@@ -13,9 +13,10 @@ description: |
   Instructions and information on how to use the SDMX Constructor tool
 link-citations: yes
 github-repo: rstudio/bookdown-demo
+favicon: favicon.ico
 ---
 
-# Introduction {-}
+# Welcome! {-}
 
 Welcome to the SDMX Constructor User Manual! SDMX Constructor is a powerful software tool that allows users to model data as per SDMX standards, generate and edit SDMX artefacts, and support data availability and access through online data portals.
 

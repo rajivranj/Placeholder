@@ -3,7 +3,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li class="toc-logo"><a href="./"><img src="new.ico"></a></li>
+        <li class="toc-logo"><a href="./"><img src="new.png"></a></li>
         <li><a href="./">SDMX Constructor: User manual</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
