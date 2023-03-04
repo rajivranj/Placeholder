@@ -1,5 +1,5 @@
 --- 
-title: "SDMX Constructor"
+title: "SDMX Constructor: User Manual"
 # description: "Instructions and information on how to use the SDMX Constructor tool"
 author: "International Labour Organization: Department of Statistics"
 # date: "`r Sys.Date()`"
@@ -23,3 +23,4 @@ Welcome to the SDMX Constructor User Manual! SDMX Constructor is a powerful soft
 ```{r front-cover, echo=FALSE, fig.align="center", out.width="60%" }
 knitr::include_graphics("./images/Main.png")
 ```
+[See screenshot](images/Main.png)
