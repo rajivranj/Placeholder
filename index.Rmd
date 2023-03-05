@@ -20,9 +20,9 @@ favicon: favicon.ico
 
 Welcome to the SDMX Constructor User Manual! SDMX Constructor is a powerful software tool that allows users to model data as per SDMX standards, generate and edit SDMX artefacts, and support data availability and access through online data portals.
 
+This user manual provides step-by-step instructions on how to use SDMX Constructor. The manual is designed to be user-friendly and accessible for various technical professionals, including data portal managers, database managers, IT infrastructure managers, developers, and statisticians. This manual provides an in-depth understanding of SDMX Constructor's features and functionality and is an essential resource for anyone managing and sharing data.
 
 ```{r front-cover, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/Main.png")
 ```
-[View a high-resolution image](images/Main.png)
-
+[Larger image](images/Main.png)
