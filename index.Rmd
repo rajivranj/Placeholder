@@ -27,12 +27,8 @@ This user manual for the SDMX Constructor provides step-by-step instructions on 
 The manual provides an in-depth understanding of SDMX Constructor's features and functionality. It is an essential resource for anyone using the tool to manage and share data following SDMX standards.
 
 
-<a href="images/Main.png"><img src="Title"></a>
+<a href="images/Main.png"><img src="images/Main.png"></a>
 
-```{r front-cover, echo=FALSE, fig.align="center", out.width="100%"}
-knitr::include_graphics("./images/Main.png")
-```
-[Click here to enlarge the image](images/Main.png)
 
 **Last updated on: `r format (Sys.Date(), '%d %b %Y')`**.
 
