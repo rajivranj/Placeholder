@@ -1,6 +1,11 @@
-# Hello bookdown 
+# Why SDMX Constructor? 
 
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (`#`) per .Rmd file.
+The first purpose of SDMX Constructor is to help users model their data in accordance with SDMX standards. This is essential for data providers who need to ensure that their data can be shared and used by others in a consistent and standardized way. With SDMX Constructor, users can easily define data structures, create data flows, and specify data concepts, all in accordance with SDMX standards.
+
+The second purpose of SDMX Constructor is to enable users to generate and edit SDMX artefacts in a user-friendly environment. This includes creating and editing code lists, concept schemes, data structures, data flows and content constraints. SDMX Constructor provides a user-friendly interface that makes it easy for users to create and modify these artefacts without needing to be an expert in SDMX.
+
+Finally, SDMX Constructor supports data availability and access through online data portals. By using SDMX Constructor, data providers can ensure that their data is available and accessible through online data portals that are built on SDMX standards. This allows data users to easily access and use the data they need for their research, analysis, and other activities.
+
 
 ## A section
 
