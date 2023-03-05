@@ -1,8 +1,7 @@
 --- 
 title: "SDMX Constructor: User Manual"
-# description: "Instructions and information on how to use the SDMX Constructor tool"
 author: "International Labour Organization: Department of Statistics"
-# date: "`r Sys.Date()`"
+date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 cover-image: Main.png
 documentclass: book
@@ -20,15 +19,29 @@ favicon: favicon.ico
 
 Welcome to the SDMX Constructor User Manual! 
 
-SDMX Constructor is a powerful software tool allowing users to model aggregate data per SDMX standards , generate and edit SDMX artefacts, and support data availability and access through online data portals.
+SDMX Constructor is a powerful software tool allowing users to model aggregate data per SDMX standards^[https://sdmx.org/?page_id=5008], generate and edit SDMX artefacts, and support data availability and access through online data portals.
 
 This user manual for the SDMX Constructor provides step-by-step instructions on how to use the tool in a user-friendly and accessible manner for various technical professionals, including data portals, database and IT infrastructure managers, developers, and statisticians. 
 
 The manual provides an in-depth understanding of SDMX Constructor's features and functionality. It is an essential resource for anyone using the tool to manage and share data following SDMX standards.
 
+```{r front-cover, echo=FALSE, fig.align="center", fig.cap = "A screenshot of SDMX Constructor", out.width="100%"}
+knitr::include_graphics("./images/Main.png")
+```
 
-<a href="images/Main.png"><img src="images/Main.png"></a>
+[Click here to enlarge the image](images/Main.png)
+
+### Audience {-}
+
+The primary target audience for this manual is data toolers, including data-portal, database and IT infrastructure managers, developers, and other technical professionals responsible for designing, building, and maintaining data systems.
+
+Another key audience for this manual is statisticians who manage regular and high-frequency data cycles. Statisticians often work closely with data toolers to ensure that data is collected, stored, and shared in a standardised and consistent manner. This manual provides statisticians with the knowledge they need to work effectively with SDMX.
 
 
-**Last updated on: `r format (Sys.Date(), '%d %b %Y')`**.
+### Scope {-}
 
+### Assumption {-}
+
+### Overview {-}
+
+### Contact {-}
