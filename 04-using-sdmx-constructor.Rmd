@@ -1,5 +1,28 @@
 # Using SDMX Constructor
 
+## Accessing SDMX artefacts from SDMX registries
+
+### Default SDMX registries
+
+## Creating SDMX artefacts from scratch
+
+### Setting up a registry as a local folder
+
+### Preparing inputs
+
+### Creating AgencyScheme
+
+### Creating ConceptScheme & Codelist
+
+### Creating DSD, Dataflow, ContentConstraint and CategoryScheme
+
+## Working with .Stat Suite
+
+### Uploading XML file to the Data Lifecycle Manager (DLM)
+
+### Connect to a new SDMX registry
+
+
 ## Footnotes
 
 Footnotes are put inside the square brackets after a caret `^[]`. Like this one ^[This is a footnote.]. 

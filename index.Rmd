@@ -31,17 +31,15 @@ knitr::include_graphics("./images/Main.png")
 
 [Click here to enlarge the image](images/Main.png)
 
-### Audience {-}
+### Audience and use cases {-}
 
 The primary target audience for this manual is data toolers, including data-portal, database and IT infrastructure managers, developers, and other technical professionals responsible for designing, building, and maintaining data systems.
 
 Another key audience for this manual is statisticians who manage regular and high-frequency data cycles. Statisticians often work closely with data toolers to ensure that data is collected, stored, and shared in a standardised and consistent manner. This manual provides statisticians with the knowledge they need to work effectively with SDMX.
 
 
-### Scope {-}
-
-### Assumption {-}
+### Scope and assumptions {-}
 
 ### Overview {-}
 
-### Contact {-}
+### Contact information {-}

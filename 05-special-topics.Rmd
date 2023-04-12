@@ -1,5 +1,12 @@
 # Special Topics
 
+## Annotations
+
+## Table Modeller
+
+## Translations using Google API/DeepL
+
+
 ## Equations
 
 Here is an equation.
