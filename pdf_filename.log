@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.27)  24 APR 2023 13:55
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.27)  24 APR 2023 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -754,21 +754,21 @@ Chapter 1.
 ] [10]
 Chapter 2.
 
-Overfull \hbox (17.937pt too wide) in paragraph at lines 271--272
+Overfull \hbox (17.937pt too wide) in paragraph at lines 274--275
 []\TU/lmr/m/n/10 To label an un-numbered heading, use: \TU/lmtt/m/n/10 # Hello world {-#nice-label}
- []
-
-
-LaTeX Warning: Reference `cross' on page 11 undefined on input line 274.
-
-
-Underfull \hbox (badness 2512) in paragraph at lines 274--275
-[]\TU/lmr/m/n/10 Next, reference the labeled heading anywhere in the text using
  []
 
 [11
 
 ]
+
+LaTeX Warning: Reference `cross' on page 12 undefined on input line 277.
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 277--278
+[]\TU/lmr/m/n/10 Next, reference the labeled heading anywhere in the text using
+ []
+
 File: pdf_filename_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use pdf_filename_files/figure-latex/nice-fig-1.pdf>
 [12] [13] [14
@@ -776,7 +776,7 @@ File: pdf_filename_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 ]
 Chapter 3.
 
-Underfull \hbox (badness 1859) in paragraph at lines 356--357
+Underfull \hbox (badness 1859) in paragraph at lines 359--360
 []\TU/lmr/m/n/10 Add an unnumbered part: \TU/lmtt/m/n/10 # (PART\*) Act one {-} \TU/lmr/m/n/10 (followed by \TU/lmtt/m/n/10 # A
  []
 
@@ -805,15 +805,15 @@ Chapter 6.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `pdf_filename.out' has not changed.
-(rerunfilecheck)             Checksum: 47E4E1558568969A53CE6F7D740333C0;5081.
+(rerunfilecheck)             Checksum: 2D76D6630A5E42E5F128721F3A85FDF1;4978.
  ) 
 Here is how much of TeX's memory you used:
- 17638 strings out of 478683
- 324871 string characters out of 5846909
- 1858012 words of memory out of 5000000
- 37494 multiletter control sequences out of 15000+600000
+ 17635 strings out of 478683
+ 324826 string characters out of 5846909
+ 1859012 words of memory out of 5000000
+ 37491 multiletter control sequences out of 15000+600000
  518778 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,8n,121p,1722b,475s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,8n,121p,1722b,485s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on pdf_filename.pdf (25 pages).

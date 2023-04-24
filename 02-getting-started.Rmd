@@ -1,9 +1,11 @@
 # Getting Started {#getting-started}
-
-Cross-references make it easier for your readers to find and link to elements in your book.
-
 ## System requirements
 
+Before installing any desktop software, ensuring the computer meets the necessary system requirements is essential. These requirements can include hardware specifications like processor speed, memory, and storage capacity, as well as software prerequisites like operating system version and other dependencies. Find below the minimum system requirements for installing and running SDMX Constructor.
+
+- •	Windows 7 or later in both 32- and 64-bit environments
+- •	.NET 4.5.2 or later with all updates and patches
+- •	200MB disk space for the software
 
 ## Installation
 
