@@ -1,26 +1,26 @@
-# Using SDMX Constructor {#using}
+# Using SDMX Constructor {#using-sdmx}
 
-## Accessing SDMX artefacts from SDMX registries {#accessing}
+## Accessing SDMX artefacts from SDMX registries {#accessing-sdmx}
 
 ### Default SDMX registries
 
-## Creating SDMX artefacts from scratch
+## Creating SDMX artefacts from scratch {#creating-sdmx}
 
-### Setting up a registry as a local folder
+### Setting up a registry as a local folder {#setting-up}
 
-### Preparing inputs
+### Preparing inputs {#preparing-inputs}
 
-### Creating AgencyScheme
+### Creating AgencyScheme {#creating-agencyscheme}
 
-### Creating ConceptScheme & Codelist
+### Creating ConceptScheme & Codelist {#creating-conceptscheme}
 
-### Creating DSD, Dataflow, ContentConstraint and CategoryScheme
+### Creating DSD, Dataflow, ContentConstraint and CategoryScheme {#creating-dsd}
 
 ## Working with .Stat Suite
 
-### Uploading XML file to the Data Lifecycle Manager (DLM)
+### Uploading XML file to the Data Lifecycle Manager (DLM) {#upload-the}
 
-### Connect to a new SDMX registry {#connect}
+### Connect to a new SDMX registry {#connect-to}
 
 
 ## Footnotes

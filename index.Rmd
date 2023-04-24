@@ -47,11 +47,11 @@ The SDMX Constructor is designed to meet the needs of a wide range of users, fro
 
 **SDMX beginners**: These users are new to SDMX and want to use the SDMX Constructor to view, edit, and create new SDMX structural artefacts. They may need assistance understanding the SDMX concepts, terminology, and the software's user interface.
 
-For SDMX beginners, this manual explains using the SDMX Constructor to access, view, edit, and create SDMX structural artefacts from SDMX registries. While one can find information on SDMX concepts and terminology from other sources, this manual focuses explicitly on the user interfaces of the SDMX Constructor. The SDMX beginners may be keen to know [how to access SDMX artefacts from default SDMX registries](#accessing) and [connect to a new SDMX registry](#connect) from the SDMX Constructor.
+For SDMX beginners, this manual explains using the SDMX Constructor to access, view, edit, and create SDMX structural artefacts from SDMX registries. While one can find information on SDMX concepts and terminology from other sources, this manual focuses explicitly on the user interfaces of the SDMX Constructor. The SDMX beginners may be keen to know how to [access SDMX artefacts from default SDMX registries](#accessing-sdmx) and [connect to a new SDMX registry](#connect-to) from the SDMX Constructor.
 
 **Data managers**: These users are likely familiar with the SDMX concepts and terminology and may require information about advanced functionalities offered by the SDMX Constructor. For example, they may want to use the SDMX Constructor as a backend client to manage SDMX artefacts for the .Stat Data Lifecycle Manager (DLM). For such cases, they may also use the SDMX Constructor to build the initial structural metadata when creating a new .Stat Suite instance.
 
-There are several topics that data managers may be interested in learning when it comes to creating SDMX artefacts from scratch. Firstly, they may want to start by setting up a registry as a local folder. Next, they can prepare inputs and create several artefacts, including the AgencyScheme, ConceptScheme, and Codelist and the DSD, Dataflow, ContentConstraint, and CategoryScheme. After creating these artefacts, they may want to learn how to upload the XML file to the Data Lifecycle Manager (DLM). Additionally, they may want to know how to access SDMX artefacts from default SDMX registries and connect to a new SDMX registry for editing SDMX artefacts directly in the DLM.
+There are several topics that data managers may be interested in learning when it comes to [creating SDMX artefacts from scratch](#creating-sdmx). Firstly, they may want to start by [setting up a registry as a local folder](#setting-up). Next, they can [prepare inputs](#preparing-inputs) and create several artefacts, including the [AgencyScheme](#creating-agencyschme), [ConceptScheme, and Codelist](#creating-conceptscheme) and the [DSD, Dataflow, ContentConstraint, and CategoryScheme](#creating-dsd). After creating these artefacts, they may want to learn how to [upload the XML file to the Data Lifecycle Manager (DLM)](#upload-the). Additionally, they may want to know how to [access SDMX artefacts from default SDMX registries](#access-sdmx) and [connect to a new SDMX registry](#connect-to) for editing SDMX artefacts directly in the DLM.
 
 **SDMX metadata managers**: These users manage SDMX artefacts and ensure their accuracy and consistency. They may use the SDMX Constructor to model data and modify SDMX structural artefacts, including translating SDMX artefacts in various languages, managing annotations and creating Metadata Structure Definition (MSD).
 
@@ -63,10 +63,10 @@ This comprehensive manual provides a step-by-step guide on getting started with 
 
 The chapters in this manual build up toward providing comprehensive guidance that covers topics users need to know to get started with the application, understand its navigation, and use its features and functionalities to model data effectively. The manual includes the following chapters.
 
--   Chapter 1: [Benefits of SDMX Constructor](#benefits)
+-   Chapter 1: [Benefits of SDMX Constructor](#benefits-of)
 -   Chapter 2: [Getting started](#getting-started)
 -   Chapter 3: [User interface](#user-interface)
--   Chapter 4: [Using SDMX Constructor](#using)
+-   Chapter 4: [Using SDMX Constructor](#using-sdmx)
 -   Chapter 5: [Special Topics](#special-topics)
 -   Chapter 6: [Glossary](#glossary)
 
