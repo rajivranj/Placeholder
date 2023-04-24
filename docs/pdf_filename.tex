@@ -117,7 +117,7 @@
 
 \title{SDMX Constructor: User Manual}
 \author{International Labour Organization: Department of Statistics}
-\date{2023-04-19}
+\date{2023-04-24}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[chapter]
@@ -149,42 +149,74 @@
 
 Welcome to the SDMX Constructor User Manual!
 
-SDMX Constructor is a powerful software tool allowing users to model aggregate data per SDMX standards\footnote{\url{https://sdmx.org/?page_id=5008}}, generate and edit SDMX artefacts, and support data availability and access through online data portals.
+SDMX Constructor\footnote{It was previously called DSD Constructor, it supported creating and editing Data Structure Definitions (DSDs) and their related artefacts (i.e., concept schemes and code lists). The significant improvements and additions to the software justify the name change of the tool from DSD Constructor to SDMX Constructor. With the latest update, the tool can now translate SDMX artefacts in multiple languages, integrate with the .Stat Suite, and manage reference metadata. Additionally, the tool now includes Table Modeller functionalities that make it easier for users who are new to SDMX to understand and use the software. The updated software is no longer just a DSD Constructor but a complete SDMX Constructor capable of handling various aspects of SDMX data and metadata. The new name better reflects the software's expanded capabilities, making it more relevant and recognizable to the target audience (\url{https://ilostat.github.io/dsdc/}).} is a powerful desktop software tool that helps users model aggregate data per the SDMX standards \footnote{An ISO standard (since 2005, version 2.1 since 2013): \url{https://www.iso.org/obp/ui/fr/\#iso:std:iso:17369:ed-1:v1:en} and \url{https://sdmx.org/?page_id=5008}} . It eases generating and editing SDMX artefacts and ultimately supports data availability and access through SDMX-compliant data portals (such as ones built with .Stat Suite\footnote{To learn more about the Dot Stat Suite platform please refer to the documentation here: \url{https://siscc.org/stat-suite/}. The SDMX Constructor has been optimised to seamlessly integrate with the Dot Stat Suite platform, as its back-end client.} ).
 
-This user manual for the SDMX Constructor provides step-by-step instructions on how to use the tool in a user-friendly and accessible manner for various technical professionals, including data portals, database and IT infrastructure managers, developers, and statisticians.
+SDMX Constructor is one of the tools that comprise the ILO SDMX toolkit \footnote{\url{https://ilostat.ilo.org/resources/sdmx-tools/}}, alongside SMART (Statistical Metadata-driven Analysis and Reporting Tool) and the SDMX Excel Add-in.
 
-The manual provides an in-depth understanding of SDMX Constructor's features and functionality. It is an essential resource for anyone using the tool to manage and share data following SDMX standards.
+This user manual for the SDMX Constructor provides step-by-step instructions on using the tool in a user-friendly and accessible manner. It provides an in-depth understanding of SDMX Constructor's features and functionalities. It is an essential resource for anyone using the tool to manage and share data following the SDMX standards.
+
+Below is a screenshot of the tool's landing page as an example of the user interface.
 
 \begin{figure}
 
-{\centering \includegraphics[width=1\linewidth]{./images/Main} 
+{\centering \includegraphics[width=1\linewidth]{./images/image001} 
 
 }
 
 \caption{A screenshot of SDMX Constructor}\label{fig:front-cover}
 \end{figure}
 
-\href{images/Main.png}{Click here to enlarge the image}
+\href{images/image001.png}{Click here to enlarge the image}
 
 \hypertarget{audience-and-use-cases}{%
-\subsection*{Audience and use cases}\label{audience-and-use-cases}}
-\addcontentsline{toc}{subsection}{Audience and use cases}
+\section*{Audience and use cases}\label{audience-and-use-cases}}
+\addcontentsline{toc}{section}{Audience and use cases}
 
-The primary target audience for this manual is data toolers, including data-portal, database and IT infrastructure managers, developers, and other technical professionals responsible for designing, building, and maintaining data systems.
+The SDMX Constructor is a powerful tool for managing SDMX structural artefacts. It is designed to meet the needs of a wide range of users, from beginners who are new to SDMX to data managers who need advanced capabilities for managing large and complex datasets. In addition to these user types, there may be other groups of users with specific requirements or use cases. This user manual provides guidance and instructions for using the SDMX Constructor, focusing on the needs of these various user types.
 
-Another key audience for this manual is statisticians who manage regular and high-frequency data cycles. Statisticians often work closely with data toolers to ensure that data is collected, stored, and shared in a standardised and consistent manner. This manual provides statisticians with the knowledge they need to work effectively with SDMX.
+SDMX beginners: These users are new to SDMX and want to use the SDMX Constructor to view, edit, and create new SDMX structural artefacts. They may need assistance understanding the SDMX concepts, terminology, and the software's user interface.
+
+For SDMX beginners, this manual explains using the SDMX Constructor to access, view, edit, and create SDMX structural artefacts from SDMX registries. While one can find information on SDMX concepts and terminology from other sources, this manual focuses explicitly on the user interfaces of the SDMX Constructor. The SDMX beginners may be keen to know how to access SDMX artefacts from default SDMX registries and connect to a new SDMX registry from the SDMX Constructor.
+
+Data managers: These users are likely familiar with the SDMX concepts and terminology and may require information about advanced functionalities offered by the SDMX Constructor. For example, they may want to use the SDMX Constructor as a backend client to manage SDMX artefacts for the .Stat Data Lifecycle Manager (DLM). For such cases, they may also use the SDMX Constructor to build the initial structural metadata when creating a new .Stat Suite instance.
+
+There are several topics that data managers may be interested in learning when it comes to creating SDMX artefacts from scratch. Firstly, they may want to start by setting up a registry as a local folder. Next, they can prepare inputs and create several artefacts, including the AgencyScheme, ConceptScheme, and Codelist and the DSD, Dataflow, ContentConstraint, and CategoryScheme. After creating these artefacts, they may want to learn how to upload the XML file to the Data Lifecycle Manager (DLM). Additionally, they may want to know how to access SDMX artefacts from default SDMX registries and connect to a new SDMX registry for editing SDMX artefacts directly in the DLM.
+
+SDMX metadata managers: These users manage SDMX artefacts and ensure their accuracy and consistency. They may use the SDMX Constructor to model data and modify SDMX structural artefacts, including translating SDMX artefacts in various languages, managing annotations and creating Metadata Structure Definition (MSD).
 
 \hypertarget{scope-and-assumptions}{%
-\subsection*{Scope and assumptions}\label{scope-and-assumptions}}
-\addcontentsline{toc}{subsection}{Scope and assumptions}
+\section*{Scope and assumptions}\label{scope-and-assumptions}}
+\addcontentsline{toc}{section}{Scope and assumptions}
+
+This comprehensive manual provides a step-by-step guide on getting started with the software, including installing it and creating and managing SDMX artefacts. The manual includes a detailed overview of the tool's user interfaces, including menu items, navigation, and other essential features. The manual does not, however, delve into the intricacies of the SDMX standard itself. Describing the SDMX standard is beyond the scope of this manual, as it is an extensive and complex topic requiring more in-depth discussion and is available elsewhere. Instead, the manual assumes that readers are familiar with the SDMX standard and focuses on explaining how to use the tool within that context.
 
 \hypertarget{overview}{%
-\subsection*{Overview}\label{overview}}
-\addcontentsline{toc}{subsection}{Overview}
+\section*{Overview}\label{overview}}
+\addcontentsline{toc}{section}{Overview}
+
+The chapters in this manual build up toward providing comprehensive guidance that covers topics users need to know to get started with the application, understand its navigation, and use its features and functionalities to model data effectively. The manual includes the following chapters.
+
+\begin{itemize}
+\tightlist
+\item
+  Chapter 1: Benefits of SDMX Constructor
+\item
+  Chapter 2: Getting started
+\item
+  Chapter 3: User interface
+\item
+  Chapter 4: Using SDMX Constructor
+\item
+  Chapter 5: Special Topics
+\item
+  Chapter 5: Glossary
+\end{itemize}
 
 \hypertarget{contact-information}{%
-\subsection*{Contact information}\label{contact-information}}
-\addcontentsline{toc}{subsection}{Contact information}
+\section*{Contact information}\label{contact-information}}
+\addcontentsline{toc}{section}{Contact information}
+
+For more information and to seek basic technical assistance or support on the tool, please reach out International Labour Organization - Department of Statistics at \href{mailto:sdmx.support@ilo.org}{\nolinkurl{sdmx.support@ilo.org}}.
 
 \hypertarget{benefits-of-sdmx-constructor}{%
 \chapter{Benefits of SDMX Constructor}\label{benefits-of-sdmx-constructor}}

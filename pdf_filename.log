@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.27)  19 APR 2023 17:49
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.27)  24 APR 2023 11:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -723,100 +723,97 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] (./pdf_filename.toc
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 7.
+(Font)              scaled to size 7.0pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 7.
+(Font)              scaled to size 5.0pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 7.
+(Font)              scaled to size 10.00092pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 7.
+(Font)              scaled to size 7.00064pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 7.
+(Font)              scaled to size 5.00046pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 7.
+(Font)              scaled to size 9.99893pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 7.
+(Font)              scaled to size 6.99925pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 7.
+(Font)              scaled to size 4.99947pt on input line 2.
 [3])
 \tf@toc=\write5
 \openout5 = `pdf_filename.toc'.
 
 [4]
-File: ./images/Main.png Graphic file (type bmp)
-<./images/Main.png>
-
-Underfull \vbox (badness 1983) has occurred while \output is active []
-
+File: ./images/image001.png Graphic file (type bmp)
+<./images/image001.png>
 [5
 
-] [6]
+] [6] [7] [8]
 Chapter 1.
-[7
+[9
 
-] [8]
+] [10]
 Chapter 2.
 
-Overfull \hbox (17.937pt too wide) in paragraph at lines 239--240
+Overfull \hbox (17.937pt too wide) in paragraph at lines 271--272
 []\TU/lmr/m/n/10 To label an un-numbered heading, use: \TU/lmtt/m/n/10 # Hello world {-#nice-label}
  []
 
 
-LaTeX Warning: Reference `cross' on page 9 undefined on input line 242.
+LaTeX Warning: Reference `cross' on page 11 undefined on input line 274.
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 242--243
+Underfull \hbox (badness 2512) in paragraph at lines 274--275
 []\TU/lmr/m/n/10 Next, reference the labeled heading anywhere in the text using
  []
 
-[9
+[11
 
 ]
 File: pdf_filename_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use pdf_filename_files/figure-latex/nice-fig-1.pdf>
-[10] [11] [12
+[12] [13] [14
 
 ]
 Chapter 3.
 
-Underfull \hbox (badness 1859) in paragraph at lines 324--325
+Underfull \hbox (badness 1859) in paragraph at lines 356--357
 []\TU/lmr/m/n/10 Add an unnumbered part: \TU/lmtt/m/n/10 # (PART\*) Act one {-} \TU/lmr/m/n/10 (followed by \TU/lmtt/m/n/10 # A
  []
 
-[13] [14
+[15] [16
 
 ]
 Chapter 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[15]
+[17]
 Overfull \vbox (49.2062pt too high) has occurred while \output is active []
 
-[16] [17] [18
+[18] [19] [20
 
 ]
 Chapter 5.
-[19] [20]
+[21] [22]
 Chapter 6.
-[21
+[23
 
-] (./pdf_filename.bbl [22]) [23
+] (./pdf_filename.bbl [24]) [25
 
 ] (./pdf_filename.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `pdf_filename.out' has not changed.
-(rerunfilecheck)             Checksum: 07762B4891505C207E33796F709F9D96;4493.
+(rerunfilecheck)             Checksum: 47E4E1558568969A53CE6F7D740333C0;5081.
  ) 
 Here is how much of TeX's memory you used:
- 17637 strings out of 478683
- 325016 string characters out of 5846909
- 1851012 words of memory out of 5000000
- 37493 multiletter control sequences out of 15000+600000
+ 17638 strings out of 478683
+ 325100 string characters out of 5846909
+ 1858012 words of memory out of 5000000
+ 37494 multiletter control sequences out of 15000+600000
  518778 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,8n,121p,439b,475s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,8n,121p,1728b,475s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on pdf_filename.pdf (23 pages).
+Output written on pdf_filename.pdf (25 pages).
