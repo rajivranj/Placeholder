@@ -17,7 +17,7 @@ favicon: favicon.ico
 
 # Preface {.unnumbered}
 
-Welcome to the SDMX Constructor User Manual!
+Welcome to the **SDMX Constructor User Manual!**
 
 SDMX Constructor[^index-1] is a powerful desktop software tool that helps users model aggregate data per the SDMX standards [^index-2] . It eases generating and editing SDMX artefacts and ultimately supports data availability and access through SDMX-compliant data portals (such as ones built with .Stat Suite[^index-3] ).
 

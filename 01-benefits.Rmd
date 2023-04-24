@@ -1,4 +1,4 @@
-# Benefits of SDMX Constructor {#benefits-to}
+# Benefits of SDMX Constructor {#benefits-of}
 
 The first purpose of SDMX Constructor is to help users model their data in accordance with SDMX standards. This is essential for data providers who need to ensure that their data can be shared and used by others in a consistent and standardized way. With SDMX Constructor, users can easily define data structures, create data flows, and specify data concepts, all in accordance with SDMX standards.
 
