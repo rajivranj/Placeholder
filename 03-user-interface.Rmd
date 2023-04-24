@@ -1,21 +1,32 @@
 # User Interface {#user-interface}
 
+This chapter will provide you with a comprehensive guide on the main aspects of the SDMX Constructor's user interface. It will cover three main topics. The first topic will be an overview of the user interface, including a detailed explanation of the various menu options, toolbars, and navigation options. The second topic will focus on the inputs and outputs of SDMX Constructor. It will cover the different input options available and the output options. The third topic will provide an overview of the translation functionality in SDMX Constructor.
+
 ## Interface overview and navigation
 
+The user interface of the tool appears like this:
+
+```{r 009, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image009.png")
+```
+[Click here to enlarge the image](images/image009.png)
+
+The interface shows many menu items on top. For example, in the top right corner (as highlighted below), the first group of buttons (General Functions) shows the items applicable to the whole tool. They include Reset, Support, Locale and Registry. See Table 1 for a brief overview of the menu items.
+
+```{r 011, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image011.png")
+```
+[Click here to enlarge the image](images/image011.png)
+
+| Menu item | What to expect: a bird's-eye view of General Functions                                                                                                          
+|-------------------|----------------------------------------------------|
+| **Reset**     | The Reset button resets the tool to its default settings. It removes all the inputs and initiates a fresh start.                                            
+| **Support**   | The Support button launches the default email application on a computer, with a new email message addressed to the support team for the tool, ready to be composed and sent.                                                                                                                                                            
+| **Locale**    | The Support button launches the default email application on a computer, with a new email message addressed to the support team for the tool, ready to be composed and sent.
+| **Registry**  | The Registry button provides several options for users to configure their settings. For example, users can specify the connection details of the SDMX registry (either a local folder or local instance (localhost) or online) and connect with the Data Lifecycle Manager (DLM) component of the .Stat Suite. In addition, the button allows specifying the proxy settings for the internet connection if a proxy is needed. There are also options for entering authentication credentials for automated translation using Google Translation or DeepL API. 
+
+: (#tab:table31) A bird's-eye view of the menu items in the top right corner (General Functions)
 
 ## Input and output methods
 
-
 ## Translation
-
-
-You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file. 
-
-Add a numbered part: `# (PART) Act one {-}` (followed by `# A chapter`)
-
-Add an unnumbered part: `# (PART\*) Act one {-}` (followed by `# A chapter`)
-
-Add an appendix as a special kind of un-numbered part: `# (APPENDIX) Other stuff {-}` (followed by `# A chapter`). Chapters in an appendix are prepended with letters instead of numbers.
-
-
-

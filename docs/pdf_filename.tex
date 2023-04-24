@@ -234,6 +234,8 @@ Finally, SDMX Constructor supports data availability and access through online d
 \hypertarget{getting-started}{%
 \chapter{Getting Started}\label{getting-started}}
 
+In this chapter, you will find information about the installation process of SDMX Constructor in a Windows environment. Specifically, it will cover the system requirements necessary to install the software, the steps required to download the executable file and the subsequent installation process. The chapter will also explain the software update process, providing practical guidance on keeping your SDMX Constructor current.
+
 \hypertarget{system-requirements}{%
 \section{System requirements}\label{system-requirements}}
 
@@ -242,123 +244,89 @@ Before installing any desktop software, ensuring the computer meets the necessar
 \begin{itemize}
 \tightlist
 \item
-  • Windows 7 or later in both 32- and 64-bit environments
+  Windows 7 or later in both 32- and 64-bit environments
 \item
-  • .NET 4.5.2 or later with all updates and patches
+  .NET 4.5.2 or later with all updates and patches
 \item
-  • 200MB disk space for the software
+  200MB disk space for the software
 \end{itemize}
 
 \hypertarget{installation}{%
 \section{Installation}\label{installation}}
 
+\textbf{Step 1}: Visit the site \url{https://ilostat.github.io/dsdc/} and click on the INSTALL menu option (as shown below).
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image003} \end{center}
+
+\textbf{Step 2}: In the resulting page, click on ``here'' (as shown below)
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image005} \end{center}
+
+\textbf{Step 3}: An interface (as shown below) will open, requiring you to enter a few details (your name, your email, and the name of your organisation (if applicable)).
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image007} \end{center}
+
+\textbf{Step 4}: The download will start when you fill in the form and submit the information. The software installer file, named ``ILOSTAT\_DSD\_Constructor\_Setup.exe'', will be downloaded.
+
+\textbf{Step 5}: Double-click on this file to begin the installation process. Select `Install' on the security message and wait for the installation process to complete.
+
 \hypertarget{software-updates}{%
 \section{Software updates}\label{software-updates}}
 
-\hypertarget{chapters-and-sub-chapters}{%
-\section{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
-
-There are two steps to cross-reference any heading:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Label the heading: \texttt{\#\ Hello\ world\ \{\#nice-label\}}.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Leave the label off if you like the automated heading generated based on your heading title: for example, \texttt{\#\ Hello\ world} = \texttt{\#\ Hello\ world\ \{\#hello-world\}}.
-  \item
-    To label an un-numbered heading, use: \texttt{\#\ Hello\ world\ \{-\#nice-label\}} or \texttt{\{\#\ Hello\ world\ .unnumbered\}}.
-  \end{itemize}
-\item
-  Next, reference the labeled heading anywhere in the text using \texttt{\textbackslash{}@ref(nice-label)}; for example, please see Chapter \ref{cross}.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    If you prefer text as the link instead of a numbered reference use: \protect\hyperlink{cross}{any text you want can go here}.
-  \end{itemize}
-\end{enumerate}
-
-\hypertarget{captioned-figures-and-tables}{%
-\section{Captioned figures and tables}\label{captioned-figures-and-tables}}
-
-Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tab:chunk-label)}, respectively.
-
-See Figure \ref{fig:nice-fig}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{pdf_filename_files/figure-latex/nice-fig-1} 
-
-}
-
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
-
-Don't miss Table \ref{tab:nice-tab}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(pressure, }\DecValTok{10}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{table}
-
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rr}
-\toprule
-temperature & pressure\\
-\midrule
-0 & 0.0002\\
-20 & 0.0012\\
-40 & 0.0060\\
-60 & 0.0300\\
-80 & 0.0900\\
-\addlinespace
-100 & 0.2700\\
-120 & 0.7500\\
-140 & 1.8500\\
-160 & 4.2000\\
-180 & 8.8000\\
-\bottomrule
-\end{tabular}
-\end{table}
+The SDMX Constructor updates itself to the latest version (if available) using the ClickOnce Deployment technique. This method ensures a streamlined installation process with minimal user involvement. An internet connection is required when launching the application to initiate the update. The software will check for available updates and automatically download and install them in the background without requiring any input from the user. This feature helps to ensure that users always have access to the latest version of the software, with the latest bug fixes, performance improvements, and new features.
 
 \hypertarget{user-interface}{%
 \chapter{User Interface}\label{user-interface}}
 
+This chapter will provide you with a comprehensive guide on the main aspects of the SDMX Constructor's user interface. It will cover three main topics. The first topic will be an overview of the user interface, including a detailed explanation of the various menu options, toolbars, and navigation options. The second topic will focus on the inputs and outputs of SDMX Constructor. It will cover the different input options available and the output options. The third topic will provide an overview of the translation functionality in SDMX Constructor.
+
 \hypertarget{interface-overview-and-navigation}{%
 \section{Interface overview and navigation}\label{interface-overview-and-navigation}}
+
+The user interface of the tool appears like this:
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image009} \end{center}
+
+\href{images/image009.png}{Click here to enlarge the image}
+
+The interface shows many menu items on top. For example, in the top right corner (as highlighted below), the first group of buttons (General Functions) shows the items applicable to the whole tool. They include Reset, Support, Locale and Registry. See Table 1 for a brief overview of the menu items.
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image011} \end{center}
+
+\href{images/image011.png}{Click here to enlarge the image}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2676}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7324}}@{}}
+\caption{\label{tab:table31} A bird's-eye view of the menu items in the top right corner (General Functions)}\tabularnewline
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Menu item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What to expect: a bird's-eye view of General Functions
+\end{minipage} \\
+\midrule()
+\endfirsthead
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Menu item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What to expect: a bird's-eye view of General Functions
+\end{minipage} \\
+\midrule()
+\endhead
+\textbf{Reset} & The Reset button resets the tool to its default settings. It removes all the inputs and initiates a fresh start. \\
+\textbf{Support} & The Support button launches the default email application on a computer, with a new email message addressed to the support team for the tool, ready to be composed and sent. \\
+\textbf{Locale} & The Support button launches the default email application on a computer, with a new email message addressed to the support team for the tool, ready to be composed and sent. \\
+\textbf{Registry} & The Registry button provides several options for users to configure their settings. For example, users can specify the connection details of the SDMX registry (either a local folder or local instance (localhost) or online) and connect with the Data Lifecycle Manager (DLM) component of the .Stat Suite. In addition, the button allows specifying the proxy settings for the internet connection if a proxy is needed. There are also options for entering authentication credentials for automated translation using Google Translation or DeepL API. \\
+\bottomrule()
+\end{longtable}
 
 \hypertarget{input-and-output-methods}{%
 \section{Input and output methods}\label{input-and-output-methods}}
 
 \hypertarget{translation}{%
 \section{Translation}\label{translation}}
-
-You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.
-
-Add a numbered part: \texttt{\#\ (PART)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
-
-Add an unnumbered part: \texttt{\#\ (PART\textbackslash{}*)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
-
-Add an appendix as a special kind of un-numbered part: \texttt{\#\ (APPENDIX)\ Other\ stuff\ \{-\}} (followed by \texttt{\#\ A\ chapter}). Chapters in an appendix are prepended with letters instead of numbers.
 
 \hypertarget{using-sdmx}{%
 \chapter{Using SDMX Constructor}\label{using-sdmx}}
