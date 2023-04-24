@@ -1,6 +1,6 @@
-# Using SDMX Constructor
+# Using SDMX Constructor {#using}
 
-## Accessing SDMX artefacts from SDMX registries
+## Accessing SDMX artefacts from SDMX registries {#accessing}
 
 ### Default SDMX registries
 
@@ -20,7 +20,7 @@
 
 ### Uploading XML file to the Data Lifecycle Manager (DLM)
 
-### Connect to a new SDMX registry
+### Connect to a new SDMX registry {#connect}
 
 
 ## Footnotes

@@ -1,4 +1,4 @@
-# Special Topics
+# Special Topics {#special-topics}
 
 ## Annotations
 
