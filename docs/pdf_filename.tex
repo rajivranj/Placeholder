@@ -460,7 +460,7 @@ Names and functions
 \midrule()
 \endhead
 \includegraphics{images/image036.png} & Export. It saves the SDMX artefact in a local folder. It is available for DSD, Dataflow, ContentConstraint, AgencyScheme, and MSD without specific options. However, options are available to save artefacts from: 1. Codelist (available in the following formats: .Stat v7 Dim, CSV and SDMX-ML) and 2. ConceptScheme, Table Modeller and CategoryScheme (available in two flavours: Save with descendants and Save without descendants). \\
-\includegraphics{images/image037.png} or \includegraphics{images/image038.png} & Push to DLM (DLM is short for Data Lifecycle Manager of the .Stat Suite ). This icon becomes active (appears with colours) when the tool is connected with a DLM instance. It is available for Codelist, DSD, Dataflow, ContentConstraint, AgencyScheme, and MSD without specific options. However, options are available to save artefacts from ConceptScheme, Table Modeller and CategoryScheme. \\
+\includegraphics{images/image037.png} or \includegraphics{images/image038.png} & Push to DLM (DLM is short for Data Lifecycle Manager of the .Stat Suite). This icon becomes active (appears with colours) when the tool is connected with a DLM instance. It is available for Codelist, DSD, Dataflow, ContentConstraint, AgencyScheme, and MSD without specific options. However, options are available to save artefacts from ConceptScheme, Table Modeller and CategoryScheme. \\
 \includegraphics{images/image039.png} & Structure Viewer. It lets you preview the tabulation and download the MS Excel and CSV templates. It is available for DSD and Dataflow. \\
 \bottomrule()
 \end{longtable}
@@ -476,7 +476,7 @@ Below the menu items on top, the user interface appears divided into two main pa
 
 \href{images/image040.png}{Click here to enlarge the image}
 
-For ConceptScheme, Table Modeller, DSD, AgencyScheme, CategoryScheme, and MSD, an additional pane also appears in the user interface (below the placeholder for listing the artefacts - (as heightened below)), which acts as a staging area (or a pool). It becomes a CONCEPTS POOL for ConceptScheme, Table Modeller, DSD and MSD options. And it turns into an AGENCY POOL for AgencyScheme and a CATEGORY POOL for CategoryScheme options.
+For ConceptScheme, Table Modeller, DSD, AgencyScheme, CategoryScheme, and MSD, an additional pane also appears in the user interface (below the placeholder for listing the artefacts - (as highlighted below)), which acts as a staging area (or a pool). It becomes a CONCEPTS POOL for ConceptScheme, Table Modeller, DSD and MSD options. And it turns into an AGENCY POOL for AgencyScheme and a CATEGORY POOL for CategoryScheme options.
 
 The users can drag the artefacts back and forth between the pool area and the pane on the right.
 
@@ -487,8 +487,50 @@ The users can drag the artefacts back and forth between the pool area and the pa
 \hypertarget{input-and-output-methods}{%
 \section{Input and output methods}\label{input-and-output-methods}}
 
+Users can input information into SDMX Constructor in several ways, depending on the specific scenarios. The following are the options.
+
+\begin{itemize}
+\tightlist
+\item
+  Typing and copy-pasting: Users can enter information by typing text or copying and pasting into fields in the forms using a keyboard.
+\item
+  Clicking: Users can interact with buttons, links, menus, or other graphical elements by clicking with a mouse, touchpad, or touchscreen. For example, double-clicking an artefact from the left pane load its details on the screen's right-side pane.
+\item
+  Dragging and dropping: Users can manipulate objects or select multiple items by dragging and dropping them with a mouse, touchpad, or touchscreen.
+\item
+  Loading from online SDMX Registry: Users can access pre-prepared SDMX artefacts from many default online SDMX registries. The input method allows users to retrieve information from the SDMX registry.
+\end{itemize}
+
+SDMX Constructor presents information to users in a standardised and user-friendly way, using a combination of graphical elements, form-based input and validation and error messages.
+
+\begin{itemize}
+\tightlist
+\item
+  Graphical interface: The DSD Constructor uses a graphical user interface (GUI) that allows users to interact with the metadata components using visual elements like buttons, menus, and icons. This makes it easy for users to navigate and manipulate the metadata and get a quick overview of the SDMX artefacts.
+\item
+  Form-based input: The DSD Constructor uses form-based input screens to allow users to enter information about the metadata components. The forms are designed to be intuitive and easy to use, with clear labels, dropdown menus, and text boxes that guide users through the input process.
+\item
+  Validation and error messages: The DSD Constructor validates the metadata components to ensure that they conform to the SDMX standard and are consistent with other components. If there are errors or inconsistencies, the tool provides error messages that help users identify and correct the issues.
+\end{itemize}
+
 \hypertarget{translation}{%
 \section{Translation}\label{translation}}
+
+DSD Constructor allows users to manage multilingual metadata components easily. Users can choose from automatic or manual translation methods and edit translations using translation tables. The tool simplifies the translation process with standardised language codes and automation and helps users achieve accurate, high-quality translations.
+
+Here are some ways the tool can support the translation of SDMX artefacts:
+
+\begin{itemize}
+\tightlist
+\item
+  Translation into three languages: The tool supports translating content into three languages of your choice. It helps by following two automatic methods, but you can always do it manually if required.
+\item
+  Automatic translation methods: Using the Google Translate API key, you can connect with Google's translation services. Another automated way is using DeepL. The SDMX Constructor allows programmatic access to DeepL's machine translation technology, bringing high-quality translation capabilities directly to the tool.
+\item
+  Translation tables: Using these API keys, the SDMX Constructor provides translation tables, which allow users to edit suggested translations of metadata components in different languages. You can enter translations for different language codes, and the tool will automatically populate the translations in the appropriate fields.
+\item
+  Standardised language codes: The SDMX Constructor uses standardised language codes; users can select from a list of pre-defined language codes.
+\end{itemize}
 
 \hypertarget{using-sdmx}{%
 \chapter{Using SDMX Constructor}\label{using-sdmx}}
