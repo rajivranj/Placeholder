@@ -12,7 +12,7 @@ knitr::include_graphics("./images/image009.png")
 
 [Click here to enlarge the image](images/image009.png)
 
-The user interface of the tool is designed to be intuitive and user-friendly. It consists of a main window and menus on top that contains various menu items. The menu items are categorised into General Functions, Editors, Editor Ribbon and Preview and Export.
+It is designed to be intuitive and user-friendly. It consists of a main window or working area and menus on top that contains various menu items. The menu items are categorised into General Functions, Editors, Editor Ribbon and Preview and Export.
 
 ### General Functions Menu
 
@@ -122,17 +122,27 @@ Below are the icons representing the menu items, along with their features. User
 
 : (#tab:table34) A bird's-eye view of the menu items in the Editor Ribbon
 
+### Working area
+
 The following section explains the working area of the tool.
 
 Below the menu items on top, the user interface appears divided into two main parts. First, the left pane on the interface serves as a space to hold the artefacts' list. The other side is designated to showcase relevant details (both sides are highlighted in different colours in the screenshot below). Selecting (by double-clicking) an artefact from the left pane prompts its details to appear on the screen's right-side pane. This layout is available for Codelist, Dataflow and ContentConstraint.
 
-image
+```{r 040, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image040.png")
+```
+
+[Click here to enlarge the image](images/image040.png)
 
 For ConceptScheme, Table Modeller, DSD, AgencyScheme, CategoryScheme, and MSD, an additional pane also appears in the user interface (below the placeholder for listing the artefacts - (as heightened below)), which acts as a staging area (or a pool). It becomes a CONCEPTS POOL for ConceptScheme, Table Modeller, DSD and MSD options. And it turns into an AGENCY POOL for AgencyScheme and a CATEGORY POOL for CategoryScheme options.
 
 The users can drag the artefacts back and forth between the pool area and the pane on the right.
 
-image
+```{r 042, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image042.png")
+```
+
+[Click here to enlarge the image](images/image042.png)
 
 ## Input and output methods
 
