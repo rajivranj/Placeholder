@@ -38,7 +38,6 @@ Below is a screenshot of the tool's landing page as an example of the user inter
 ```{r front-cover, echo=FALSE, fig.align="center", fig.cap = "A screenshot of SDMX Constructor", out.width="100%"}
 knitr::include_graphics("./images/image001.png")
 ```
-
 [Click here to enlarge the image](images/image001.png)
 
 ## Audience and use cases {.unnumbered}

@@ -9,7 +9,6 @@ The user interface of the tool appears like this:
 ```{r 009, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image009.png")
 ```
-
 [Click here to enlarge the image](images/image009.png)
 
 It is designed to be intuitive and user-friendly. It consists of a main window or working area and menus on top that contains various menu items. The menu items are categorised into General Functions, Editors, Editor Ribbon and Preview and Export.
@@ -21,7 +20,6 @@ In the top right corner (as highlighted below), the first group of buttons (Gene
 ```{r 011, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image011.png")
 ```
-
 [Click here to enlarge the image](images/image011.png)
 
 | Menu item    | What to expect: A bird's-eye view of General Functions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -40,7 +38,6 @@ The second group of menu items (Editors) shows the options in the top left corne
 ```{r 013, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image013.png")
 ```
-
 [Click here to enlarge the image](images/image013.png)
 
 | Menu item             | What to expect: A bird's-eye view of the menu items in the top left corner (Editors)                                                                                                                                                                                                         |
@@ -64,7 +61,6 @@ The third group of menu items (Editor Ribbon) are in the top left corner and bel
 ```{r 015, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image015.png")
 ```
-
 [Click here to enlarge the image](images/image015.png)
 
 It contains icons that represent the most commonly used features of the selected options above, and hovering over each icon will reveal a tooltip that describes its function. The options available in this group of menu items change according to the menu item selected on the top menu.
@@ -97,7 +93,6 @@ All options available within this menu group per the item selected on the top me
 ```{r 032, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image032.png")
 ```
-
 [Click here to enlarge the image](images/image032.png)
 
 ### Preview and Export Menu
@@ -107,7 +102,6 @@ The fourth menu item group (Preview and Export) is in the top right corner and b
 ```{r 034, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image034.png")
 ```
-
 [Click here to enlarge the image](images/image034.png)
 
 The options available in this group of menu items are related to the preview and export functionalities of the tool and change according to the menu item selected on the top menu (the second group of menu items (Editors)).
@@ -141,7 +135,6 @@ The users can drag the artefacts back and forth between the pool area and the pa
 ```{r 042, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image042.png")
 ```
-
 [Click here to enlarge the image](images/image042.png)
 
 ## Input and output methods
