@@ -113,8 +113,6 @@ Imagine a country called Demoland and its National Statistical Office (NSO), Dem
 
 : (#tab:table41) Unemployment Rate by sex and region
 
-Sure, here's the table:
-
 | Age Group | Men    | Women  | Both Sexes |
 |-----------|--------|--------|------------|
 | 15-24     | 130,088| 133,770| 263,856    |

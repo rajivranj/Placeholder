@@ -125,7 +125,6 @@ Below the menu items on top, the user interface appears divided into two main pa
 ```{r 040, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image040.png")
 ```
-
 [Click here to enlarge the image](images/image040.png)
 
 For ConceptScheme, Table Modeller, DSD, AgencyScheme, CategoryScheme, and MSD, an additional pane also appears in the user interface (below the placeholder for listing the artefacts - (as highlighted below)), which acts as a staging area (or a pool). It becomes a CONCEPTS POOL for ConceptScheme, Table Modeller, DSD and MSD options. And it turns into an AGENCY POOL for AgencyScheme and a CATEGORY POOL for CategoryScheme options.
