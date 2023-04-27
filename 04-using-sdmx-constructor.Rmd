@@ -8,20 +8,20 @@ Next, we will dive into how to use SDMX Constructor to create new SDMX artefacts
 
 Finally, we will explore how to use SDMX Constructor to work with .Stat Suite. This powerful platform is designed to help you analyse, visualise, and disseminate statistical data, and SDMX Constructor is the perfect complement to help you access and work with the SDMX artefacts you need.
 
-By the end of this chapter, you will have a solid understanding of how to use SDMX Constructor to access, create, and work with SDMX artefacts, and you will be well on your way to becoming an expert in this powerful tool. So, let’s get started!
-
+By the end of this chapter, you will have a solid understanding of how to use SDMX Constructor to access, create, and work with SDMX artefacts, and you will be well on your way to becoming an expert in this powerful tool. So, let's get started!
 
 ## Accessing SDMX artefacts from registries {#accessing-sdmx}
 
 In this section, we will walk you through the process of using SDMX Constructor on your computer to access and view the SDMX artefacts from the SDMX registries. This will enable you to easily browse and download the artefacts you need, for example, from the default registries already available in the SDMX Constructor.
 
-### Default SDMX registries
+**Default SDMX registries**
 
-You can use the SDMX Constructor on your computer to access and view the SDMX artefacts from the SDMX registries. By default, SDMX Constructor offers the following registries to access SDMX artefacts: SDMX Global Registry: (https://registry.sdmx.org/), United Nations Statistics Division (UNSD): (https://data.un.org/WS), the Italian National Institute of Statistics (ESTAT) and the ILO Department of Statistics (ILOSTAT): (https://www.ilo.org/sdmx/index.html). You can view these by going to the Registry button and opening the Registry Name dropdown in the SDMX Registry tab, as shown below.
+You can use the SDMX Constructor on your computer to access and view the SDMX artefacts from the SDMX registries. By default, SDMX Constructor offers the following registries to access SDMX artefacts: SDMX Global Registry: (<https://registry.sdmx.org/>), United Nations Statistics Division (UNSD): (<https://data.un.org/WS>), the Italian National Institute of Statistics (ESTAT) and the ILO Department of Statistics (ILOSTAT): (<https://www.ilo.org/sdmx/index.html>). You can view these by going to the Registry button and opening the Registry Name dropdown in the SDMX Registry tab, as shown below.
 
 ```{r 044, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image044.png")
 ```
+
 [Click here to enlarge the image](images/image044.png)
 
 As shown below, select a registry from the dropdown option to load the artefacts.
@@ -29,78 +29,157 @@ As shown below, select a registry from the dropdown option to load the artefacts
 ```{r 046, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image046.png")
 ```
+
 [Click here to enlarge the image](images/image046.png)
 
-## Creating SDMX artefacts from scratch {#creating-sdmx}
+## Setting up a registry as a local folder {#setting-up}
 
-Using SDMX Constructor, you can create new SDMX artefacts from scratch. 
+You can use the SDMX Constructor to create SDMX artefacts on your computer without a complicated setup. You can start using it with a local folder on your computer. Following are the steps to set up a registry in a computer's local folder.
 
-### Setting up a registry as a local folder {#setting-up}
-
-You can use the SDMX Constructor to create SDMX artefacts on your computer without a complicated setup. You can start using it with a local folder on your computer. Following are the steps to set up a registry in a computer’s local folder. 
-
-- On your computer, create a folder, and let’s call it LOCAL_REGISTRY. The screenshot below shows that the folder is created within the C drive. 
+-   On your computer, create a folder, and let's call it LOCAL_REGISTRY. The screenshot below shows that the folder is created within the C drive.
 
 ```{r 048, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image048.png")
 ```
+
 [Click here to enlarge the image](images/image048.png)
 
--	Start the SDMX Constructor.
--	Click on the Registry button on the SDMX Constructor. It will open a pop-up window showing the default entries in the SDMX Registry tab.
+-   Start the SDMX Constructor.
+-   Click on the Registry button on the SDMX Constructor. It will open a pop-up window showing the default entries in the SDMX Registry tab.
 
 ```{r 050, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image050.png")
 ```
+
 [Click here to enlarge the image](images/image050.png)
 
--	In the pop-up window, there are only two fields where we need to make changes: Registry Name and Base URL. You can click the ‘New’ button (which will clear the fields) or type directly within the fields. 
--	For Registry Name, please type the name of the folder we created before LOCAL_REGISTRY.
--	For the Base URL, get the path of the folder (shown below). 
+-   In the pop-up window, there are only two fields where we need to make changes: Registry Name and Base URL. You can click the 'New' button (which will clear the fields) or type directly within the fields.
+-   For Registry Name, please type the name of the folder we created before LOCAL_REGISTRY.
+-   For the Base URL, get the path of the folder (shown below).
 
 ```{r 052, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image052.png")
 ```
+
 [Click here to enlarge the image](images/image052.png)
 
--	After entries in two fields, the pop-up window will look like this:
+-   After entries in two fields, the pop-up window will look like this:
 
 ```{r 054, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image054.png")
 ```
+
 [Click here to enlarge the image](images/image054.png)
 
--	Hit Save. It will generate a confirmation message, as shown below.
+-   Hit Save. It will generate a confirmation message, as shown below.
 
 ```{r 056, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image056.png")
 ```
+
 [Click here to enlarge the image](images/image056.png)
 
--	Press OK to confirm. The pop-up windows will go away. 
--	To confirm if the folder is accessible from the tool, in the Editor Ribbon area, if you go to the ‘Load from registry’ option, you will see the LOCAL_REGISTRY in the dropdown options.
+-   Press OK to confirm. The pop-up windows will go away.
+-   To confirm if the folder is accessible from the tool, in the Editor Ribbon area, if you go to the 'Load from registry' option, you will see the LOCAL_REGISTRY in the dropdown options.
 
 ```{r 058, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image058.png")
 ```
+
 [Click here to enlarge the image](images/image058.png)
 
--	The setup with a local folder is complete. 
+-   The setup with a local folder is complete.
 
+## Preparing inputs {#preparing-inputs}
 
-### Preparing inputs {#preparing-inputs}
+To demonstrate the key functionalities of the SDMX Constructor, it is helpful to have a dummy dataset modelled appropriately.
 
-### Creating AgencyScheme {#creating-agencyscheme}
+Imagine a country called Demoland and its National Statistical Office (NSO), Demoland NSO. Imagine the Demoland NSO is creating SDMX artefacts for its data in the following two tables.
 
-### Creating ConceptScheme & Codelist {#creating-conceptscheme}
+| Region           | Sex        | 2015 | 2016 | 2017 | 2018 | 2019 |
+|------------------|------------|------|------|------|------|------|
+| Cities and Towns | Men        | 14.4 | 14.4 | 14   | 13.1 | 12.5 |
+| Cities and Towns | Women      | 20.7 | 21   | 21   | 21   | 21   |
+| Cities and Towns | Both sexes | 17.6 | 17.2 | 17.8 | 17.2 | 17.2 |
+| Urban Villages   | Men        | 27.8 | 28.2 | 28   | 28   | 28   |
+| Urban Villages   | Women      | 30.3 | 29.4 | 29.8 | 30   | 30   |
+| Urban Villages   | Both sexes | 29.1 | 29.1 | 28.8 | 29.6 | 29.4 |
+| Rural Areas      | Men        | 26.2 | 26.2 | 26.1 | 26.9 | 27.2 |
+| Rural Areas      | Women      | 29.6 | 29.5 | 29.5 | 29.5 | 28.6 |
+| Rural Areas      | Both sexes | 28   | 27.1 | 27.1 | 26.9 | 27.4 |
+| Total            | Men        | 24   | 24   | 23.7 | 23.7 | 24.2 |
+| Total            | Women      | 27.9 | 27.9 | 28.7 | 28.3 | 28.3 |
+| Total            | Both sexes | 26   | 26   | 26   | 26.2 | 26.2 |
 
-### Creating DSD, Dataflow, ContentConstraint and CategoryScheme {#creating-dsd}
+: (#tab:table41) Unemployment Rate by sex and region
+
+Sure, here's the table:
+
+| Age Group | Men    | Women  | Both Sexes |
+|-----------|--------|--------|------------|
+| 15-24     | 130,088| 133,770| 263,856    |
+| 25-34     | 33,165 | 60,240 | 93,405     |
+| 35-44     | 21,970 | 38,944 | 60,914     |
+| 45-54     | 18,631 | 36,403 | 55,034     |
+| 55-64     | 26,821 | 44,010 | 70,831     |
+| 65+       | 45,323 | 78,725 | 124,048    |
+| Total     | 275,997| 392,092| 668,088    |
+
+: (#tab:table42) Population outside the labour force by sex and age group (2022)
+
+After modelling the data in both tables, we have the following ConceptScheme and Codelist arranged below. Note that the order of the columns in the following tables is per the SDMX Constructor’s bulk load default templates (ConceptScheme and Codelist).
+
+**ConceptScheme:**
+
+| Concept ID   | Concept Name       | Description                                                             | Codelist ID   |
+|--------------|--------------------|------------------------------------------------------------------------|---------------|
+| INDICATOR    | Indicator          | Refers to statistical measure describing a particular aspect of a social, economic or environmental phenomenon | CL_INDICATOR  |
+| UNIT_MEASURE | Unit of measure    | Unit in which the observation values are expressed                      | CL_UNIT_MEASURE |
+| SEX          | Sex                | State of being male or female                                           | CL_SEX         |
+| GEO          | Geographic area    | Refers to Urban or Rural locations                                      | CL_GEO         |
+| TIME_PERIOD  | Time period        | Timespan or point in time to which the observation refers                | CL_TIME_PERIOD |
+| FREQ         | Frequency          | Time interval at which observations occur over a given time period      | CL_FREQ        |
+| AGE          | Age groups         | Length of time that an entity has lived or existed                       | CL_AGE         |
+| OBS_VALUE    | Observation values | Refers to data or observation values                                    | CL_OBS_VALUE  |
+
+: (#tab:table43) ConceptScheme
+
+**Codelist:**
+
+| Codelist ID   | Concept Name       | Code ID | Code Name                                       |
+|---------------|--------------------|---------|------------------------------------------------|
+| CL_INDICATOR  | Indicator          | UNER    | Unemployment Rate                              |
+| CL_INDICATOR  | Indicator          | POLF    | Population outside the labour force            |
+| CL_UNIT_MEASURE | Unit of measure   | RT      | Rate                                           |
+| CL_UNIT_MEASURE | Unit of measure   | PS      | Persons                                        |
+| CL_SEX        | Sex                | M       | Men                                            |
+| CL_SEX        | Sex                | F       | Women                                          |
+| CL_SEX        | Sex                | _T      | Both Sexes (Total)                             |
+| CL_GEO        | Geographical area | M       | Cities and Towns (Metropolitan Area)            |
+| CL_GEO        | Geographical area | U       | Urban Villages                                 |
+| CL_GEO        | Geographical area | R       | Rural Areas                                    |
+| CL_GEO        | Geographical area | _T      | Total                                          |
+| CL_FREQ       | Frequency         | A       | Annual                                         |
+| CL_AGE        | Age groups        | 15T24   | 15-24                                          |
+| CL_AGE        | Age groups        | 25T34   | 25-34                                          |
+| CL_AGE        | Age groups        | 35T44   | 35-44                                          |
+| CL_AGE        | Age groups        | 45T54   | 45-54                                          |
+| CL_AGE        | Age groups        | 55T64   | 55-64                                          |
+| CL_AGE        | Age groups        | GE65    | 65+                                            |
+| CL_AGE        | Age groups        | _T      | Total                                          |
+
+: (#tab:table44) Codelist
+
+## Creating AgencyScheme {#creating-agencyscheme}
+
+## Creating ConceptScheme & Codelist {#creating-conceptscheme}
+
+## Creating DSD, Dataflow, ContentConstraint and CategoryScheme {#creating-dsd}
 
 ## Working with .Stat Suite
 
-The tool works as a back-end of the .Stat Suite. In two ways. 
+The tool works as a back-end of the .Stat Suite. In two ways.
 
 ### Uploading XML file to the Data Lifecycle Manager (DLM) {#upload-the}
 
 ### Connect to a new SDMX registry {#connect-to}
-

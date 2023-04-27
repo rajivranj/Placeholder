@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3.2 Input and output methods | SDMX Constructor: User Manual</title>
+  <title>4.3 Preparing inputs | SDMX Constructor: User Manual</title>
   <meta name="description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3.2 Input and output methods | SDMX Constructor: User Manual" />
+  <meta property="og:title" content="4.3 Preparing inputs | SDMX Constructor: User Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/Main.png" />
   <meta property="og:description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3.2 Input and output methods | SDMX Constructor: User Manual" />
+  <meta name="twitter:title" content="4.3 Preparing inputs | SDMX Constructor: User Manual" />
   
   <meta name="twitter:description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="twitter:image" content="/Main.png" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="prev" href="interface-overview-and-navigation.html"/>
-<link rel="next" href="translation.html"/>
+<link rel="prev" href="setting-up.html"/>
+<link rel="next" href="creating-agencyscheme.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -211,29 +211,401 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="input-and-output-methods" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> Input and output methods<a href="input-and-output-methods.html#input-and-output-methods" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Users can input information into SDMX Constructor in several ways, depending on the specific scenarios. The following are the options.</p>
-<ul>
-<li>Typing and copy-pasting: Users can enter information by typing text or copying and pasting into fields in the forms using a keyboard.</li>
-<li>Clicking: Users can interact with buttons, links, menus, or other graphical elements by clicking with a mouse, touchpad, or touchscreen. For example, double-clicking an artefact from the left pane load its details on the screen’s right-side pane.</li>
-<li>Dragging and dropping: Users can manipulate objects or select multiple items by dragging and dropping them with a mouse, touchpad, or touchscreen.</li>
-<li>Loading from online SDMX Registry: Users can access pre-prepared SDMX artefacts from many default online SDMX registries. The input method allows users to retrieve information from the SDMX registry.</li>
-</ul>
-<p>SDMX Constructor presents information to users in a standardised and user-friendly way, using a combination of graphical elements, form-based input and validation and error messages.</p>
-<ul>
-<li>Graphical interface: The DSD Constructor uses a graphical user interface (GUI) that allows users to interact with the metadata components using visual elements like buttons, menus, and icons. This makes it easy for users to navigate and manipulate the metadata and get a quick overview of the SDMX artefacts.</li>
-<li>Form-based input: The DSD Constructor uses form-based input screens to allow users to enter information about the metadata components. The forms are designed to be intuitive and easy to use, with clear labels, dropdown menus, and text boxes that guide users through the input process.</li>
-<li>Validation and error messages: The DSD Constructor validates the metadata components to ensure that they conform to the SDMX standard and are consistent with other components. If there are errors or inconsistencies, the tool provides error messages that help users identify and correct the issues.</li>
-</ul>
+<div id="preparing-inputs" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Preparing inputs<a href="preparing-inputs.html#preparing-inputs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To demonstrate the key functionalities of the SDMX Constructor, it is helpful to have a dummy dataset modelled appropriately.</p>
+<p>Imagine a country called Demoland and its National Statistical Office (NSO), Demoland NSO. Imagine the Demoland NSO is creating SDMX artefacts for its data in the following two tables.</p>
+<table>
+<caption><span id="tab:table41">Table 4.1: </span> Unemployment Rate by sex and region</caption>
+<thead>
+<tr class="header">
+<th>Region</th>
+<th>Sex</th>
+<th>2015</th>
+<th>2016</th>
+<th>2017</th>
+<th>2018</th>
+<th>2019</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cities and Towns</td>
+<td>Men</td>
+<td>14.4</td>
+<td>14.4</td>
+<td>14</td>
+<td>13.1</td>
+<td>12.5</td>
+</tr>
+<tr class="even">
+<td>Cities and Towns</td>
+<td>Women</td>
+<td>20.7</td>
+<td>21</td>
+<td>21</td>
+<td>21</td>
+<td>21</td>
+</tr>
+<tr class="odd">
+<td>Cities and Towns</td>
+<td>Both sexes</td>
+<td>17.6</td>
+<td>17.2</td>
+<td>17.8</td>
+<td>17.2</td>
+<td>17.2</td>
+</tr>
+<tr class="even">
+<td>Urban Villages</td>
+<td>Men</td>
+<td>27.8</td>
+<td>28.2</td>
+<td>28</td>
+<td>28</td>
+<td>28</td>
+</tr>
+<tr class="odd">
+<td>Urban Villages</td>
+<td>Women</td>
+<td>30.3</td>
+<td>29.4</td>
+<td>29.8</td>
+<td>30</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Urban Villages</td>
+<td>Both sexes</td>
+<td>29.1</td>
+<td>29.1</td>
+<td>28.8</td>
+<td>29.6</td>
+<td>29.4</td>
+</tr>
+<tr class="odd">
+<td>Rural Areas</td>
+<td>Men</td>
+<td>26.2</td>
+<td>26.2</td>
+<td>26.1</td>
+<td>26.9</td>
+<td>27.2</td>
+</tr>
+<tr class="even">
+<td>Rural Areas</td>
+<td>Women</td>
+<td>29.6</td>
+<td>29.5</td>
+<td>29.5</td>
+<td>29.5</td>
+<td>28.6</td>
+</tr>
+<tr class="odd">
+<td>Rural Areas</td>
+<td>Both sexes</td>
+<td>28</td>
+<td>27.1</td>
+<td>27.1</td>
+<td>26.9</td>
+<td>27.4</td>
+</tr>
+<tr class="even">
+<td>Total</td>
+<td>Men</td>
+<td>24</td>
+<td>24</td>
+<td>23.7</td>
+<td>23.7</td>
+<td>24.2</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>Women</td>
+<td>27.9</td>
+<td>27.9</td>
+<td>28.7</td>
+<td>28.3</td>
+<td>28.3</td>
+</tr>
+<tr class="even">
+<td>Total</td>
+<td>Both sexes</td>
+<td>26</td>
+<td>26</td>
+<td>26</td>
+<td>26.2</td>
+<td>26.2</td>
+</tr>
+</tbody>
+</table>
+<p>Sure, here’s the table:</p>
+<table>
+<caption><span id="tab:table42">Table 4.2: </span> Population outside the labour force by sex and age group (2022)</caption>
+<thead>
+<tr class="header">
+<th>Age Group</th>
+<th>Men</th>
+<th>Women</th>
+<th>Both Sexes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>15-24</td>
+<td>130,088</td>
+<td>133,770</td>
+<td>263,856</td>
+</tr>
+<tr class="even">
+<td>25-34</td>
+<td>33,165</td>
+<td>60,240</td>
+<td>93,405</td>
+</tr>
+<tr class="odd">
+<td>35-44</td>
+<td>21,970</td>
+<td>38,944</td>
+<td>60,914</td>
+</tr>
+<tr class="even">
+<td>45-54</td>
+<td>18,631</td>
+<td>36,403</td>
+<td>55,034</td>
+</tr>
+<tr class="odd">
+<td>55-64</td>
+<td>26,821</td>
+<td>44,010</td>
+<td>70,831</td>
+</tr>
+<tr class="even">
+<td>65+</td>
+<td>45,323</td>
+<td>78,725</td>
+<td>124,048</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>275,997</td>
+<td>392,092</td>
+<td>668,088</td>
+</tr>
+</tbody>
+</table>
+<p>After modelling the data in both tables, we have the following ConceptScheme and Codelist arranged below. Note that the order of the columns in the following tables is per the SDMX Constructor’s bulk load default templates (ConceptScheme and Codelist).</p>
+<p><strong>ConceptScheme:</strong></p>
+<table>
+<caption><span id="tab:table43">Table 4.3: </span> ConceptScheme</caption>
+<colgroup>
+<col width="11%" />
+<col width="16%" />
+<col width="59%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept ID</th>
+<th>Concept Name</th>
+<th>Description</th>
+<th>Codelist ID</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>INDICATOR</td>
+<td>Indicator</td>
+<td>Refers to statistical measure describing a particular aspect of a social, economic or environmental phenomenon</td>
+<td>CL_INDICATOR</td>
+</tr>
+<tr class="even">
+<td>UNIT_MEASURE</td>
+<td>Unit of measure</td>
+<td>Unit in which the observation values are expressed</td>
+<td>CL_UNIT_MEASURE</td>
+</tr>
+<tr class="odd">
+<td>SEX</td>
+<td>Sex</td>
+<td>State of being male or female</td>
+<td>CL_SEX</td>
+</tr>
+<tr class="even">
+<td>GEO</td>
+<td>Geographic area</td>
+<td>Refers to Urban or Rural locations</td>
+<td>CL_GEO</td>
+</tr>
+<tr class="odd">
+<td>TIME_PERIOD</td>
+<td>Time period</td>
+<td>Timespan or point in time to which the observation refers</td>
+<td>CL_TIME_PERIOD</td>
+</tr>
+<tr class="even">
+<td>FREQ</td>
+<td>Frequency</td>
+<td>Time interval at which observations occur over a given time period</td>
+<td>CL_FREQ</td>
+</tr>
+<tr class="odd">
+<td>AGE</td>
+<td>Age groups</td>
+<td>Length of time that an entity has lived or existed</td>
+<td>CL_AGE</td>
+</tr>
+<tr class="even">
+<td>OBS_VALUE</td>
+<td>Observation values</td>
+<td>Refers to data or observation values</td>
+<td>CL_OBS_VALUE</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Codelist:</strong></p>
+<table>
+<caption><span id="tab:table44">Table 4.4: </span> Codelist</caption>
+<colgroup>
+<col width="16%" />
+<col width="21%" />
+<col width="9%" />
+<col width="52%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Codelist ID</th>
+<th>Concept Name</th>
+<th>Code ID</th>
+<th>Code Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CL_INDICATOR</td>
+<td>Indicator</td>
+<td>UNER</td>
+<td>Unemployment Rate</td>
+</tr>
+<tr class="even">
+<td>CL_INDICATOR</td>
+<td>Indicator</td>
+<td>POLF</td>
+<td>Population outside the labour force</td>
+</tr>
+<tr class="odd">
+<td>CL_UNIT_MEASURE</td>
+<td>Unit of measure</td>
+<td>RT</td>
+<td>Rate</td>
+</tr>
+<tr class="even">
+<td>CL_UNIT_MEASURE</td>
+<td>Unit of measure</td>
+<td>PS</td>
+<td>Persons</td>
+</tr>
+<tr class="odd">
+<td>CL_SEX</td>
+<td>Sex</td>
+<td>M</td>
+<td>Men</td>
+</tr>
+<tr class="even">
+<td>CL_SEX</td>
+<td>Sex</td>
+<td>F</td>
+<td>Women</td>
+</tr>
+<tr class="odd">
+<td>CL_SEX</td>
+<td>Sex</td>
+<td>_T</td>
+<td>Both Sexes (Total)</td>
+</tr>
+<tr class="even">
+<td>CL_GEO</td>
+<td>Geographical area</td>
+<td>M</td>
+<td>Cities and Towns (Metropolitan Area)</td>
+</tr>
+<tr class="odd">
+<td>CL_GEO</td>
+<td>Geographical area</td>
+<td>U</td>
+<td>Urban Villages</td>
+</tr>
+<tr class="even">
+<td>CL_GEO</td>
+<td>Geographical area</td>
+<td>R</td>
+<td>Rural Areas</td>
+</tr>
+<tr class="odd">
+<td>CL_GEO</td>
+<td>Geographical area</td>
+<td>_T</td>
+<td>Total</td>
+</tr>
+<tr class="even">
+<td>CL_FREQ</td>
+<td>Frequency</td>
+<td>A</td>
+<td>Annual</td>
+</tr>
+<tr class="odd">
+<td>CL_AGE</td>
+<td>Age groups</td>
+<td>15T24</td>
+<td>15-24</td>
+</tr>
+<tr class="even">
+<td>CL_AGE</td>
+<td>Age groups</td>
+<td>25T34</td>
+<td>25-34</td>
+</tr>
+<tr class="odd">
+<td>CL_AGE</td>
+<td>Age groups</td>
+<td>35T44</td>
+<td>35-44</td>
+</tr>
+<tr class="even">
+<td>CL_AGE</td>
+<td>Age groups</td>
+<td>45T54</td>
+<td>45-54</td>
+</tr>
+<tr class="odd">
+<td>CL_AGE</td>
+<td>Age groups</td>
+<td>55T64</td>
+<td>55-64</td>
+</tr>
+<tr class="even">
+<td>CL_AGE</td>
+<td>Age groups</td>
+<td>GE65</td>
+<td>65+</td>
+</tr>
+<tr class="odd">
+<td>CL_AGE</td>
+<td>Age groups</td>
+<td>_T</td>
+<td>Total</td>
+</tr>
+</tbody>
+</table>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="interface-overview-and-navigation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="translation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="setting-up.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="creating-agencyscheme.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -264,7 +636,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rajivranj/placeholder/edit/main/03-user-interface.Rmd",
+"link": "https://github.com/rajivranj/placeholder/edit/main/04-using-sdmx-constructor.Rmd",
 "text": "Edit"
 },
 "history": {

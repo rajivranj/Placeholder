@@ -550,8 +550,7 @@ By the end of this chapter, you will have a solid understanding of how to use SD
 
 In this section, we will walk you through the process of using SDMX Constructor on your computer to access and view the SDMX artefacts from the SDMX registries. This will enable you to easily browse and download the artefacts you need, for example, from the default registries already available in the SDMX Constructor.
 
-\hypertarget{default-sdmx-registries}{%
-\subsection{Default SDMX registries}\label{default-sdmx-registries}}
+\textbf{Default SDMX registries}
 
 You can use the SDMX Constructor on your computer to access and view the SDMX artefacts from the SDMX registries. By default, SDMX Constructor offers the following registries to access SDMX artefacts: SDMX Global Registry: (\url{https://registry.sdmx.org/}), United Nations Statistics Division (UNSD): (\url{https://data.un.org/WS}), the Italian National Institute of Statistics (ESTAT) and the ILO Department of Statistics (ILOSTAT): (\url{https://www.ilo.org/sdmx/index.html}). You can view these by going to the Registry button and opening the Registry Name dropdown in the SDMX Registry tab, as shown below.
 
@@ -565,13 +564,8 @@ As shown below, select a registry from the dropdown option to load the artefacts
 
 \href{images/image046.png}{Click here to enlarge the image}
 
-\hypertarget{creating-sdmx}{%
-\section{Creating SDMX artefacts from scratch}\label{creating-sdmx}}
-
-Using SDMX Constructor, you can create new SDMX artefacts from scratch.
-
 \hypertarget{setting-up}{%
-\subsection{Setting up a registry as a local folder}\label{setting-up}}
+\section{Setting up a registry as a local folder}\label{setting-up}}
 
 You can use the SDMX Constructor to create SDMX artefacts on your computer without a complicated setup. You can start using it with a local folder on your computer. Following are the steps to set up a registry in a computer's local folder.
 
@@ -650,16 +644,166 @@ You can use the SDMX Constructor to create SDMX artefacts on your computer witho
 \end{itemize}
 
 \hypertarget{preparing-inputs}{%
-\subsection{Preparing inputs}\label{preparing-inputs}}
+\section{Preparing inputs}\label{preparing-inputs}}
+
+To demonstrate the key functionalities of the SDMX Constructor, it is helpful to have a dummy dataset modelled appropriately.
+
+Imagine a country called Demoland and its National Statistical Office (NSO), Demoland NSO. Imagine the Demoland NSO is creating SDMX artefacts for its data in the following two tables.
+
+\begin{longtable}[]{@{}lllllll@{}}
+\caption{\label{tab:table41} Unemployment Rate by sex and region}\tabularnewline
+\toprule()
+Region & Sex & 2015 & 2016 & 2017 & 2018 & 2019 \\
+\midrule()
+\endfirsthead
+\toprule()
+Region & Sex & 2015 & 2016 & 2017 & 2018 & 2019 \\
+\midrule()
+\endhead
+Cities and Towns & Men & 14.4 & 14.4 & 14 & 13.1 & 12.5 \\
+Cities and Towns & Women & 20.7 & 21 & 21 & 21 & 21 \\
+Cities and Towns & Both sexes & 17.6 & 17.2 & 17.8 & 17.2 & 17.2 \\
+Urban Villages & Men & 27.8 & 28.2 & 28 & 28 & 28 \\
+Urban Villages & Women & 30.3 & 29.4 & 29.8 & 30 & 30 \\
+Urban Villages & Both sexes & 29.1 & 29.1 & 28.8 & 29.6 & 29.4 \\
+Rural Areas & Men & 26.2 & 26.2 & 26.1 & 26.9 & 27.2 \\
+Rural Areas & Women & 29.6 & 29.5 & 29.5 & 29.5 & 28.6 \\
+Rural Areas & Both sexes & 28 & 27.1 & 27.1 & 26.9 & 27.4 \\
+Total & Men & 24 & 24 & 23.7 & 23.7 & 24.2 \\
+Total & Women & 27.9 & 27.9 & 28.7 & 28.3 & 28.3 \\
+Total & Both sexes & 26 & 26 & 26 & 26.2 & 26.2 \\
+\bottomrule()
+\end{longtable}
+
+Sure, here's the table:
+
+\begin{longtable}[]{@{}llll@{}}
+\caption{\label{tab:table42} Population outside the labour force by sex and age group (2022)}\tabularnewline
+\toprule()
+Age Group & Men & Women & Both Sexes \\
+\midrule()
+\endfirsthead
+\toprule()
+Age Group & Men & Women & Both Sexes \\
+\midrule()
+\endhead
+15-24 & 130,088 & 133,770 & 263,856 \\
+25-34 & 33,165 & 60,240 & 93,405 \\
+35-44 & 21,970 & 38,944 & 60,914 \\
+45-54 & 18,631 & 36,403 & 55,034 \\
+55-64 & 26,821 & 44,010 & 70,831 \\
+65+ & 45,323 & 78,725 & 124,048 \\
+Total & 275,997 & 392,092 & 668,088 \\
+\bottomrule()
+\end{longtable}
+
+After modelling the data in both tables, we have the following ConceptScheme and Codelist arranged below. Note that the order of the columns in the following tables is per the SDMX Constructor's bulk load default templates (ConceptScheme and Codelist).
+
+\textbf{ConceptScheme:}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1157}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1653}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5950}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1240}}@{}}
+\caption{\label{tab:table43} ConceptScheme}\tabularnewline
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Concept ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Concept Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Codelist ID
+\end{minipage} \\
+\midrule()
+\endfirsthead
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Concept ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Concept Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Codelist ID
+\end{minipage} \\
+\midrule()
+\endhead
+INDICATOR & Indicator & Refers to statistical measure describing a particular aspect of a social, economic or environmental phenomenon & CL\_INDICATOR \\
+UNIT\_MEASURE & Unit of measure & Unit in which the observation values are expressed & CL\_UNIT\_MEASURE \\
+SEX & Sex & State of being male or female & CL\_SEX \\
+GEO & Geographic area & Refers to Urban or Rural locations & CL\_GEO \\
+TIME\_PERIOD & Time period & Timespan or point in time to which the observation refers & CL\_TIME\_PERIOD \\
+FREQ & Frequency & Time interval at which observations occur over a given time period & CL\_FREQ \\
+AGE & Age groups & Length of time that an entity has lived or existed & CL\_AGE \\
+OBS\_VALUE & Observation values & Refers to data or observation values & CL\_OBS\_VALUE \\
+\bottomrule()
+\end{longtable}
+
+\textbf{Codelist:}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1630}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2174}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0978}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5217}}@{}}
+\caption{\label{tab:table44} Codelist}\tabularnewline
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Codelist ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Concept Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Code ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Code Name
+\end{minipage} \\
+\midrule()
+\endfirsthead
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Codelist ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Concept Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Code ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Code Name
+\end{minipage} \\
+\midrule()
+\endhead
+CL\_INDICATOR & Indicator & UNER & Unemployment Rate \\
+CL\_INDICATOR & Indicator & POLF & Population outside the labour force \\
+CL\_UNIT\_MEASURE & Unit of measure & RT & Rate \\
+CL\_UNIT\_MEASURE & Unit of measure & PS & Persons \\
+CL\_SEX & Sex & M & Men \\
+CL\_SEX & Sex & F & Women \\
+CL\_SEX & Sex & \_T & Both Sexes (Total) \\
+CL\_GEO & Geographical area & M & Cities and Towns (Metropolitan Area) \\
+CL\_GEO & Geographical area & U & Urban Villages \\
+CL\_GEO & Geographical area & R & Rural Areas \\
+CL\_GEO & Geographical area & \_T & Total \\
+CL\_FREQ & Frequency & A & Annual \\
+CL\_AGE & Age groups & 15T24 & 15-24 \\
+CL\_AGE & Age groups & 25T34 & 25-34 \\
+CL\_AGE & Age groups & 35T44 & 35-44 \\
+CL\_AGE & Age groups & 45T54 & 45-54 \\
+CL\_AGE & Age groups & 55T64 & 55-64 \\
+CL\_AGE & Age groups & GE65 & 65+ \\
+CL\_AGE & Age groups & \_T & Total \\
+\bottomrule()
+\end{longtable}
 
 \hypertarget{creating-agencyscheme}{%
-\subsection{Creating AgencyScheme}\label{creating-agencyscheme}}
+\section{Creating AgencyScheme}\label{creating-agencyscheme}}
 
 \hypertarget{creating-conceptscheme}{%
-\subsection{Creating ConceptScheme \& Codelist}\label{creating-conceptscheme}}
+\section{Creating ConceptScheme \& Codelist}\label{creating-conceptscheme}}
 
 \hypertarget{creating-dsd}{%
-\subsection{Creating DSD, Dataflow, ContentConstraint and CategoryScheme}\label{creating-dsd}}
+\section{Creating DSD, Dataflow, ContentConstraint and CategoryScheme}\label{creating-dsd}}
 
 \hypertarget{working-with-.stat-suite}{%
 \section{Working with .Stat Suite}\label{working-with-.stat-suite}}

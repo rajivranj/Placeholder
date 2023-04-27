@@ -31,7 +31,7 @@
   
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="prev" href="accessing-sdmx.html"/>
-<link rel="next" href="working-with-.stat-suite.html"/>
+<link rel="next" href="setting-up.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -170,18 +170,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="accessing-sdmx.html"><a href="accessing-sdmx.html#default-sdmx-registries"><i class="fa fa-check"></i><b>4.1.1</b> Default SDMX registries</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="creating-sdmx.html"><a href="creating-sdmx.html"><i class="fa fa-check"></i><b>4.2</b> Creating SDMX artefacts from scratch</a>
+<li class="chapter" data-level="4.2" data-path="creating-sdmx.html"><a href="creating-sdmx.html"><i class="fa fa-check"></i><b>4.2</b> Creating SDMX artefacts from scratch</a></li>
+<li class="chapter" data-level="4.3" data-path="setting-up.html"><a href="setting-up.html"><i class="fa fa-check"></i><b>4.3</b> Setting up a registry as a local folder</a></li>
+<li class="chapter" data-level="4.4" data-path="preparing-inputs.html"><a href="preparing-inputs.html"><i class="fa fa-check"></i><b>4.4</b> Preparing inputs</a></li>
+<li class="chapter" data-level="4.5" data-path="creating-agencyscheme.html"><a href="creating-agencyscheme.html"><i class="fa fa-check"></i><b>4.5</b> Creating AgencyScheme</a></li>
+<li class="chapter" data-level="4.6" data-path="creating-conceptscheme.html"><a href="creating-conceptscheme.html"><i class="fa fa-check"></i><b>4.6</b> Creating ConceptScheme &amp; Codelist</a></li>
+<li class="chapter" data-level="4.7" data-path="creating-dsd.html"><a href="creating-dsd.html"><i class="fa fa-check"></i><b>4.7</b> Creating DSD, Dataflow, ContentConstraint and CategoryScheme</a></li>
+<li class="chapter" data-level="4.8" data-path="working-with-.stat-suite.html"><a href="working-with-.stat-suite.html"><i class="fa fa-check"></i><b>4.8</b> Working with .Stat Suite</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="creating-sdmx.html"><a href="creating-sdmx.html#setting-up"><i class="fa fa-check"></i><b>4.2.1</b> Setting up a registry as a local folder</a></li>
-<li class="chapter" data-level="4.2.2" data-path="creating-sdmx.html"><a href="creating-sdmx.html#preparing-inputs"><i class="fa fa-check"></i><b>4.2.2</b> Preparing inputs</a></li>
-<li class="chapter" data-level="4.2.3" data-path="creating-sdmx.html"><a href="creating-sdmx.html#creating-agencyscheme"><i class="fa fa-check"></i><b>4.2.3</b> Creating AgencyScheme</a></li>
-<li class="chapter" data-level="4.2.4" data-path="creating-sdmx.html"><a href="creating-sdmx.html#creating-conceptscheme"><i class="fa fa-check"></i><b>4.2.4</b> Creating ConceptScheme &amp; Codelist</a></li>
-<li class="chapter" data-level="4.2.5" data-path="creating-sdmx.html"><a href="creating-sdmx.html#creating-dsd"><i class="fa fa-check"></i><b>4.2.5</b> Creating DSD, Dataflow, ContentConstraint and CategoryScheme</a></li>
-</ul></li>
-<li class="chapter" data-level="4.3" data-path="working-with-.stat-suite.html"><a href="working-with-.stat-suite.html"><i class="fa fa-check"></i><b>4.3</b> Working with .Stat Suite</a>
-<ul>
-<li class="chapter" data-level="4.3.1" data-path="working-with-.stat-suite.html"><a href="working-with-.stat-suite.html#upload-the"><i class="fa fa-check"></i><b>4.3.1</b> Uploading XML file to the Data Lifecycle Manager (DLM)</a></li>
-<li class="chapter" data-level="4.3.2" data-path="working-with-.stat-suite.html"><a href="working-with-.stat-suite.html#connect-to"><i class="fa fa-check"></i><b>4.3.2</b> Connect to a new SDMX registry</a></li>
+<li class="chapter" data-level="4.8.1" data-path="working-with-.stat-suite.html"><a href="working-with-.stat-suite.html#upload-the"><i class="fa fa-check"></i><b>4.8.1</b> Uploading XML file to the Data Lifecycle Manager (DLM)</a></li>
+<li class="chapter" data-level="4.8.2" data-path="working-with-.stat-suite.html"><a href="working-with-.stat-suite.html#connect-to"><i class="fa fa-check"></i><b>4.8.2</b> Connect to a new SDMX registry</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="special-topics.html"><a href="special-topics.html"><i class="fa fa-check"></i><b>5</b> Special Topics</a>
@@ -220,59 +218,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="creating-sdmx" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> Creating SDMX artefacts from scratch<a href="creating-sdmx.html#creating-sdmx" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Using SDMX Constructor, you can create new SDMX artefacts from scratch.</p>
-<div id="setting-up" class="section level3 hasAnchor" number="4.2.1">
-<h3><span class="header-section-number">4.2.1</span> Setting up a registry as a local folder<a href="creating-sdmx.html#setting-up" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>You can use the SDMX Constructor to create SDMX artefacts on your computer without a complicated setup. You can start using it with a local folder on your computer. Following are the steps to set up a registry in a computer’s local folder.</p>
-<ul>
-<li>On your computer, create a folder, and let’s call it LOCAL_REGISTRY. The screenshot below shows that the folder is created within the C drive.</li>
-</ul>
-<p><img src="images/image048.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image048.png">Click here to enlarge the image</a></p>
-<ul>
-<li>Start the SDMX Constructor.</li>
-<li>Click on the Registry button on the SDMX Constructor. It will open a pop-up window showing the default entries in the SDMX Registry tab.</li>
-</ul>
-<p><img src="images/image050.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image050.png">Click here to enlarge the image</a></p>
-<ul>
-<li>In the pop-up window, there are only two fields where we need to make changes: Registry Name and Base URL. You can click the ‘New’ button (which will clear the fields) or type directly within the fields.</li>
-<li>For Registry Name, please type the name of the folder we created before LOCAL_REGISTRY.</li>
-<li>For the Base URL, get the path of the folder (shown below).</li>
-</ul>
-<p><img src="images/image052.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image052.png">Click here to enlarge the image</a></p>
-<ul>
-<li>After entries in two fields, the pop-up window will look like this:</li>
-</ul>
-<p><img src="images/image054.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image054.png">Click here to enlarge the image</a></p>
-<ul>
-<li>Hit Save. It will generate a confirmation message, as shown below.</li>
-</ul>
-<p><img src="images/image056.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image056.png">Click here to enlarge the image</a></p>
-<ul>
-<li>Press OK to confirm. The pop-up windows will go away.</li>
-<li>To confirm if the folder is accessible from the tool, in the Editor Ribbon area, if you go to the ‘Load from registry’ option, you will see the LOCAL_REGISTRY in the dropdown options.</li>
-</ul>
-<p><img src="images/image058.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image058.png">Click here to enlarge the image</a></p>
-<ul>
-<li>The setup with a local folder is complete.</li>
-</ul>
-</div>
-<div id="preparing-inputs" class="section level3 hasAnchor" number="4.2.2">
-<h3><span class="header-section-number">4.2.2</span> Preparing inputs<a href="creating-sdmx.html#preparing-inputs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="creating-agencyscheme" class="section level3 hasAnchor" number="4.2.3">
-<h3><span class="header-section-number">4.2.3</span> Creating AgencyScheme<a href="creating-sdmx.html#creating-agencyscheme" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="creating-conceptscheme" class="section level3 hasAnchor" number="4.2.4">
-<h3><span class="header-section-number">4.2.4</span> Creating ConceptScheme &amp; Codelist<a href="creating-sdmx.html#creating-conceptscheme" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="creating-dsd" class="section level3 hasAnchor" number="4.2.5">
-<h3><span class="header-section-number">4.2.5</span> Creating DSD, Dataflow, ContentConstraint and CategoryScheme<a href="creating-sdmx.html#creating-dsd" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
 </div>
             </section>
 
@@ -280,7 +225,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 <a href="accessing-sdmx.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="working-with-.stat-suite.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="setting-up.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
