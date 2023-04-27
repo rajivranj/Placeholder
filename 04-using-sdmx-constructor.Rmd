@@ -7,14 +7,31 @@ The first topic we will cover is how to use SDMX Constructor to access SDMX arte
 Next, we will dive into how to use SDMX Constructor to create new SDMX artefacts from scratch. Whether you need to create a new concept scheme, code list or DSD, SDMX Constructor provides a simple and intuitive interface to help you get the job done.
 
 Finally, we will explore how to use SDMX Constructor to work with .Stat Suite. This powerful platform is designed to help you analyse, visualise, and disseminate statistical data, and SDMX Constructor is the perfect complement to help you access and work with the SDMX artefacts you need.
+
 By the end of this chapter, you will have a solid understanding of how to use SDMX Constructor to access, create, and work with SDMX artefacts, and you will be well on your way to becoming an expert in this powerful tool. So, let’s get started!
 
 
 ## Accessing SDMX artefacts from registries {#accessing-sdmx}
 
-The tool allows to access SDMX artefacts from SDMX registries. For example, from the default registries available in the SDMX Constructor.
+In this section, we will walk you through the process of using SDMX Constructor on your computer to access and view the SDMX artefacts from the SDMX registries. This will enable you to easily browse and download the artefacts you need, for example, from the default registries already available in the SDMX Constructor.
 
 ### Default SDMX registries
+
+You can use the SDMX Constructor on your computer to access and view the SDMX artefacts from the SDMX registries. By default, SDMX Constructor offers the following registries to access SDMX artefacts: SDMX Global Registry-(https://registry.sdmx.org/), United Nations Statistics Division (UNSD)-(https://data.un.org/WS), the Italian National Institute of Statistics (ESTAT) and the ILO Department of Statistics (ILOSTAT) - (https://www.ilo.org/sdmx/index.html). You can view these by going to the Registry button and opening the Registry Name dropdown in the SDMX Registry tab, as shown below.
+
+```{r 044, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image044.png")
+```
+
+[Click here to enlarge the image](images/image044.png)
+
+As shown below, select a registry from the dropdown option to load the artefacts.
+
+```{r 046, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image046.png")
+```
+
+[Click here to enlarge the image](images/image046.png)
 
 ## Creating SDMX artefacts from scratch {#creating-sdmx}
 
