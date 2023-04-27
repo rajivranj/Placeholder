@@ -794,8 +794,128 @@ CL\_AGE & Age groups & \_T & Total \\
 \bottomrule()
 \end{longtable}
 
+We will use these dummy datasets in this user manual to illustrate some critical functionalities of SDMX Constructor.
+
 \hypertarget{creating-agencyscheme}{%
 \section{Creating AgencyScheme}\label{creating-agencyscheme}}
+
+\begin{itemize}
+\tightlist
+\item
+  Start the SDMX Constructor, click the AgencyScheme button on top, and select the folder we created before, LOCAL\_REGISTRY, from the AgencyScheme Editor's `Load from registry' dropdown option, as shown below.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image060} \end{center}
+
+\href{images/image060.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Create an AgencyScheme by entering the ID, AgencyID, Version and Name in the fields as shown below. For this exercise, we will have only Demoland NSO as an agency (all data are from Demoland NSO). We will do it in two stages. First, we will enter the properties for the AgencyScheme and then create the agency.
+\end{itemize}
+
+Note on IDs and versions: All SDMX artefacts, have a unique identifier: In case of AgencySchme these are Agency ID, ID, and Version. Each artefact is assigned a specific version number to keep track of changes and avoid conflicts. This makes sure that the artefacts are managed efficiently and can be easily shared and reused by others while also giving users control over the artefacts they create.
+
+\begin{itemize}
+\tightlist
+\item
+  For ID, enter AGENCIES; For AgencyID, enter Demoland\_NSO; for version, enter 1.0; and for the Name, enter Demoland NSO Agency Scheme as shown below.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image062} \end{center}
+
+\href{images/image062.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Now, we create the agency (as part of the AgencyScheme) by clicking on `Add New Agency' as shown below.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image064} \end{center}
+
+\href{images/image064.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Clicking on `Add New Agency' will open a pop-up window. We create the Demoland NSO agency by entering DEMOLAND\_NSO in the ID and Demoland NSO in the Name field in the Add Agency pop-up and clicking Apply (as shown below).
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image066} \end{center}
+
+\href{images/image066.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Once we finished creating the agency, it would look like the following (the agency will be in the AGENCY POOL).
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image068} \end{center}
+
+\href{images/image068.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Move the agency from the AGENCY POOL to the AGENCY space on the right pane by selecting and dragging it. After the move, it would look like the following.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image070} \end{center}
+
+\href{images/image070.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Click the Export button highlighted below to save the agency scheme in the folder.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image072} \end{center}
+
+\href{images/image072.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  As shown below, a pop-up window will open to confirm the saving location.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image074} \end{center}
+
+\href{images/image074.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Clicking on Save will prompt another message (``All files in this directory (path) with delete and merged into a single file (path) are you sure to continue?''), as shown below.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image076} \end{center}
+
+\href{images/image076.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Clicking on Yes will create and save an XML file in the folder we created before, as shown below.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image078} \end{center}
+
+\href{images/image078.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Opening the file (LocalRegistry.xml) will show the agency scheme, as shown in the image below.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image080} \end{center}
+
+\href{images/image080.png}{Click here to enlarge the image}
 
 \hypertarget{creating-conceptscheme}{%
 \section{Creating ConceptScheme \& Codelist}\label{creating-conceptscheme}}

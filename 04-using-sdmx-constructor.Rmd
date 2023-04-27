@@ -21,7 +21,6 @@ You can use the SDMX Constructor on your computer to access and view the SDMX ar
 ```{r 044, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image044.png")
 ```
-
 [Click here to enlarge the image](images/image044.png)
 
 As shown below, select a registry from the dropdown option to load the artefacts.
@@ -29,7 +28,6 @@ As shown below, select a registry from the dropdown option to load the artefacts
 ```{r 046, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image046.png")
 ```
-
 [Click here to enlarge the image](images/image046.png)
 
 ## Setting up a registry as a local folder {#setting-up}
@@ -41,7 +39,6 @@ You can use the SDMX Constructor to create SDMX artefacts on your computer witho
 ```{r 048, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image048.png")
 ```
-
 [Click here to enlarge the image](images/image048.png)
 
 -   Start the SDMX Constructor.
@@ -50,7 +47,6 @@ knitr::include_graphics("./images/image048.png")
 ```{r 050, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image050.png")
 ```
-
 [Click here to enlarge the image](images/image050.png)
 
 -   In the pop-up window, there are only two fields where we need to make changes: Registry Name and Base URL. You can click the 'New' button (which will clear the fields) or type directly within the fields.
@@ -60,7 +56,6 @@ knitr::include_graphics("./images/image050.png")
 ```{r 052, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image052.png")
 ```
-
 [Click here to enlarge the image](images/image052.png)
 
 -   After entries in two fields, the pop-up window will look like this:
@@ -68,7 +63,6 @@ knitr::include_graphics("./images/image052.png")
 ```{r 054, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image054.png")
 ```
-
 [Click here to enlarge the image](images/image054.png)
 
 -   Hit Save. It will generate a confirmation message, as shown below.
@@ -76,7 +70,6 @@ knitr::include_graphics("./images/image054.png")
 ```{r 056, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image056.png")
 ```
-
 [Click here to enlarge the image](images/image056.png)
 
 -   Press OK to confirm. The pop-up windows will go away.
@@ -85,7 +78,6 @@ knitr::include_graphics("./images/image056.png")
 ```{r 058, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image058.png")
 ```
-
 [Click here to enlarge the image](images/image058.png)
 
 -   The setup with a local folder is complete.
@@ -112,6 +104,8 @@ Imagine a country called Demoland and its National Statistical Office (NSO), Dem
 | Total            | Both sexes | 26   | 26   | 26   | 26.2 | 26.2 |
 
 : (#tab:table41) Unemployment Rate by sex and region
+
+
 
 | Age Group | Men    | Women  | Both Sexes |
 |-----------|--------|--------|------------|
@@ -168,7 +162,91 @@ After modelling the data in both tables, we have the following ConceptScheme and
 
 : (#tab:table44) Codelist
 
+We will use these dummy datasets in this user manual to illustrate some critical functionalities of SDMX Constructor. 
+
 ## Creating AgencyScheme {#creating-agencyscheme}
+
+-	Start the SDMX Constructor, click the AgencyScheme button on top, and select the folder we created before, LOCAL_REGISTRY, from the AgencyScheme Editor’s ‘Load from registry’ dropdown option, as shown below.
+
+```{r 060, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image060.png")
+```
+[Click here to enlarge the image](images/image060.png)
+
+-	Create an AgencyScheme by entering the ID, AgencyID, Version and Name in the fields as shown below. For this exercise, we will have only Demoland NSO as an agency (all data are from Demoland NSO). We will do it in two stages. First, we will enter the properties for the AgencyScheme and then create the agency. 
+
+Note on IDs and versions: All SDMX artefacts, have a unique identifier: In case of AgencySchme these are Agency ID, ID, and Version. Each artefact is assigned a specific version number to keep track of changes and avoid conflicts. This makes sure that the artefacts are managed efficiently and can be easily shared and reused by others while also giving users control over the artefacts they create.
+
+-	For ID, enter AGENCIES; For AgencyID, enter Demoland_NSO; for version, enter 1.0; and for the Name, enter Demoland NSO Agency Scheme as shown below.
+
+```{r 062, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image062.png")
+```
+[Click here to enlarge the image](images/image062.png)
+
+-	Now, we create the agency (as part of the AgencyScheme) by clicking on ‘Add New Agency’ as shown below.
+
+```{r 064, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image064.png")
+```
+[Click here to enlarge the image](images/image064.png)
+
+-	Clicking on ‘Add New Agency’ will open a pop-up window. We create the Demoland NSO agency by entering DEMOLAND_NSO in the ID and Demoland NSO in the Name field in the Add Agency pop-up and clicking Apply (as shown below).
+
+```{r 066, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image066.png")
+```
+[Click here to enlarge the image](images/image066.png)
+
+-	Once we finished creating the agency, it would look like the following (the agency will be in the AGENCY POOL).
+
+```{r 068, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image068.png")
+```
+[Click here to enlarge the image](images/image068.png)
+
+-	Move the agency from the AGENCY POOL to the AGENCY space on the right pane by selecting and dragging it. After the move, it would look like the following.
+
+```{r 070, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image070.png")
+```
+[Click here to enlarge the image](images/image070.png)
+
+-	Click the Export button highlighted below to save the agency scheme in the folder.
+
+```{r 072, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image072.png")
+```
+[Click here to enlarge the image](images/image072.png)
+
+-	As shown below, a pop-up window will open to confirm the saving location.
+
+```{r 074, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image074.png")
+```
+[Click here to enlarge the image](images/image074.png)
+
+-	Clicking on Save will prompt another message (“All files in this directory (path) with delete and merged into a single file (path) are you sure to continue?”), as shown below.
+
+```{r 076, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image076.png")
+```
+[Click here to enlarge the image](images/image076.png)
+
+-	Clicking on Yes will create and save an XML file in the folder we created before, as shown below.
+
+```{r 078, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image078.png")
+```
+[Click here to enlarge the image](images/image078.png)
+
+-	Opening the file (LocalRegistry.xml) will show the agency scheme, as shown in the image below. 
+
+```{r 080, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image080.png")
+```
+[Click here to enlarge the image](images/image080.png)
+
 
 ## Creating ConceptScheme & Codelist {#creating-conceptscheme}
 
