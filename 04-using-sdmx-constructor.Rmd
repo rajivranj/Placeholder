@@ -250,6 +250,8 @@ knitr::include_graphics("./images/image080.png")
 
 ## Creating ConceptScheme & Codelist {#creating-conceptscheme}
 
+
+
 ## Creating DSD, Dataflow, ContentConstraint and CategoryScheme {#creating-dsd}
 
 ## Working with .Stat Suite
