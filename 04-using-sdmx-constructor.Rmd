@@ -1,6 +1,14 @@
 # Using SDMX Constructor {#using-sdmx}
 
-In this chapter...three things
+Welcome to the chapter on using SDMX Constructor! This chapter will cover three key topics that will help you make the most of this powerful tool.
+
+The first topic we will cover is how to use SDMX Constructor to access SDMX artefacts from SDMX registries. This will include step-by-step instructions on how to use the tool to connect to a registry, browse its contents, and download the artefacts you need.
+
+Next, we will dive into how to use SDMX Constructor to create new SDMX artefacts from scratch. Whether you need to create a new concept scheme, code list or DSD, SDMX Constructor provides a simple and intuitive interface to help you get the job done.
+
+Finally, we will explore how to use SDMX Constructor to work with .Stat Suite. This powerful platform is designed to help you analyse, visualise, and disseminate statistical data, and SDMX Constructor is the perfect complement to help you access and work with the SDMX artefacts you need.
+By the end of this chapter, you will have a solid understanding of how to use SDMX Constructor to access, create, and work with SDMX artefacts, and you will be well on your way to becoming an expert in this powerful tool. So, let’s get started!
+
 
 ## Accessing SDMX artefacts from registries {#accessing-sdmx}
 
