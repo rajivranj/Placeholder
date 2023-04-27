@@ -17,21 +17,7 @@ In this section, we will walk you through the process of using SDMX Constructor 
 
 ### Default SDMX registries
 
-You can use the SDMX Constructor on your computer to access and view the SDMX artefacts from the SDMX registries. By default, SDMX Constructor offers the following registries to access SDMX artefacts: SDMX Global Registry-(https://registry.sdmx.org/), United Nations Statistics Division (UNSD)-(https://data.un.org/WS), the Italian National Institute of Statistics (ESTAT) and the ILO Department of Statistics (ILOSTAT) - (https://www.ilo.org/sdmx/index.html). You can view these by going to the Registry button and opening the Registry Name dropdown in the SDMX Registry tab, as shown below.
 
-```{r 044, echo=FALSE, fig.align="center", out.width="100%"}
-knitr::include_graphics("./images/image044.png")
-```
-
-[Click here to enlarge the image](images/image044.png)
-
-As shown below, select a registry from the dropdown option to load the artefacts.
-
-```{r 046, echo=FALSE, fig.align="center", out.width="100%"}
-knitr::include_graphics("./images/image046.png")
-```
-
-[Click here to enlarge the image](images/image046.png)
 
 ## Creating SDMX artefacts from scratch {#creating-sdmx}
 
