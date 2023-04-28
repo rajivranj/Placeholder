@@ -393,31 +393,31 @@ knitr::include_graphics("./images/image118.png")
 
 -	A pop-up message will ask to save the XML file in the folder (LOCAL_REGISTRY) we created before. Click on Save to save the file. 
  
-```{r 120, echo=FALSE, fig.align="center", out.width="100%"}
-knitr::include_graphics("./images/image120.png")
+```{r 123, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image123.png")
 ```
-[Click here to enlarge the image](images/image120.png)
+[Click here to enlarge the image](images/image123.png)
 
 -	After clicking Save, the tool will ask the question to merge files. Select Yes. 
  
-```{r 122, echo=FALSE, fig.align="center", out.width="100%"}
-knitr::include_graphics("./images/image122.png")
+```{r 125, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image125.png")
 ```
-[Click here to enlarge the image](images/image122.png)
+[Click here to enlarge the image](images/image125.png)
 
 -	A confirmation message will appear for a short time at the bottom right corner, as shown below.
  
-```{r 124, echo=FALSE, fig.align="center", out.width="100%"}
-knitr::include_graphics("./images/image124.png")
+```{r 127, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image127.png")
 ```
-[Click here to enlarge the image](images/image124.png)
+[Click here to enlarge the image](images/image127.png)
 
 -	After that, if you go to the file’s location, you will see the XML file created, as shown below.
  
-```{r 126, echo=FALSE, fig.align="center", out.width="100%"}
-knitr::include_graphics("./images/image126.png")
+```{r 129, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image129.png")
 ```
-[Click here to enlarge the image](images/image126.png)
+[Click here to enlarge the image](images/image129.png)
 
 -	Opening the XML file will show the details containing, AgencyScheme, ConceptScheme and Codelists. 
 
