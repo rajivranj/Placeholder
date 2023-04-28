@@ -421,7 +421,6 @@ knitr::include_graphics("./images/image126.png")
 
 -	Opening the XML file will show the details containing, AgencyScheme, ConceptScheme and Codelists. 
 
-
 ## Creating DSD, Dataflow, ContentConstraint and CategoryScheme {#creating-dsd}
 
 ## Working with .Stat Suite
