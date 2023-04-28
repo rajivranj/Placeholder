@@ -175,7 +175,9 @@ knitr::include_graphics("./images/image060.png")
 
 -	Create an AgencyScheme by entering the ID, AgencyID, Version and Name in the fields as shown below. For this exercise, we will have only Demoland NSO as an agency (all data are from Demoland NSO). We will do it in two stages. First, we will enter the properties for the AgencyScheme and then create the agency. 
 
-Note on IDs and versions: All SDMX artefacts, have a unique identifier: In case of AgencySchme these are Agency ID, ID, and Version. Each artefact is assigned a specific version number to keep track of changes and avoid conflicts. This makes sure that the artefacts are managed efficiently and can be easily shared and reused by others while also giving users control over the artefacts they create.
+
+> **Note on IDs and versions**: All SDMX artefacts, have a unique identifier: In case of AgencySchme these are Agency ID, ID, and Version. Each artefact is assigned a specific version number to keep track of changes and avoid conflicts. This makes sure that the artefacts are managed efficiently and can be easily shared and reused by others while also giving users control over the artefacts they create.
+
 
 -	For ID, enter AGENCIES; For AgencyID, enter Demoland_NSO; for version, enter 1.0; and for the Name, enter Demoland NSO Agency Scheme as shown below.
 
@@ -250,6 +252,174 @@ knitr::include_graphics("./images/image080.png")
 
 ## Creating ConceptScheme & Codelist {#creating-conceptscheme}
 
+We do this in one go. But first, we will upload the Codelist and then the ConceptScheme. 
+
+**Create Codelist:**
+
+-	Click on the Codelist button on top and ensure that the folder we created before, LOCAL_REGISTRY, is selected from the Codelist Editor’s ‘Load from registry’ dropdown option, as shown below.
+
+```{r 082, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image082.png")
+```
+[Click here to enlarge the image](images/image082.png)
+
+-	Click on the Bulk load button as shown below.
+ 
+```{r 084, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image084.png")
+```
+[Click here to enlarge the image](images/image084.png)
+
+-	It will open up a pop-up window, as shown below.
+ 
+```{r 086, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image086.png")
+```
+[Click here to enlarge the image](images/image086.png)
+
+-	Copy the Codelist table we prepared before and paste its contents here. Before pasting, remember to click on the ID column (shown in white in the image below). Then, select the entire row (by clicking on the little arrow (pointing at the right) at the beginning of the rows).
+ 
+```{r 088, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image088.png")
+```
+[Click here to enlarge the image](images/image088.png)
+
+-	After pasting, remember to delete the header row. You can do this by selecting the entire row (by clicking again the little arrow pointing at the right at the beginning of the rows) and clicking the button (“-”) below, as indicated by a downward red arrow. 
+ 
+```{r 090, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image090.png")
+```
+[Click here to enlarge the image](images/image090.png)
+
+-	Enter the Agency ID and Version on the top row as DEMOLAND_NSO and 1.0, respectively, as shown below. If only the top row contains entries (DEMOLAND_NSO and 1.0) and the rest is empty, it implies that the Agency ID and Version are repeated for each row.
+ 
+```{r 092, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image092.png")
+```
+[Click here to enlarge the image](images/image092.png)
+
+-	Click on Load, as shown below.
+
+```{r 094, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image094.png")
+```
+[Click here to enlarge the image](images/image094.png)
+
+-	After the loading, this is how it would look (as shown below).
+
+```{r 096, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image096.png")
+```
+[Click here to enlarge the image](images/image096.png)
+
+-	Clicking on any item on this list will show the details on the right pane, as shown below.
+ 
+```{r 098, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image098.png")
+```
+[Click here to enlarge the image](images/image098.png)
+
+**Create ConceptScheme:**
+
+-	Click on the ConceptScheme button on top and ensure that the folder we created before, LOCAL_REGISTRY, is selected from the ConceptScheme Editor’s ‘Load from registry’ dropdown option, as shown below.
+ 
+```{r 100, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image100.png")
+```
+[Click here to enlarge the image](images/image100.png)
+
+-	Click on the Bulk load button, as shown below.
+ 
+```{r 102, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image102.png")
+```
+[Click here to enlarge the image](images/image102.png)
+
+-	It will open up a pop-up window, as shown below.
+ 
+```{r 104, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image104.png")
+```
+[Click here to enlarge the image](images/image104.png)
+
+-	Copy the ConceptScheme table we prepared before and paste its contents here. Before pasting, remember to click on the ID column and select the entire row (by clicking on the little arrow at the beginning of the rows).
+ 
+```{r 106, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image106.png")
+```
+[Click here to enlarge the image](images/image106.png)
+
+-	After pasting, remember to delete the header row by selecting the entire row and using the button (“-”) below, as indicated by a downward red arrow. 
+ 
+```{r 108, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image108.png")
+```
+[Click here to enlarge the image](images/image108.png)
+
+-	Click on Load, as shown below.
+
+```{r 110, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image110.png")
+```
+[Click here to enlarge the image](images/image110.png)
+
+-	After loading, the concepts will be visible in the CONCEPT POOL, as shown below.
+ 
+```{r 112, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image112.png")
+```
+[Click here to enlarge the image](images/image112.png)
+
+-	Move all the concepts from the CONCEPT POOL to the CONCEPT pane by selecting all (ctrl + a), then dragging and dropping. After the move, it would look like the following.
+ 
+```{r 114, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image114.png")
+```
+[Click here to enlarge the image](images/image114.png)
+
+-	After moving the concepts, enter the details: (ID: CS_DEMOLAND_NSO, AgencyID: DEMOLAND_NSO, Version: 1.0, and Name: Concept Scheme of Demoland NSO) for the ConceptScheme, as shown below.
+
+```{r 116, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image116.png")
+```
+[Click here to enlarge the image](images/image116.png)
+
+-	Then, click the ‘Save with descendants’ from the save option as shown below. This option, ‘Save with descendants, ’ will save the concept scheme with the codelist. 
+ 
+```{r 118, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image118.png")
+```
+[Click here to enlarge the image](images/image118.png)
+
+-	A pop-up message will ask to save the XML file in the folder (LOCAL_REGISTRY) we created before. Click on Save to save the file. 
+ 
+```{r 120, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image120.png")
+```
+[Click here to enlarge the image](images/image120.png)
+
+-	After clicking Save, the tool will ask the question to merge files. Select Yes. 
+ 
+```{r 122, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image122.png")
+```
+[Click here to enlarge the image](images/image122.png)
+
+-	A confirmation message will appear for a short time at the bottom right corner, as shown below.
+ 
+```{r 124, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image124.png")
+```
+[Click here to enlarge the image](images/image124.png)
+
+-	After that, if you go to the file’s location, you will see the XML file created, as shown below.
+ 
+```{r 126, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image126.png")
+```
+[Click here to enlarge the image](images/image126.png)
+
+-	Opening the XML file will show the details containing, AgencyScheme, ConceptScheme and Codelists. 
 
 
 ## Creating DSD, Dataflow, ContentConstraint and CategoryScheme {#creating-dsd}
