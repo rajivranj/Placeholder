@@ -650,32 +650,60 @@ To demonstrate the key functionalities of the SDMX Constructor, it is helpful to
 
 Imagine a country called Demoland and its National Statistical Office (NSO), Demoland NSO. Imagine the Demoland NSO is creating SDMX artefacts for its data in the following two tables.
 
-\begin{longtable}[]{@{}lllllll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1835}}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1009}}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1284}}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1743}}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1101}}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1284}}
+  >{\centering\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1743}}@{}}
 \caption{\label{tab:table41} Unemployment Rate by sex and region}\tabularnewline
 \toprule()
-Region & Sex & 2015 & 2016 & 2017 & 2018 & 2019 \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Region
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+2015
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+2015
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+2015
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+2016
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+2016
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+2016
+\end{minipage} \\
 \midrule()
 \endfirsthead
 \toprule()
-Region & Sex & 2015 & 2016 & 2017 & 2018 & 2019 \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Region
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+2015
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+2015
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+2015
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+2016
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+2016
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+2016
+\end{minipage} \\
 \midrule()
 \endhead
-Cities and Towns & Men & 14.4 & 14.4 & 14 & 13.1 & 12.5 \\
-Cities and Towns & Women & 20.7 & 21 & 21 & 21 & 21 \\
-Cities and Towns & Both sexes & 17.6 & 17.2 & 17.8 & 17.2 & 17.2 \\
-Urban Villages & Men & 27.8 & 28.2 & 28 & 28 & 28 \\
-Urban Villages & Women & 30.3 & 29.4 & 29.8 & 30 & 30 \\
-Urban Villages & Both sexes & 29.1 & 29.1 & 28.8 & 29.6 & 29.4 \\
-Rural Areas & Men & 26.2 & 26.2 & 26.1 & 26.9 & 27.2 \\
-Rural Areas & Women & 29.6 & 29.5 & 29.5 & 29.5 & 28.6 \\
-Rural Areas & Both sexes & 28 & 27.1 & 27.1 & 26.9 & 27.4 \\
-Total & Men & 24 & 24 & 23.7 & 23.7 & 24.2 \\
-Total & Women & 27.9 & 27.9 & 28.7 & 28.3 & 28.3 \\
-Total & Both sexes & 26 & 26 & 26 & 26.2 & 26.2 \\
+& \textbf{Men} & \textbf{Women} & \textbf{Both Sexes} & \textbf{Men} & \textbf{Women} & \textbf{Both Sexes} \\
+Cities and Towns & 14.4 & 20.7 & 17.6 & 14.4 & 21 & 17.2 \\
+Urban Villages & 27.8 & 30.3 & 29.1 & 28.2 & 29.4 & 29.1 \\
+Rural Areas & 26.2 & 29.6 & 28 & 26.2 & 29.5 & 27.1 \\
+Total & 24 & 27.9 & 26 & 24 & 27.9 & 26 \\
 \bottomrule()
 \end{longtable}
 
-\begin{longtable}[]{@{}llll@{}}
+\begin{longtable}[]{@{}lccc@{}}
 \caption{\label{tab:table42} Population outside the labour force by sex and age group (2022)}\tabularnewline
 \toprule()
 Age Group & Men & Women & Both Sexes \\
@@ -700,10 +728,10 @@ After modelling the data in both tables, we have the following ConceptScheme and
 \textbf{ConceptScheme:}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1157}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1653}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5950}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1240}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1200}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1680}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5840}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1280}}@{}}
 \caption{\label{tab:table43} ConceptScheme}\tabularnewline
 \toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
@@ -743,10 +771,10 @@ OBS\_VALUE & Observation values & Refers to data or observation values & CL\_OBS
 \textbf{Codelist:}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1630}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2174}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0978}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5217}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2188}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1042}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5104}}@{}}
 \caption{\label{tab:table44} Codelist}\tabularnewline
 \toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
@@ -959,7 +987,7 @@ We do this in one go. But first, we will upload the Codelist and then the Concep
 \begin{itemize}
 \tightlist
 \item
-  Copy the Codelist table we prepared before and paste its contents here. Before pasting, remember to click on the ID column (shown in white in the image below). Then, select the entire row (by clicking on the little arrow (pointing at the right) at the beginning of the rows).
+  Copy the Codelist table (Table: \ref{tab:table44}) we prepared before and paste its contents here. Before pasting, remember to click on the ID column (shown in white in the image below). Then, select the entire row (by clicking on the little arrow (pointing at the right) at the beginning of the rows).
 \end{itemize}
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image088} \end{center}
@@ -1051,7 +1079,7 @@ We do this in one go. But first, we will upload the Codelist and then the Concep
 \begin{itemize}
 \tightlist
 \item
-  Copy the ConceptScheme table we prepared before and paste its contents here. Before pasting, remember to click on the ID column and select the entire row (by clicking on the little arrow at the beginning of the rows).
+  Copy the ConceptScheme table (Table: \ref{tab:table43}) we prepared before and paste its contents here. Before pasting, remember to click on the ID column and select the entire row (by clicking on the little arrow at the beginning of the rows).
 \end{itemize}
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image106} \end{center}
@@ -1167,7 +1195,7 @@ We do this in one go. But first, we will upload the Codelist and then the Concep
 \hypertarget{creating-dsd}{%
 \section{Creating DSD, Dataflow, ContentConstraint and CategoryScheme}\label{creating-dsd}}
 
-Recalling our two initial tables (Table 1 and Table 2), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the Table Modeller option in the SDMX Constructor.
+Recalling our two initial tables (table: \ref{tab:table41} and table: \ref{tab:table42}), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the Table Modeller option in the SDMX Constructor.
 
 The Table Modeller offers the functionality to design statistical tables with an intuitive user interface to generate the SDMX artefacts that model it.
 
@@ -1176,8 +1204,6 @@ The Table Modeller offers the functionality to design statistical tables with an
 \item
   Click on the Table Modeller button on top and ensure that the folder we created before, LOCAL\_REGISTRY, is selected from the Table Modeller Editor's `Load from registry' dropdown option, as shown below.
 \end{itemize}
-
-Figure 48-130
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image130} \end{center}
 
@@ -1189,8 +1215,6 @@ Figure 48-130
   You will notice the concept scheme we created before, as highlighted below.
 \end{itemize}
 
-Figure 49-132
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image132} \end{center}
 
 \href{images/image132.png}{Click here to enlarge the image}
@@ -1201,20 +1225,16 @@ Figure 49-132
   Double-clicking the concept scheme will move it to the CONCEPT POOL, as shown below.
 \end{itemize}
 
-Figure 50-134
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image134} \end{center}
 
 \href{images/image134.png}{Click here to enlarge the image}
 
 \begin{itemize}
 \item
-  Now, you can select the concepts in the CONCEPT POOL, then drag and drop them into various spaces (Constant Dimensions, Header, Side, Measures \&Observation Attributes and Footnotes \& Table Attributes) on the right pane. The logic driving where to drop each concept comes from our original tables (Tables 1 and 2).
+  Now, you can select the concepts in the CONCEPT POOL, then drag and drop them into various spaces (Constant Dimensions, Header, Side, Measures \& Observation Attributes and Footnotes \& Table Attributes) on the right pane. The logic driving where to drop each concept comes from our original tables (Tables \ref{tab:table41} and \ref{tab:table42}).
 \item
-  For Table 1 (Unemployment Rate by sex and region), the following distribution will be representative.
+  For Table \ref{tab:table41} (Unemployment Rate by sex and region), the following distribution will be representative.
 \end{itemize}
-
-Figure 51-136
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image136} \end{center}
 
@@ -1226,8 +1246,6 @@ Figure 51-136
   We can now apply two constraints: one for the indicator's name and the other for the unit of measure. The indicator's name will be the Unemployment Rate, which we can select by double-clicking the moved indicator concept as shown below.
 \end{itemize}
 
-Figure 52-138
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image138} \end{center}
 
 \href{images/image138.png}{Click here to enlarge the image}
@@ -1235,10 +1253,8 @@ Figure 52-138
 \begin{itemize}
 \tightlist
 \item
-  Another constraint would be the unit of measure. Because it is `rate' (for Table 1), double-clicking the moved unit of measure concept would offer the option to select the rate. Select the Rate as shown below.
+  Another constraint would be the unit of measure. Because it is `rate' (for Table \ref{tab:table41}), double-clicking the moved unit of measure concept would offer the option to select the rate. Select the Rate as shown below.
 \end{itemize}
-
-Figure 53-140
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image140} \end{center}
 
@@ -1250,8 +1266,6 @@ Figure 53-140
   Now we add the table information as shown below.
 \end{itemize}
 
-Figure 54-142
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image142} \end{center}
 
 \href{images/image142.png}{Click here to enlarge the image}
@@ -1261,8 +1275,6 @@ Figure 54-142
 \item
   Then we will hit save (select `Save without descendants'), as shown below.
 \end{itemize}
-
-Figure 55-144
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image144} \end{center}
 
@@ -1274,8 +1286,6 @@ Figure 55-144
   After saving, it will show a message as shown below.
 \end{itemize}
 
-Figure 56-146
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image146} \end{center}
 
 \href{images/image146.png}{Click here to enlarge the image}
@@ -1285,8 +1295,6 @@ Figure 56-146
 \item
   Clicking on Continue will result in a pop-up asking to save the file, as shown below.
 \end{itemize}
-
-Figure 57-152
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image152} \end{center}
 
@@ -1298,8 +1306,6 @@ Figure 57-152
   Clicking Save will show this message and ask if the files should be merged.
 \end{itemize}
 
-Figure 58-154
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image154} \end{center}
 
 \href{images/image154.png}{Click here to enlarge the image}
@@ -1309,10 +1315,8 @@ Figure 58-154
 \item
   Clicking on Yes will merge the file.
 \item
-  We will repeat the process for Table 2 (Population outside the labour force by sex and age group (2022)). We can do that by moving Age to the `Side' space (and removing the Geo back to the CONCEPT POOL), changing the constraints for the indicator to `Population outside the labour force' and unit of measure to `Persons', and updating the table information as shown below.
+  We will repeat the process for Table @ref(tab:table42 (Population outside the labour force by sex and age group (2022)). We can do that by moving Age to the `Side' space (and removing the Geo back to the CONCEPT POOL), changing the constraints for the indicator to `Population outside the labour force' and unit of measure to `Persons', and updating the table information as shown below.
 \end{itemize}
-
-Figure 59-156
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image156} \end{center}
 
@@ -1323,8 +1327,6 @@ Figure 59-156
 \item
   After hitting the save (Save without descendants) button, the message will read like the one below.
 \end{itemize}
-
-Figure 60-158
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image158} \end{center}
 
@@ -1341,8 +1343,6 @@ Figure 60-158
   First, we will click the CategoryScheme button and enter the properties (ID: CAS\_BY\_TOPIC, AgencyID: DEMOLAND\_NSO, Version: 1.0 and Name: Categorisation Scheme By Topic) as shown below.
 \end{itemize}
 
-Figure 61-160
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image160} \end{center}
 
 \href{images/image160.png}{Click here to enlarge the image}
@@ -1352,8 +1352,6 @@ Figure 61-160
 \item
   Click on ``Add New Category'', as shown below.
 \end{itemize}
-
-Figure 62-162
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image162} \end{center}
 
@@ -1365,8 +1363,6 @@ Figure 62-162
   It will open a pop-up window, as shown below. Enter the details: ID: UNER (shorthand for Unemployment Rate) and Name: Unemployment Rate.
 \end{itemize}
 
-Figure 63-164
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image164} \end{center}
 
 \href{images/image164.png}{Click here to enlarge the image}
@@ -1376,8 +1372,6 @@ Figure 63-164
 \item
   Click on the Load ``Dataflows'' button, as shown below.
 \end{itemize}
-
-Figure 64-166
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image166} \end{center}
 
@@ -1389,8 +1383,6 @@ Figure 64-166
   It will open another pop-up window to select the dataflow through the Registry.
 \end{itemize}
 
-Figure 65-168
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image168} \end{center}
 
 \href{images/image168.png}{Click here to enlarge the image}
@@ -1400,8 +1392,6 @@ Figure 65-168
 \item
   Select the Registry (LOCAL\_REGISTRY), then the dataflow, and press Apply as shown below.
 \end{itemize}
-
-Figure 66-170
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image170} \end{center}
 
@@ -1413,8 +1403,6 @@ Figure 66-170
   A message will appear as shown below.
 \end{itemize}
 
-Figure 67-172
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image172} \end{center}
 
 \href{images/image172.png}{Click here to enlarge the image}
@@ -1424,8 +1412,6 @@ Figure 67-172
 \item
   Clicking the OK button will lead you to the following window.
 \end{itemize}
-
-Figure 68-174
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image174} \end{center}
 
@@ -1437,8 +1423,6 @@ Figure 68-174
   As shown below, move (dragging and dropping) the dataflow to the `attached dataflows' space.
 \end{itemize}
 
-Figure 69-176
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image176} \end{center}
 
 \href{images/image176.png}{Click here to enlarge the image}
@@ -1448,8 +1432,6 @@ Figure 69-176
 \item
   Clicking ``Apply'' in that pop-up will take you to the following window, showing the entry into the CATEGORY POOL.
 \end{itemize}
-
-Figure 70-178
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image178} \end{center}
 
@@ -1461,8 +1443,6 @@ Figure 70-178
   Move it to the right pane, as shown below.
 \end{itemize}
 
-Figure 71-180
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image180} \end{center}
 
 \href{images/image180.png}{Click here to enlarge the image}
@@ -1472,8 +1452,6 @@ Figure 71-180
 \item
   Then hit Save (Save without descendants), and it will show the pop-up windows to ensure the location where it saves the file, as shown below.
 \end{itemize}
-
-Figure 72-182
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image182} \end{center}
 
@@ -1487,8 +1465,6 @@ Figure 72-182
   Repeat the process for the other category, `Population outside the labour force'. The final view would be as follows:
 \end{itemize}
 
-Figure 73-184
-
 \begin{center}\includegraphics[width=1\linewidth]{./images/image184} \end{center}
 
 \href{images/image184.png}{Click here to enlarge the image}
@@ -1498,8 +1474,6 @@ Figure 73-184
 \item
   The XML file (by going to the location of the folder we created before and opening the XML file) would be like the one below.
 \end{itemize}
-
-Figure 74-186
 
 \begin{center}\includegraphics[width=1\linewidth]{./images/image186} \end{center}
 

@@ -88,27 +88,21 @@ To demonstrate the key functionalities of the SDMX Constructor, it is helpful to
 
 Imagine a country called Demoland and its National Statistical Office (NSO), Demoland NSO. Imagine the Demoland NSO is creating SDMX artefacts for its data in the following two tables.
 
-| Region           | Sex        | 2015 | 2016 | 2017 | 2018 | 2019 |
-|------------------|------------|------|------|------|------|------|
-| Cities and Towns | Men        | 14.4 | 14.4 | 14   | 13.1 | 12.5 |
-| Cities and Towns | Women      | 20.7 | 21   | 21   | 21   | 21   |
-| Cities and Towns | Both sexes | 17.6 | 17.2 | 17.8 | 17.2 | 17.2 |
-| Urban Villages   | Men        | 27.8 | 28.2 | 28   | 28   | 28   |
-| Urban Villages   | Women      | 30.3 | 29.4 | 29.8 | 30   | 30   |
-| Urban Villages   | Both sexes | 29.1 | 29.1 | 28.8 | 29.6 | 29.4 |
-| Rural Areas      | Men        | 26.2 | 26.2 | 26.1 | 26.9 | 27.2 |
-| Rural Areas      | Women      | 29.6 | 29.5 | 29.5 | 29.5 | 28.6 |
-| Rural Areas      | Both sexes | 28   | 27.1 | 27.1 | 26.9 | 27.4 |
-| Total            | Men        | 24   | 24   | 23.7 | 23.7 | 24.2 |
-| Total            | Women      | 27.9 | 27.9 | 28.7 | 28.3 | 28.3 |
-| Total            | Both sexes | 26   | 26   | 26   | 26.2 | 26.2 |
+
+| Region            | 2015 | 2015 | 2015 | 2016 | 2016 | 2016 |
+|:-------------------|:---------:|:------------:|:-----------------:|:----------:|:------------:|:-----------------:|
+|                    | **Men**     | **Women**      | **Both Sexes**      | **Men**      | **Women**      | **Both Sexes**      |
+| Cities and Towns   | 14.4    | 20.7       | 17.6            | 14.4     | 21         | 17.2            |
+| Urban Villages     | 27.8    | 30.3       | 29.1            | 28.2     | 29.4       | 29.1            |
+| Rural Areas        | 26.2    | 29.6       | 28              | 26.2     | 29.5       | 27.1            |
+| Total              | 24      | 27.9       | 26              | 24       | 27.9       | 26              |
 
 : (#tab:table41) Unemployment Rate by sex and region
 
 
 
 | Age Group | Men    | Women  | Both Sexes |
-|-----------|--------|--------|------------|
+|:-----------|:--------:|:--------:|:------------:|
 | 15-24     | 130,088| 133,770| 263,856    |
 | 25-34     | 33,165 | 60,240 | 93,405     |
 | 35-44     | 21,970 | 38,944 | 60,914     |
@@ -124,7 +118,7 @@ After modelling the data in both tables, we have the following ConceptScheme and
 **ConceptScheme:**
 
 | Concept ID   | Concept Name       | Description                                                             | Codelist ID   |
-|--------------|--------------------|------------------------------------------------------------------------|---------------|
+|:--------------|:--------------------|:------------------------------------------------------------------------|:---------------|
 | INDICATOR    | Indicator          | Refers to statistical measure describing a particular aspect of a social, economic or environmental phenomenon | CL_INDICATOR  |
 | UNIT_MEASURE | Unit of measure    | Unit in which the observation values are expressed                      | CL_UNIT_MEASURE |
 | SEX          | Sex                | State of being male or female                                           | CL_SEX         |
@@ -139,7 +133,7 @@ After modelling the data in both tables, we have the following ConceptScheme and
 **Codelist:**
 
 | Codelist ID   | Concept Name       | Code ID | Code Name                                       |
-|---------------|--------------------|---------|------------------------------------------------|
+|:---------------|:--------------------|:---------|:------------------------------------------------|
 | CL_INDICATOR  | Indicator          | UNER    | Unemployment Rate                              |
 | CL_INDICATOR  | Indicator          | POLF    | Population outside the labour force            |
 | CL_UNIT_MEASURE | Unit of measure   | RT      | Rate                                           |
@@ -277,7 +271,7 @@ knitr::include_graphics("./images/image086.png")
 ```
 [Click here to enlarge the image](images/image086.png)
 
--	Copy the Codelist table we prepared before and paste its contents here. Before pasting, remember to click on the ID column (shown in white in the image below). Then, select the entire row (by clicking on the little arrow (pointing at the right) at the beginning of the rows).
+-	Copy the Codelist table (Table: \@ref(tab:table44)) we prepared before and paste its contents here. Before pasting, remember to click on the ID column (shown in white in the image below). Then, select the entire row (by clicking on the little arrow (pointing at the right) at the beginning of the rows).
  
 ```{r 088, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image088.png")
@@ -342,7 +336,7 @@ knitr::include_graphics("./images/image104.png")
 ```
 [Click here to enlarge the image](images/image104.png)
 
--	Copy the ConceptScheme table we prepared before and paste its contents here. Before pasting, remember to click on the ID column and select the entire row (by clicking on the little arrow at the beginning of the rows).
+-	Copy the ConceptScheme table (Table: \@ref(tab:table43)) we prepared before and paste its contents here. Before pasting, remember to click on the ID column and select the entire row (by clicking on the little arrow at the beginning of the rows).
  
 ```{r 106, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image106.png")
@@ -423,13 +417,13 @@ knitr::include_graphics("./images/image129.png")
 
 ## Creating DSD, Dataflow, ContentConstraint and CategoryScheme {#creating-dsd}
 
-Recalling our two initial tables (Table 1 and Table 2), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the Table Modeller option in the SDMX Constructor.
+Recalling our two initial tables (table: \@ref(tab:table41) and table: \@ref(tab:table42)), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the Table Modeller option in the SDMX Constructor.
 
 The Table Modeller offers the functionality to design statistical tables with an intuitive user interface to generate the SDMX artefacts that model it. 
 
 -	Click on the Table Modeller button on top and ensure that the folder we created before, LOCAL_REGISTRY, is selected from the Table Modeller Editor’s ‘Load from registry’ dropdown option, as shown below.
  
-Figure 48-130
+
 ```{r 130, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image130.png")
 ```
@@ -437,7 +431,6 @@ knitr::include_graphics("./images/image130.png")
 
 -	You will notice the concept scheme we created before, as highlighted below. 
  
-Figure 49-132
 ```{r 132, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image132.png")
 ```
@@ -445,17 +438,15 @@ knitr::include_graphics("./images/image132.png")
 
 -	Double-clicking the concept scheme will move it to the CONCEPT POOL, as shown below.
  
-Figure 50-134
 ```{r 134, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image134.png")
 ```
 [Click here to enlarge the image](images/image134.png)
 
--	Now, you can select the concepts in the CONCEPT POOL, then drag and drop them into various spaces (Constant Dimensions, Header, Side, Measures &Observation Attributes and Footnotes & Table Attributes) on the right pane. The logic driving where to drop each concept comes from our original tables (Tables 1 and 2).
+-	Now, you can select the concepts in the CONCEPT POOL, then drag and drop them into various spaces (Constant Dimensions, Header, Side, Measures & Observation Attributes and Footnotes & Table Attributes) on the right pane. The logic driving where to drop each concept comes from our original tables (Tables \@ref(tab:table41) and \@ref(tab:table42)).
 
--	For Table 1 (Unemployment Rate by sex and region), the following distribution will be representative.
+-	For Table \@ref(tab:table41) (Unemployment Rate by sex and region), the following distribution will be representative.
  
-Figure 51-136
 ```{r 136, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image136.png")
 ```
@@ -463,15 +454,13 @@ knitr::include_graphics("./images/image136.png")
 
 -	We can now apply two constraints: one for the indicator’s name and the other for the unit of measure. The indicator’s name will be the Unemployment Rate, which we can select by double-clicking the moved indicator concept as shown below. 
  
-Figure 52-138
 ```{r 138, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image138.png")
 ```
 [Click here to enlarge the image](images/image138.png)
 
--	Another constraint would be the unit of measure. Because it is ‘rate’ (for Table 1), double-clicking the moved unit of measure concept would offer the option to select the rate. Select the Rate as shown below. 
+-	Another constraint would be the unit of measure. Because it is ‘rate’ (for Table \@ref(tab:table41)), double-clicking the moved unit of measure concept would offer the option to select the rate. Select the Rate as shown below. 
  
-Figure 53-140
 ```{r 140, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image140.png")
 ```
@@ -479,7 +468,6 @@ knitr::include_graphics("./images/image140.png")
 
 -	Now we add the table information as shown below.
  
-Figure 54-142
 ```{r 142, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image142.png")
 ```
@@ -487,7 +475,6 @@ knitr::include_graphics("./images/image142.png")
 
 -	Then we will hit save (select ‘Save without descendants’), as shown below. 
  
-Figure 55-144
 ```{r 144, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image144.png")
 ```
@@ -495,7 +482,6 @@ knitr::include_graphics("./images/image144.png")
 
 -	After saving, it will show a message as shown below.
  
-Figure 56-146
 ```{r 146, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image146.png")
 ```
@@ -503,7 +489,6 @@ knitr::include_graphics("./images/image146.png")
 
 -	Clicking on Continue will result in a pop-up asking to save the file, as shown below.
  
-Figure 57-152
 ```{r 152, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image152.png")
 ```
@@ -511,16 +496,14 @@ knitr::include_graphics("./images/image152.png")
 
 -	Clicking Save will show this message and ask if the files should be merged.
  
-Figure 58-154
 ```{r 154, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image154.png")
 ```
 [Click here to enlarge the image](images/image154.png)
 
 -	Clicking on Yes will merge the file. 
--	We will repeat the process for Table 2 (Population outside the labour force by sex and age group (2022)). We can do that by moving Age to the ‘Side’ space (and removing the Geo back to the CONCEPT POOL), changing the constraints for the indicator to ‘Population outside the labour force’ and unit of measure to ‘Persons’, and updating the table information as shown below. 
+-	We will repeat the process for Table \@ref(tab:table42 (Population outside the labour force by sex and age group (2022)). We can do that by moving Age to the ‘Side’ space (and removing the Geo back to the CONCEPT POOL), changing the constraints for the indicator to ‘Population outside the labour force’ and unit of measure to ‘Persons’, and updating the table information as shown below. 
  
-Figure 59-156
 ```{r 156, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image156.png")
 ```
@@ -528,7 +511,6 @@ knitr::include_graphics("./images/image156.png")
 
 -	After hitting the save (Save without descendants) button, the message will read like the one below.
  
-Figure 60-158
 ```{r 158, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image158.png")
 ```
@@ -539,7 +521,6 @@ knitr::include_graphics("./images/image158.png")
 Now, we can create a categorisation scheme. The categorisation could be by topics such as ‘Unemployment Rate’ and ‘Population outside the labour force’. 
 -	First, we will click the CategoryScheme button and enter the properties (ID: CAS_BY_TOPIC, AgencyID: DEMOLAND_NSO, Version: 1.0 and Name: Categorisation Scheme By Topic) as shown below.
  
-Figure 61-160
 ```{r 160, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image160.png")
 ```
@@ -547,7 +528,6 @@ knitr::include_graphics("./images/image160.png")
 
 -	Click on “Add New Category”, as shown below.
  
-Figure 62-162
 ```{r 162, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image162.png")
 ```
@@ -555,7 +535,6 @@ knitr::include_graphics("./images/image162.png")
 
 -	It will open a pop-up window, as shown below. Enter the details: ID: UNER (shorthand for Unemployment Rate) and Name: Unemployment Rate.
  
-Figure 63-164
 ```{r 164, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image164.png")
 ```
@@ -563,7 +542,6 @@ knitr::include_graphics("./images/image164.png")
 
 -	Click on the Load “Dataflows” button, as shown below. 
  
-Figure 64-166
 ```{r 166, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image166.png")
 ```
@@ -571,7 +549,6 @@ knitr::include_graphics("./images/image166.png")
 
 -	It will open another pop-up window to select the dataflow through the Registry.
  
-Figure 65-168
 ```{r 168, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image168.png")
 ```
@@ -579,7 +556,6 @@ knitr::include_graphics("./images/image168.png")
 
 -	Select the Registry (LOCAL_REGISTRY), then the dataflow, and press Apply as shown below.
  
-Figure 66-170
 ```{r 170, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image170.png")
 ```
@@ -587,7 +563,6 @@ knitr::include_graphics("./images/image170.png")
 
 -	A message will appear as shown below.
  
-Figure 67-172
 ```{r 172, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image172.png")
 ```
@@ -595,7 +570,6 @@ knitr::include_graphics("./images/image172.png")
 
 -	Clicking the OK button will lead you to the following window.
  
-Figure 68-174
 ```{r 174, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image174.png")
 ```
@@ -603,7 +577,6 @@ knitr::include_graphics("./images/image174.png")
 
 -	As shown below, move (dragging and dropping) the dataflow to the ‘attached dataflows’ space.
  
-Figure 69-176
 ```{r 176, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image176.png")
 ```
@@ -611,7 +584,6 @@ knitr::include_graphics("./images/image176.png")
 
 -	Clicking “Apply” in that pop-up will take you to the following window, showing the entry into the CATEGORY POOL.
  
-Figure 70-178
 ```{r 178, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image178.png")
 ```
@@ -619,7 +591,6 @@ knitr::include_graphics("./images/image178.png")
 
 -	Move it to the right pane, as shown below.
  
-Figure 71-180
 ```{r 180, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image180.png")
 ```
@@ -627,7 +598,6 @@ knitr::include_graphics("./images/image180.png")
 
 -	Then hit Save (Save without descendants), and it will show the pop-up windows to ensure the location where it saves the file, as shown below.
  
-Figure 72-182
 ```{r 182, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image182.png")
 ```
@@ -636,7 +606,6 @@ knitr::include_graphics("./images/image182.png")
 -	Clicking on Save will ask the confirmation to merge the file. Select Yes.
 -	Repeat the process for the other category, ‘Population outside the labour force’. The final view would be as follows:
  
-Figure 73-184
 ```{r 184, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image184.png")
 ```
@@ -644,7 +613,6 @@ knitr::include_graphics("./images/image184.png")
 
 -	The XML file (by going to the location of the folder we created before and opening the XML file) would be like the one below.
  
-Figure 74-186
 ```{r 186, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image186.png")
 ```
