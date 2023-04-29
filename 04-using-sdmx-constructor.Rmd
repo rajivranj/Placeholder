@@ -417,7 +417,7 @@ knitr::include_graphics("./images/image129.png")
 
 ## Creating DSD, Dataflow, ContentConstraint and CategoryScheme {#creating-dsd}
 
-Recalling our two initial tables (table: \@ref(tab:table41) and table: \@ref(tab:table42)), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the Table Modeller option in the SDMX Constructor.
+Recalling our two initial tables (Table: \@ref(tab:table41) and Table: \@ref(tab:table42)), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the Table Modeller option in the SDMX Constructor.
 
 The Table Modeller offers the functionality to design statistical tables with an intuitive user interface to generate the SDMX artefacts that model it. 
 
@@ -443,7 +443,7 @@ knitr::include_graphics("./images/image134.png")
 ```
 [Click here to enlarge the image](images/image134.png)
 
--	Now, you can select the concepts in the CONCEPT POOL, then drag and drop them into various spaces (Constant Dimensions, Header, Side, Measures & Observation Attributes and Footnotes & Table Attributes) on the right pane. The logic driving where to drop each concept comes from our original tables (Tables \@ref(tab:table41) and \@ref(tab:table42)).
+-	Now, you can select the concepts in the CONCEPT POOL, then drag and drop them into various spaces (Constant Dimensions, Header, Side, Measures & Observation Attributes and Footnotes & Table Attributes) on the right pane. The logic driving where to drop each concept comes from our original tables (Table: \@ref(tab:table41) and Table: \@ref(tab:table42)).
 
 -	For Table \@ref(tab:table41) (Unemployment Rate by sex and region), the following distribution will be representative.
  
@@ -618,6 +618,13 @@ knitr::include_graphics("./images/image186.png")
 ```
 [Click here to enlarge the image](images/image186.png)
 
-## Uploading XML file to the DLM {#upload-the}
+## Uploading XML file to the DLM {#uploading-xml}
 
-## Connect to a new SDMX registry {#connect-to}
+You can upload the XML file containing the SDMX artefacts to the .Stat Data Lifecycle Manager (DLM). The DLM could be on the cloud or local computer (Localhost). Here is one case illustrated where we upload the XML file we created and saved using the SDMX Constructor in a folder to a locally hosted instance of the DLM. 
+
+
+> **Note on artefact versioning**: Artefact versioning is crucial for managing SDMX artefacts, as it prevents conflicts when uploading structures to the DLM. This is especially important when multiple users work on the same artefact simultaneously or when updating artefacts over time. You may recall the usual place (in the right corner of the respective windows) to enter the version number in the user interface for creating or modifying artefacts in the SDMX Constructor.  
+
+
+
+## Connecting to an SDMX registry {#connecting-to}

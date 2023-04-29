@@ -33,46 +33,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -119,23 +79,6 @@
 \author{International Labour Organization: Department of Statistics}
 \date{2023-04-29}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
-\theoremstyle{definition}
-\newtheorem{hypothesis}{Hypothesis}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -180,7 +123,7 @@ For SDMX beginners, this manual explains using the SDMX Constructor to access, v
 
 \textbf{Data managers}: These users are likely familiar with the SDMX concepts and terminology and may require information about advanced functionalities offered by the SDMX Constructor. For example, they may want to use the SDMX Constructor as a backend client to manage SDMX artefacts for the .Stat Data Lifecycle Manager (DLM). For such cases, they may also use the SDMX Constructor to build the initial structural metadata when creating a new .Stat Suite instance.
 
-There are several topics that data managers may be interested in learning when it comes to creating SDMX artefacts from scratch. Firstly, they may want to start by \protect\hyperlink{setting-up}{setting up a registry as a local folder}. Next, they can \protect\hyperlink{preparing-inputs}{prepare inputs} and create several artefacts, including the \protect\hyperlink{creating-agencyscheme}{AgencyScheme}, \protect\hyperlink{creating-conceptscheme}{ConceptScheme, and Codelist} and the \protect\hyperlink{creating-dsd}{DSD, Dataflow, ContentConstraint, and CategoryScheme}. After creating these artefacts, they may want to learn how to \protect\hyperlink{upload-the}{upload the XML file to the Data Lifecycle Manager (DLM)}. Additionally, they may want to know how to \protect\hyperlink{accessing-sdmx}{access SDMX artefacts from default SDMX registries} and \protect\hyperlink{connect-to}{connect to a new SDMX registry} for editing SDMX artefacts directly in the DLM.
+There are several topics that data managers may be interested in learning when it comes to creating SDMX artefacts from scratch. Firstly, they may want to start by \protect\hyperlink{setting-up}{setting up a registry as a local folder}. Next, they can \protect\hyperlink{preparing-inputs}{prepare inputs} and create several artefacts, including the \protect\hyperlink{creating-agencyscheme}{AgencyScheme}, \protect\hyperlink{creating-conceptscheme}{ConceptScheme, and Codelist} and the \protect\hyperlink{creating-dsd}{DSD, Dataflow, ContentConstraint, and CategoryScheme}. After creating these artefacts, they may want to learn how to \protect\hyperlink{uploading-xml}{upload the XML file to the Data Lifecycle Manager (DLM)}. Additionally, they may want to know how to \protect\hyperlink{accessing-sdmx}{access SDMX artefacts from default SDMX registries} and \protect\hyperlink{connect-to}{connect to a new SDMX registry} for editing SDMX artefacts directly in the DLM.
 
 \textbf{SDMX metadata managers}: These users manage SDMX artefacts and ensure their accuracy and consistency. They may use the SDMX Constructor to model data and modify SDMX structural artefacts, including translating SDMX artefacts in various languages, managing annotations and creating Metadata Structure Definition (MSD).
 
@@ -1195,7 +1138,7 @@ We do this in one go. But first, we will upload the Codelist and then the Concep
 \hypertarget{creating-dsd}{%
 \section{Creating DSD, Dataflow, ContentConstraint and CategoryScheme}\label{creating-dsd}}
 
-Recalling our two initial tables (table: \ref{tab:table41} and table: \ref{tab:table42}), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the Table Modeller option in the SDMX Constructor.
+Recalling our two initial tables (Table: \ref{tab:table41} and Table: \ref{tab:table42}), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the Table Modeller option in the SDMX Constructor.
 
 The Table Modeller offers the functionality to design statistical tables with an intuitive user interface to generate the SDMX artefacts that model it.
 
@@ -1231,7 +1174,7 @@ The Table Modeller offers the functionality to design statistical tables with an
 
 \begin{itemize}
 \item
-  Now, you can select the concepts in the CONCEPT POOL, then drag and drop them into various spaces (Constant Dimensions, Header, Side, Measures \& Observation Attributes and Footnotes \& Table Attributes) on the right pane. The logic driving where to drop each concept comes from our original tables (Tables \ref{tab:table41} and \ref{tab:table42}).
+  Now, you can select the concepts in the CONCEPT POOL, then drag and drop them into various spaces (Constant Dimensions, Header, Side, Measures \& Observation Attributes and Footnotes \& Table Attributes) on the right pane. The logic driving where to drop each concept comes from our original tables (Table: \ref{tab:table41} and Table: \ref{tab:table42}).
 \item
   For Table \ref{tab:table41} (Unemployment Rate by sex and region), the following distribution will be representative.
 \end{itemize}
@@ -1479,16 +1422,17 @@ The Table Modeller offers the functionality to design statistical tables with an
 
 \href{images/image186.png}{Click here to enlarge the image}
 
-\hypertarget{working-with-.stat-suite}{%
-\section{Working with .Stat Suite}\label{working-with-.stat-suite}}
+\hypertarget{uploading-xml}{%
+\section{Uploading XML file to the DLM}\label{uploading-xml}}
 
-The tool works as a back-end of the .Stat Suite. In two ways.
+You can upload the XML file containing the SDMX artefacts to the .Stat Data Lifecycle Manager (DLM). The DLM could be on the cloud or local computer (Localhost). Here is one case illustrated where we upload the XML file we created and saved using the SDMX Constructor in a folder to a locally hosted instance of the DLM.
 
-\hypertarget{upload-the}{%
-\subsection{Uploading XML file to the Data Lifecycle Manager (DLM)}\label{upload-the}}
+\begin{quote}
+\textbf{Note on artefact versioning}: Artefact versioning is crucial for managing SDMX artefacts, as it prevents conflicts when uploading structures to the DLM. This is especially important when multiple users work on the same artefact simultaneously or when updating artefacts over time. You may recall the usual place (in the right corner of the respective windows) to enter the version number in the user interface for creating or modifying artefacts in the SDMX Constructor.
+\end{quote}
 
-\hypertarget{connect-to}{%
-\subsection{Connect to a new SDMX registry}\label{connect-to}}
+\hypertarget{connecting-to}{%
+\section{Connecting to an SDMX registry}\label{connecting-to}}
 
 \hypertarget{special-topics}{%
 \chapter{Special Topics}\label{special-topics}}
@@ -1501,71 +1445,6 @@ The tool works as a back-end of the .Stat Suite. In two ways.
 
 \hypertarget{translations-using-google-apideepl}{%
 \section{Translations using Google API/DeepL}\label{translations-using-google-apideepl}}
-
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
-
-Here is an equation.
-
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  \label{eq:binom}
-\end{equation}
-
-You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
-
-\hypertarget{theorems-and-proofs}{%
-\section{Theorems and proofs}\label{theorems-and-proofs}}
-
-Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
-
-\begin{theorem}
-\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
-and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
-\[a^2 + b^2 = c^2\]
-\end{theorem}
-
-Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
-
-\hypertarget{callout-blocks}{%
-\section{Callout blocks}\label{callout-blocks}}
-
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
-
-\hypertarget{sharing-your-book}{%
-\chapter{Sharing your book}\label{sharing-your-book}}
-
-\hypertarget{publishing}{%
-\section{Publishing}\label{publishing}}
-
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
-
-\hypertarget{pages}{%
-\section{404 pages}\label{pages}}
-
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
-
-\hypertarget{metadata-for-sharing}{%
-\section{Metadata for sharing}\label{metadata-for-sharing}}
-
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
-
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
-
-Read more about the features of this output format here:
-
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
-
-Or use:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
-
 
   \bibliography{book.bib,packages.bib}
 
