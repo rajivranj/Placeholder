@@ -623,8 +623,186 @@ knitr::include_graphics("./images/image186.png")
 You can upload the XML file containing the SDMX artefacts to the .Stat Data Lifecycle Manager (DLM). The DLM could be on the cloud or local computer (Localhost). Here is one case illustrated where we upload the XML file we created and saved using the SDMX Constructor in a folder to a locally hosted instance of the DLM. 
 
 
-> **Note on artefact versioning**: Artefact versioning is crucial for managing SDMX artefacts, as it prevents conflicts when uploading structures to the DLM. This is especially important when multiple users work on the same artefact simultaneously or when updating artefacts over time. You may recall the usual place (in the right corner of the respective windows) to enter the version number in the user interface for creating or modifying artefacts in the SDMX Constructor.  
+> **Note on artefact versioning**: Artefact versioning is crucial for managing SDMX artefacts, as it prevents conflicts when uploading structures to the DLM. This is especially important when multiple users work on the same artefact simultaneously or when updating artefacts over time. You may recall the usual place (in the right corner of the respective windows) to enter the version number in the user interface for creating or modifying artefacts in the SDMX Constructor.
 
+-	Start the DLM. Configured as localhost, it will look like the following. 
+ 
+```{r 188, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image188.png")
+```
+[Click here to enlarge the image](images/image188.png)
+
+-	Login using your credentials.
+ 
+```{r 190, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image190.png")
+```
+[Click here to enlarge the image](images/image190.png)
+
+-	Click on the ‘Upload structures’ button as shown below:
+ 
+```{r 192, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image192.png")
+```
+[Click here to enlarge the image](images/image192.png)
+
+-	Click on ‘Add files’ as shown below.
+ 
+```{r 194, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image194.png")
+```
+[Click here to enlarge the image](images/image194.png)
+
+-	Select the XML file we created before from the folder as shown below.
+ 
+```{r 196, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image196.png")
+```
+[Click here to enlarge the image](images/image196.png)
+
+-	After adding the file, select the ‘demo-design’ space, as shown below.
+ 
+```{r 198, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image198.png")
+```
+[Click here to enlarge the image](images/image198.png)
+
+-	Click upload as shown below.
+ 
+```{r 200, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image200.png")
+```
+[Click here to enlarge the image](images/image200.png)
+
+-	As shown below, the green background and the message will indicate the successful XML file upload.
+ 
+```{r 202, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image202.png")
+```
+[Click here to enlarge the image](images/image202.png)
+
+-	Clicking the Home icon will take you to the following interface.
+ 
+```{r 204, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image204.png")
+```
+[Click here to enlarge the image](images/image204.png)
+
+-	Here, selecting the options on the left navigation panel will show the artefacts on the main pane, as shown below.
+ 
+```{r 206, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image206.png")
+```
+[Click here to enlarge the image](images/image206.png)
 
 
 ## Connecting to an SDMX registry {#connecting-to}
+
+SDMX Constructor can also connect to a new SDMX registry (such as .Stat DLM) directly, and users can directly pull or push (perhaps after editing) artefacts from the SDMX Constructor. 
+-	After launching the SDMX Constructor, click on the Registry, as shown below.
+ 
+Figure 85-208
+```{r 208, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image208.png")
+```
+[Click here to enlarge the image](images/image208.png)
+
+-	The default value you can see is as follows.
+ 
+Figure 86-210
+```{r 210, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image210.png")
+```
+[Click here to enlarge the image](images/image210.png)
+
+-	Change the default values for Registry Name and Base URL. For Registry Name, you can choose a name of your choice. For example, Registry Name is DLM, and for the Base URL, the localhost configuration is already specified (by default, it will be http://127.0.0.1/rest/). 
+ 
+Figure 87-212
+```{r 212, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image212.png")
+```
+[Click here to enlarge the image](images/image212.png)
+
+-	Clicking on Save will show the message shown below. Click on OK.
+ 
+Figure 88-214
+```{r 214, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image214.png")
+```
+[Click here to enlarge the image](images/image214.png)
+
+-	Once the Registry is set, select it from the ‘Load from registry’ option, as shown below. 
+ 
+Figure 89-216
+```{r 216, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image216.png")
+```
+[Click here to enlarge the image](images/image216.png)
+
+Doing this syncs the artefacts. For instance, you can see the dataflows in SDMX Constructor populated from the DLM. However, pushing any new entry (in this case, let’s say, a new dataflow) to DLM would require the credentials for the DLM. 
+
+-	From the concepts obtained from the DLM, as shown below, let’s create a new data flow. 
+ 
+Figure 90-218
+```{r 218, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image218.png")
+```
+[Click here to enlarge the image](images/image218.png)
+
+-	Move the concepts around and enter table details as shown below.
+ 
+Figure 91-220
+```{r 220, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image220.png")
+```
+[Click here to enlarge the image](images/image220.png)
+
+-	Apply the content constraints as shown below.
+ 
+Figure 92-222
+```{r 222, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image222.png")
+```
+[Click here to enlarge the image](images/image222.png)
+
+-	Then click on the Push to DLM button, as shown below.
+ 
+Figure 93-224
+```{r 224, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image224.png")
+```
+[Click here to enlarge the image](images/image224.png)
+
+-	Select ‘Push without descendants’.
+ 
+Figure 94-226
+```{r 226, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image226.png")
+```
+[Click here to enlarge the image](images/image226.png)
+
+-	After entering the credentials for the DLM, push, and you will see a message like the one below.
+ 
+Figure 95-228
+```{r 228, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image228.png")
+```
+[Click here to enlarge the image](images/image228.png)
+
+-	After you have pressed the Continue button, you will see the following. The message mentions what has changed and what has not. In this case, it notes no DSD change, but one data flow and a content constraint have been created. 
+ 
+Figure 96-230
+```{r 230, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image230.png")
+```
+[Click here to enlarge the image](images/image230.png)
+
+-	Click on OK and go to the DLM. In the DLM, clicking on the dataflow would show the additional dataflow added directly through the SDMX Constructor to the DLM, as shown below.  
+ 
+Figure 97-232
+```{r 232, echo=FALSE, fig.align="center", out.width="100%"}
+knitr::include_graphics("./images/image232.png")
+```
+[Click here to enlarge the image](images/image232.png)
+
+

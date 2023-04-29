@@ -1431,8 +1431,263 @@ You can upload the XML file containing the SDMX artefacts to the .Stat Data Life
 \textbf{Note on artefact versioning}: Artefact versioning is crucial for managing SDMX artefacts, as it prevents conflicts when uploading structures to the DLM. This is especially important when multiple users work on the same artefact simultaneously or when updating artefacts over time. You may recall the usual place (in the right corner of the respective windows) to enter the version number in the user interface for creating or modifying artefacts in the SDMX Constructor.
 \end{quote}
 
+\begin{itemize}
+\tightlist
+\item
+  Start the DLM. Configured as localhost, it will look like the following.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image188} \end{center}
+
+\href{images/image188.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Login using your credentials.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image190} \end{center}
+
+\href{images/image190.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Click on the `Upload structures' button as shown below:
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image192} \end{center}
+
+\href{images/image192.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Click on `Add files' as shown below.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image194} \end{center}
+
+\href{images/image194.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Select the XML file we created before from the folder as shown below.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image196} \end{center}
+
+\href{images/image196.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  After adding the file, select the `demo-design' space, as shown below.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image198} \end{center}
+
+\href{images/image198.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Click upload as shown below.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image200} \end{center}
+
+\href{images/image200.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  As shown below, the green background and the message will indicate the successful XML file upload.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image202} \end{center}
+
+\href{images/image202.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Clicking the Home icon will take you to the following interface.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image204} \end{center}
+
+\href{images/image204.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Here, selecting the options on the left navigation panel will show the artefacts on the main pane, as shown below.
+\end{itemize}
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image206} \end{center}
+
+\href{images/image206.png}{Click here to enlarge the image}
+
 \hypertarget{connecting-to}{%
 \section{Connecting to an SDMX registry}\label{connecting-to}}
+
+SDMX Constructor can also connect to a new SDMX registry (such as .Stat DLM) directly, and users can directly pull or push (perhaps after editing) artefacts from the SDMX Constructor.
+- After launching the SDMX Constructor, click on the Registry, as shown below.
+
+Figure 85-208
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image208} \end{center}
+
+\href{images/image208.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  The default value you can see is as follows.
+\end{itemize}
+
+Figure 86-210
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image210} \end{center}
+
+\href{images/image210.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Change the default values for Registry Name and Base URL. For Registry Name, you can choose a name of your choice. For example, Registry Name is DLM, and for the Base URL, the localhost configuration is already specified (by default, it will be \url{http://127.0.0.1/rest/}).
+\end{itemize}
+
+Figure 87-212
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image212} \end{center}
+
+\href{images/image212.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Clicking on Save will show the message shown below. Click on OK.
+\end{itemize}
+
+Figure 88-214
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image214} \end{center}
+
+\href{images/image214.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Once the Registry is set, select it from the `Load from registry' option, as shown below.
+\end{itemize}
+
+Figure 89-216
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image216} \end{center}
+
+\href{images/image216.png}{Click here to enlarge the image}
+
+Doing this syncs the artefacts. For instance, you can see the dataflows in SDMX Constructor populated from the DLM. However, pushing any new entry (in this case, let's say, a new dataflow) to DLM would require the credentials for the DLM.
+
+\begin{itemize}
+\tightlist
+\item
+  From the concepts obtained from the DLM, as shown below, let's create a new data flow.
+\end{itemize}
+
+Figure 90-218
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image218} \end{center}
+
+\href{images/image218.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Move the concepts around and enter table details as shown below.
+\end{itemize}
+
+Figure 91-220
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image220} \end{center}
+
+\href{images/image220.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Apply the content constraints as shown below.
+\end{itemize}
+
+Figure 92-222
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image222} \end{center}
+
+\href{images/image222.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Then click on the Push to DLM button, as shown below.
+\end{itemize}
+
+Figure 93-224
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image224} \end{center}
+
+\href{images/image224.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Select `Push without descendants'.
+\end{itemize}
+
+Figure 94-226
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image226} \end{center}
+
+\href{images/image226.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  After entering the credentials for the DLM, push, and you will see a message like the one below.
+\end{itemize}
+
+Figure 95-228
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image228} \end{center}
+
+\href{images/image228.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  After you have pressed the Continue button, you will see the following. The message mentions what has changed and what has not. In this case, it notes no DSD change, but one data flow and a content constraint have been created.
+\end{itemize}
+
+Figure 96-230
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image230} \end{center}
+
+\href{images/image230.png}{Click here to enlarge the image}
+
+\begin{itemize}
+\tightlist
+\item
+  Click on OK and go to the DLM. In the DLM, clicking on the dataflow would show the additional dataflow added directly through the SDMX Constructor to the DLM, as shown below.
+\end{itemize}
+
+Figure 97-232
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image232} \end{center}
+
+\href{images/image232.png}{Click here to enlarge the image}
 
 \hypertarget{special-topics}{%
 \chapter{Special Topics}\label{special-topics}}
