@@ -618,11 +618,6 @@ knitr::include_graphics("./images/image186.png")
 ```
 [Click here to enlarge the image](images/image186.png)
 
+## Uploading XML file to the DLM {#upload-the}
 
-## Working with .Stat Suite
-
-The tool works as a back-end of the .Stat Suite. In two ways.
-
-### Uploading XML file to the Data Lifecycle Manager (DLM) {#upload-the}
-
-### Connect to a new SDMX registry {#connect-to}
+## Connect to a new SDMX registry {#connect-to}
