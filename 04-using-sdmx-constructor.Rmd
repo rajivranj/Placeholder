@@ -502,7 +502,7 @@ knitr::include_graphics("./images/image154.png")
 [Click here to enlarge the image](images/image154.png)
 
 -	Clicking on Yes will merge the file. 
--	We will repeat the process for Table \@ref(tab:table42 (Population outside the labour force by sex and age group (2022)). We can do that by moving Age to the ‘Side’ space (and removing the Geo back to the CONCEPT POOL), changing the constraints for the indicator to ‘Population outside the labour force’ and unit of measure to ‘Persons’, and updating the table information as shown below. 
+-	We will repeat the process for Table \@ref(tab:table42) (Population outside the labour force by sex and age group (2022)). We can do that by moving Age to the ‘Side’ space (and removing the Geo back to the CONCEPT POOL), changing the constraints for the indicator to ‘Population outside the labour force’ and unit of measure to ‘Persons’, and updating the table information as shown below. 
  
 ```{r 156, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image156.png")
