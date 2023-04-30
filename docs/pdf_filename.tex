@@ -100,14 +100,7 @@ This user manual for the SDMX Constructor provides step-by-step instructions on 
 
 Below is a screenshot of the tool's landing page as an example of the user interface.
 
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{./images/image001} 
-
-}
-
-\caption{A screenshot of SDMX Constructor}\label{fig:front-cover}
-\end{figure}
+\begin{center}\includegraphics[width=1\linewidth]{./images/image001} \end{center}
 
 \href{images/image001.png}{Click here to enlarge the image}
 
@@ -119,11 +112,11 @@ The SDMX Constructor is designed to meet the needs of a wide range of users, fro
 
 \textbf{SDMX beginners}: These users are new to SDMX and want to use the SDMX Constructor to view, edit, and create new SDMX structural artefacts. They may need assistance understanding the SDMX concepts, terminology, and the software's user interface.
 
-For SDMX beginners, this manual explains using the SDMX Constructor to access, view, edit, and create SDMX structural artefacts from SDMX registries. While one can find information on SDMX concepts and terminology from other sources, this manual focuses explicitly on the user interfaces of the SDMX Constructor. The SDMX beginners may be keen to know how to \protect\hyperlink{accessing-sdmx}{access SDMX artefacts from default SDMX registries} and \protect\hyperlink{connect-to}{connect to a new SDMX registry} from the SDMX Constructor.
+For SDMX beginners, this manual explains using the SDMX Constructor to access, view, edit, and create SDMX structural artefacts from SDMX registries. While one can find information on SDMX concepts and terminology from other sources, this manual focuses explicitly on the user interfaces of the SDMX Constructor. The SDMX beginners may be keen to know how to \protect\hyperlink{accessing-sdmx}{view and access SDMX artefacts from SDMX registries}, as well as how to \protect\hyperlink{connecting-to}{connect to an SDMX registry} through the SDMX Constructor.
 
 \textbf{Data managers}: These users are likely familiar with the SDMX concepts and terminology and may require information about advanced functionalities offered by the SDMX Constructor. For example, they may want to use the SDMX Constructor as a backend client to manage SDMX artefacts for the .Stat Data Lifecycle Manager (DLM). For such cases, they may also use the SDMX Constructor to build the initial structural metadata when creating a new .Stat Suite instance.
 
-There are several topics that data managers may be interested in learning when it comes to creating SDMX artefacts from scratch. Firstly, they may want to start by \protect\hyperlink{setting-up}{setting up a registry as a local folder}. Next, they can \protect\hyperlink{preparing-inputs}{prepare inputs} and create several artefacts, including the \protect\hyperlink{creating-agencyscheme}{AgencyScheme}, \protect\hyperlink{creating-conceptscheme}{ConceptScheme, and Codelist} and the \protect\hyperlink{creating-dsd}{DSD, Dataflow, ContentConstraint, and CategoryScheme}. After creating these artefacts, they may want to learn how to \protect\hyperlink{uploading-xml}{upload the XML file to the Data Lifecycle Manager (DLM)}. Additionally, they may want to know how to \protect\hyperlink{accessing-sdmx}{access SDMX artefacts from default SDMX registries} and \protect\hyperlink{connect-to}{connect to a new SDMX registry} for editing SDMX artefacts directly in the DLM.
+There are several topics that data managers may be interested in learning when it comes to creating SDMX artefacts from scratch. Firstly, they may want to start by \protect\hyperlink{setting-up}{setting up a registry as a local folder}. Next, they can \protect\hyperlink{preparing-inputs}{prepare inputs} and create several artefacts, including the \protect\hyperlink{creating-agencyscheme}{AgencyScheme}, \protect\hyperlink{creating-conceptscheme}{ConceptScheme, and Codelist} and the \protect\hyperlink{creating-dsd}{DSD, Dataflow, ContentConstraint, and CategoryScheme}. After creating these artefacts, they may want to learn how to \protect\hyperlink{uploading-xml}{upload the XML file to the Data Lifecycle Manager (DLM)}. Additionally, they may want to know how to \protect\hyperlink{accessing-sdmx}{access SDMX artefacts from SDMX registries} and \protect\hyperlink{connecting-to}{connect to an SDMX registry} for editing SDMX artefacts directly in the DLM.
 
 \textbf{SDMX metadata managers}: These users manage SDMX artefacts and ensure their accuracy and consistency. They may use the SDMX Constructor to model data and modify SDMX structural artefacts, including translating SDMX artefacts in various languages, managing annotations and creating Metadata Structure Definition (MSD).
 
@@ -1138,7 +1131,7 @@ We do this in one go. But first, we will upload the Codelist and then the Concep
 \hypertarget{creating-dsd}{%
 \section{Creating DSD, Dataflow, ContentConstraint and CategoryScheme}\label{creating-dsd}}
 
-Recalling our two initial tables (Table: \ref{tab:table41} and Table: \ref{tab:table42}), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the Table Modeller option in the SDMX Constructor.
+Recalling our two initial tables (Table: \ref{tab:table41} and Table: \ref{tab:table42}), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the \protect\hyperlink{table-modeller}{Table Modeller} option in the SDMX Constructor.
 
 The Table Modeller offers the functionality to design statistical tables with an intuitive user interface to generate the SDMX artefacts that model it.
 
@@ -1676,6 +1669,46 @@ Doing this syncs the artefacts. For instance, you can see the dataflows in SDMX 
 
 \hypertarget{table-modeller}{%
 \section{Table Modeller}\label{table-modeller}}
+
+The Table Modeller functionality supports designing statistical tables using an intuitive user interface that generates the SDMX artefacts that model it. The interface is designed to use statistical terms to name objects, hiding the SDMX artefact names wherever possible, making it user-friendly and accessible.
+
+By understanding the user interface (as shown below), the users of the Table Modeller functionality in SDMX Constructor can easily create statistical tables that generate the SDMX artefacts. Note that the table is a view of a container, which defines how the data will be stored.
+
+\begin{center}\includegraphics[width=1\linewidth]{./images/image234} \end{center}
+
+\href{images/image234.png}{Click here to enlarge the image}
+
+The placeholders provided in the Table Modeller interface help users understand and include different concepts in the table and create well-defined SDMX artefacts.
+
+A table in SDMX parlance represents a Dataflow, has a title, and comprises concepts (SDMX CONCEPTS) that take different roles in the table. The Table Modeller interface has various placeholders for the concepts, which are:
+
+\begin{itemize}
+\item
+  \textbf{Constant Dimensions:} A placeholder for SDMX CONCEPT type DIMENSIONS that remain constant across the table, such as indicator or measure and frequency.
+\item
+  \textbf{Header:} A placeholder for SDMX CONCEPT type DIMENSIONS that appear at the top of the table, such as time-period.
+\item
+  \textbf{Side:} A placeholder for SDMX CONCEPT type DIMENSIONS that appear on the left-hand side of the table. It can contain dimensions such as Age or Region (urban/rural).
+\item
+  \textbf{Measure \& Observation Attributes:} A placeholder for observation values (or primary measure) and SDMX CONCEPT type ATTRIBUTES attached at the observation level, such as DECIMALS.
+\item
+  \textbf{Footnotes \& Table Attributes:} A placeholder for SDMX CONCEPT type ATTRIBUTES such as `free text' notes and `source' attached at the dataset level.
+\end{itemize}
+
+\textbf{Using the Table Modeller}
+
+\begin{itemize}
+\item
+  You can ``drag-and-drop'' concepts from the CONCEPT POOL on the left panel to the different areas/spaces/placeholders on the right panel.
+\item
+  The concepts dropped in the ``Side'', ``Header'', and ``Measure \& Observation Attributes'' areas will become DIMENSIONS. Note that the relative position of the concept in the area is relevant.
+\item
+  Concepts dropped in ``Constant Dimensions'' will also be DIMENSIONS, but the user will have to select one (and only one) item from each DIMENSION'S Codelist, which will be assigned to it (as ContentConstraint).
+\item
+  Concepts dropped in the ``Measure \& Observation Attributes'' area, and the ``Footnotes \& Table Attributes'' area will become ATTRIBUTES, the former attached at the Observation level and the latter at the Dataset level.
+\item
+  The outputs of the Table Modeller are the artefacts needed to represent in SDMX the table design.
+\end{itemize}
 
 \hypertarget{translations-using-google-apideepl}{%
 \section{Translations using Google API/DeepL}\label{translations-using-google-apideepl}}

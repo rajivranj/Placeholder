@@ -35,7 +35,7 @@ This user manual for the SDMX Constructor provides step-by-step instructions on 
 
 Below is a screenshot of the tool's landing page as an example of the user interface.
 
-```{r front-cover, echo=FALSE, fig.align="center", fig.cap = "A screenshot of SDMX Constructor", out.width="100%"}
+```{r front-cover, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image001.png")
 ```
 [Click here to enlarge the image](images/image001.png)
@@ -46,11 +46,11 @@ The SDMX Constructor is designed to meet the needs of a wide range of users, fro
 
 **SDMX beginners**: These users are new to SDMX and want to use the SDMX Constructor to view, edit, and create new SDMX structural artefacts. They may need assistance understanding the SDMX concepts, terminology, and the software's user interface.
 
-For SDMX beginners, this manual explains using the SDMX Constructor to access, view, edit, and create SDMX structural artefacts from SDMX registries. While one can find information on SDMX concepts and terminology from other sources, this manual focuses explicitly on the user interfaces of the SDMX Constructor. The SDMX beginners may be keen to know how to [access SDMX artefacts from default SDMX registries](#accessing-sdmx) and [connect to a new SDMX registry](#connect-to) from the SDMX Constructor.
+For SDMX beginners, this manual explains using the SDMX Constructor to access, view, edit, and create SDMX structural artefacts from SDMX registries. While one can find information on SDMX concepts and terminology from other sources, this manual focuses explicitly on the user interfaces of the SDMX Constructor. The SDMX beginners may be keen to know how to [view and access SDMX artefacts from SDMX registries](#accessing-sdmx), as well as how to [connect to an SDMX registry](#connecting-to) through the SDMX Constructor.
 
 **Data managers**: These users are likely familiar with the SDMX concepts and terminology and may require information about advanced functionalities offered by the SDMX Constructor. For example, they may want to use the SDMX Constructor as a backend client to manage SDMX artefacts for the .Stat Data Lifecycle Manager (DLM). For such cases, they may also use the SDMX Constructor to build the initial structural metadata when creating a new .Stat Suite instance.
 
-There are several topics that data managers may be interested in learning when it comes to creating SDMX artefacts from scratch. Firstly, they may want to start by [setting up a registry as a local folder](#setting-up). Next, they can [prepare inputs](#preparing-inputs) and create several artefacts, including the [AgencyScheme](#creating-agencyscheme), [ConceptScheme, and Codelist](#creating-conceptscheme) and the [DSD, Dataflow, ContentConstraint, and CategoryScheme](#creating-dsd). After creating these artefacts, they may want to learn how to [upload the XML file to the Data Lifecycle Manager (DLM)](#uploading-xml). Additionally, they may want to know how to [access SDMX artefacts from default SDMX registries](#accessing-sdmx) and [connect to a new SDMX registry](#connect-to) for editing SDMX artefacts directly in the DLM.
+There are several topics that data managers may be interested in learning when it comes to creating SDMX artefacts from scratch. Firstly, they may want to start by [setting up a registry as a local folder](#setting-up). Next, they can [prepare inputs](#preparing-inputs) and create several artefacts, including the [AgencyScheme](#creating-agencyscheme), [ConceptScheme, and Codelist](#creating-conceptscheme) and the [DSD, Dataflow, ContentConstraint, and CategoryScheme](#creating-dsd). After creating these artefacts, they may want to learn how to [upload the XML file to the Data Lifecycle Manager (DLM)](#uploading-xml). Additionally, they may want to know how to [access SDMX artefacts from SDMX registries](#accessing-sdmx) and [connect to an SDMX registry](#connecting-to) for editing SDMX artefacts directly in the DLM.
 
 **SDMX metadata managers**: These users manage SDMX artefacts and ensure their accuracy and consistency. They may use the SDMX Constructor to model data and modify SDMX structural artefacts, including translating SDMX artefacts in various languages, managing annotations and creating Metadata Structure Definition (MSD).
 

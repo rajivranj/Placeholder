@@ -417,9 +417,9 @@ knitr::include_graphics("./images/image129.png")
 
 ## Creating DSD, Dataflow, ContentConstraint and CategoryScheme {#creating-dsd}
 
-Recalling our two initial tables (Table: \@ref(tab:table41) and Table: \@ref(tab:table42)), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the Table Modeller option in the SDMX Constructor.
+Recalling our two initial tables (Table: \@ref(tab:table41) and Table: \@ref(tab:table42)), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the [Table Modeller](#table-modeller) option in the SDMX Constructor.
 
-The Table Modeller offers the functionality to design statistical tables with an intuitive user interface to generate the SDMX artefacts that model it. 
+The Table Modeller offers the functionality to design statistical tables with an intuitive user interface to generate the SDMX artefacts that model it.
 
 -	Click on the Table Modeller button on top and ensure that the folder we created before, LOCAL_REGISTRY, is selected from the Table Modeller Editor’s ‘Load from registry’ dropdown option, as shown below.
  

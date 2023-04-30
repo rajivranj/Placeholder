@@ -137,6 +137,27 @@
             <section class="normal" id="section-">
 <div id="table-modeller" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Table Modeller<a href="table-modeller.html#table-modeller" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Table Modeller functionality supports designing statistical tables using an intuitive user interface that generates the SDMX artefacts that model it. The interface is designed to use statistical terms to name objects, hiding the SDMX artefact names wherever possible, making it user-friendly and accessible.</p>
+<p>By understanding the user interface (as shown below), the users of the Table Modeller functionality in SDMX Constructor can easily create statistical tables that generate the SDMX artefacts. Note that the table is a view of a container, which defines how the data will be stored.</p>
+<p><img src="images/image234.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image234.png">Click here to enlarge the image</a></p>
+<p>The placeholders provided in the Table Modeller interface help users understand and include different concepts in the table and create well-defined SDMX artefacts.</p>
+<p>A table in SDMX parlance represents a Dataflow, has a title, and comprises concepts (SDMX CONCEPTS) that take different roles in the table. The Table Modeller interface has various placeholders for the concepts, which are:</p>
+<ul>
+<li><p><strong>Constant Dimensions:</strong> A placeholder for SDMX CONCEPT type DIMENSIONS that remain constant across the table, such as indicator or measure and frequency.</p></li>
+<li><p><strong>Header:</strong> A placeholder for SDMX CONCEPT type DIMENSIONS that appear at the top of the table, such as time-period.</p></li>
+<li><p><strong>Side:</strong> A placeholder for SDMX CONCEPT type DIMENSIONS that appear on the left-hand side of the table. It can contain dimensions such as Age or Region (urban/rural).</p></li>
+<li><p><strong>Measure &amp; Observation Attributes:</strong> A placeholder for observation values (or primary measure) and SDMX CONCEPT type ATTRIBUTES attached at the observation level, such as DECIMALS.</p></li>
+<li><p><strong>Footnotes &amp; Table Attributes:</strong> A placeholder for SDMX CONCEPT type ATTRIBUTES such as ‘free text’ notes and ‘source’ attached at the dataset level.</p></li>
+</ul>
+<p><strong>Using the Table Modeller</strong></p>
+<ul>
+<li><p>You can “drag-and-drop” concepts from the CONCEPT POOL on the left panel to the different areas/spaces/placeholders on the right panel.</p></li>
+<li><p>The concepts dropped in the “Side”, “Header”, and “Measure &amp; Observation Attributes” areas will become DIMENSIONS. Note that the relative position of the concept in the area is relevant.</p></li>
+<li><p>Concepts dropped in “Constant Dimensions” will also be DIMENSIONS, but the user will have to select one (and only one) item from each DIMENSION’S Codelist, which will be assigned to it (as ContentConstraint).</p></li>
+<li><p>Concepts dropped in the “Measure &amp; Observation Attributes” area, and the “Footnotes &amp; Table Attributes” area will become ATTRIBUTES, the former attached at the Observation level and the latter at the Dataset level.</p></li>
+<li><p>The outputs of the Table Modeller are the artefacts needed to represent in SDMX the table design.</p></li>
+</ul>
 </div>
             </section>
 
