@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.3 Software updates | SDMX Constructor: User Manual</title>
+  <title>3.4 Preview and Export Menu | SDMX Constructor: User Manual</title>
   <meta name="description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.3 Software updates | SDMX Constructor: User Manual" />
+  <meta property="og:title" content="3.4 Preview and Export Menu | SDMX Constructor: User Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/Main.png" />
   <meta property="og:description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.3 Software updates | SDMX Constructor: User Manual" />
+  <meta name="twitter:title" content="3.4 Preview and Export Menu | SDMX Constructor: User Manual" />
   
   <meta name="twitter:description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="twitter:image" content="/Main.png" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="prev" href="installation.html"/>
-<link rel="next" href="user-interface.html"/>
+<link rel="prev" href="editor-ribbon-menu.html"/>
+<link rel="next" href="working-area.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -132,19 +132,48 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="software-updates" class="section level2 hasAnchor" number="2.3">
-<h2><span class="header-section-number">2.3</span> Software updates<a href="software-updates.html#software-updates" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The SDMX Constructor updates itself to the latest version (if available) using the ClickOnce Deployment technique. This method ensures a streamlined installation process with minimal user involvement. An internet connection is required when launching the application to initiate the update. The software will check for available updates and automatically download and install them in the background without requiring any input from the user. This feature helps to ensure that users always have access to the latest version of the software, with the latest bug fixes, performance improvements, and new features.</p>
-
+<div id="preview-and-export-menu" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Preview and Export Menu<a href="preview-and-export-menu.html#preview-and-export-menu" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The fourth menu item group (Preview and Export) is in the top right corner and below the first group of menu items (as highlighted below).</p>
+<p><img src="images/image034.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image034.png">Click here to enlarge the image</a></p>
+<p>The options available in this group of menu items are related to the preview and export functionalities of the tool and change according to the menu item selected on the top menu (the second group of menu items (Editors)).</p>
+<p>Below are the icons representing the menu items, along with their features. Users can change the size of these icons by right-clicking on any of them, selecting Customize, and selecting the appropriate setting in Options.</p>
+<table>
+<caption><span id="tab:table34">Table 3.4: </span> A bird’s-eye view of the menu items in the Editor Ribbon</caption>
+<colgroup>
+<col width="29%" />
+<col width="70%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Menu item</th>
+<th>Names and functions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/image036.png" /></td>
+<td>Export. It saves the SDMX artefact in a local folder. It is available for DSD, Dataflow, ContentConstraint, AgencyScheme, and MSD without specific options. However, options are available to save artefacts from: 1. Codelist (available in the following formats: .Stat v7 Dim, CSV and SDMX-ML) and 2. ConceptScheme, Table Modeller and CategoryScheme (available in two flavours: Save with descendants and Save without descendants).</td>
+</tr>
+<tr class="even">
+<td><img src="images/image037.png" /> <br> or <br> <img src="images/image038.png" /></td>
+<td>Push to DLM (DLM is short for Data Lifecycle Manager of the .Stat Suite). This icon becomes active (appears with colours) when the tool is connected with a DLM instance. It is available for Codelist, DSD, Dataflow, ContentConstraint, AgencyScheme, and MSD without specific options. However, options are available to save artefacts from ConceptScheme, Table Modeller and CategoryScheme.</td>
+</tr>
+<tr class="odd">
+<td><img src="images/image039.png" /></td>
+<td>Structure Viewer. It lets you preview the tabulation and download the MS Excel and CSV templates. It is available for DSD and Dataflow.</td>
+</tr>
+</tbody>
+</table>
 </div>
-<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="installation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="user-interface.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="editor-ribbon-menu.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="working-area.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -175,7 +204,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rajivranj/placeholder/edit/main/02-getting-started.Rmd",
+"link": "https://github.com/rajivranj/placeholder/edit/main/03-user-interface.Rmd",
 "text": "Edit"
 },
 "history": {

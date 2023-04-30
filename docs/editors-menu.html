@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.3 Software updates | SDMX Constructor: User Manual</title>
+  <title>3.2 Editors Menu | SDMX Constructor: User Manual</title>
   <meta name="description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.3 Software updates | SDMX Constructor: User Manual" />
+  <meta property="og:title" content="3.2 Editors Menu | SDMX Constructor: User Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/Main.png" />
   <meta property="og:description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.3 Software updates | SDMX Constructor: User Manual" />
+  <meta name="twitter:title" content="3.2 Editors Menu | SDMX Constructor: User Manual" />
   
   <meta name="twitter:description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="twitter:image" content="/Main.png" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="prev" href="installation.html"/>
-<link rel="next" href="user-interface.html"/>
+<link rel="prev" href="general-functions-menu.html"/>
+<link rel="next" href="editor-ribbon-menu.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -132,19 +132,70 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="software-updates" class="section level2 hasAnchor" number="2.3">
-<h2><span class="header-section-number">2.3</span> Software updates<a href="software-updates.html#software-updates" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The SDMX Constructor updates itself to the latest version (if available) using the ClickOnce Deployment technique. This method ensures a streamlined installation process with minimal user involvement. An internet connection is required when launching the application to initiate the update. The software will check for available updates and automatically download and install them in the background without requiring any input from the user. This feature helps to ensure that users always have access to the latest version of the software, with the latest bug fixes, performance improvements, and new features.</p>
-
+<div id="editors-menu" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Editors Menu<a href="editors-menu.html#editors-menu" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The second group of menu items (Editors) shows the options in the top left corner (as highlighted below). They include Codelist, ConceptScheme, Table Modeller, DSD, Dataflow, ConceptConstraint, AgencyScheme, CategoryScheme and MSD. Each menu item is an entry point for creating and editing a specific artefact. Clicking on any of the options will reveal more particular options below. See Table 3.2 for a brief overview of the menu items (Editors).</p>
+<p><img src="images/image013.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image013.png">Click here to enlarge the image</a></p>
+<table>
+<caption><span id="tab:table32">Table 3.2: </span> A bird’s-eye view of the menu items in the top left corner (Editors)</caption>
+<colgroup>
+<col width="29%" />
+<col width="70%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Menu item</th>
+<th>What to expect: A bird’s-eye view of the menu items in the top left corner (Editors)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Codelist</strong></td>
+<td>The Codelist button shows an interface to create or edit the list of Concepts (dimensions/attributes of a modelled dataset), each having a list of possible values or codes. The codes have unique IDs and (multilingual) labels and may have other information such as order and hierarchy.</td>
+</tr>
+<tr class="even">
+<td><strong>ConceptScheme</strong></td>
+<td>The ConceptScheme button shows an interface to create or edit the Concepts (dimensions/attributes of a modelled dataset). Each concept has an ID and (multilingual) labels and may have other information.</td>
+</tr>
+<tr class="odd">
+<td><strong>Table Modeller</strong></td>
+<td>The Table Modeller button shows the options to generate the SDMX artefacts by recreating the statistical table using the Concepts (dimensions/attributes of a modelled data set) with an intuitive user interface (drag and drop).</td>
+</tr>
+<tr class="even">
+<td><strong>DSD</strong></td>
+<td>The DSD button abbreviating Data Structure Definition shows an interface to create or edit the structure of a modelled dataset. It specifies the dimensions, attributes and their possible values or codes.</td>
+</tr>
+<tr class="odd">
+<td><strong>Dataflow</strong></td>
+<td>The Dataflow button shows an interface to create or edit a subset and representation of a DSD and describes which dimensions to show on rows or columns.</td>
+</tr>
+<tr class="even">
+<td><strong>ConceptConstraint</strong></td>
+<td>The ConceptConstraint button shows an interface to create or edit combinations of codes that are allowed for various artefacts of the dataflows.</td>
+</tr>
+<tr class="odd">
+<td><strong>AgencyScheme</strong></td>
+<td>The AgencyScheme button shows an interface to create or edit a hierarchical list of agencies or organisations. Each agency or organisation is identified by a unique code (ID), a name, and other descriptive information.</td>
+</tr>
+<tr class="even">
+<td><strong>CategoryScheme</strong></td>
+<td>The CategoryScheme button shows an interface to create or edit a CategoryScheme, which is essentially a list of categories organised in a hierarchical structure. Each category is identified by a unique code (ID), a name, and other descriptive information.</td>
+</tr>
+<tr class="odd">
+<td><strong>MSD</strong></td>
+<td>The MSD button abbreviating Metadata Structure Definition shows an interface describing the structure of reference metadata associated with a data set. It specifies the elements and attributes that can be used to represent metadata concepts and the relationships between them.</td>
+</tr>
+</tbody>
+</table>
 </div>
-<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="installation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="user-interface.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="general-functions-menu.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="editor-ribbon-menu.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -175,7 +226,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rajivranj/placeholder/edit/main/02-getting-started.Rmd",
+"link": "https://github.com/rajivranj/placeholder/edit/main/03-user-interface.Rmd",
 "text": "Edit"
 },
 "history": {

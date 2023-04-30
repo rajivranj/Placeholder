@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.3 Software updates | SDMX Constructor: User Manual</title>
+  <title>3.3 Editor Ribbon Menu | SDMX Constructor: User Manual</title>
   <meta name="description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.3 Software updates | SDMX Constructor: User Manual" />
+  <meta property="og:title" content="3.3 Editor Ribbon Menu | SDMX Constructor: User Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/Main.png" />
   <meta property="og:description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.3 Software updates | SDMX Constructor: User Manual" />
+  <meta name="twitter:title" content="3.3 Editor Ribbon Menu | SDMX Constructor: User Manual" />
   
   <meta name="twitter:description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="twitter:image" content="/Main.png" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="prev" href="installation.html"/>
-<link rel="next" href="user-interface.html"/>
+<link rel="prev" href="editors-menu.html"/>
+<link rel="next" href="preview-and-export-menu.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -132,19 +132,89 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="software-updates" class="section level2 hasAnchor" number="2.3">
-<h2><span class="header-section-number">2.3</span> Software updates<a href="software-updates.html#software-updates" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The SDMX Constructor updates itself to the latest version (if available) using the ClickOnce Deployment technique. This method ensures a streamlined installation process with minimal user involvement. An internet connection is required when launching the application to initiate the update. The software will check for available updates and automatically download and install them in the background without requiring any input from the user. This feature helps to ensure that users always have access to the latest version of the software, with the latest bug fixes, performance improvements, and new features.</p>
-
+<div id="editor-ribbon-menu" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Editor Ribbon Menu<a href="editor-ribbon-menu.html#editor-ribbon-menu" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The third group of menu items (Editor Ribbon) are in the top left corner and below the second group of menu items (as highlighted below).</p>
+<p><img src="images/image015.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image015.png">Click here to enlarge the image</a></p>
+<p>It contains icons that represent the most commonly used features of the selected options above, and hovering over each icon will reveal a tooltip that describes its function. The options available in this group of menu items change according to the menu item selected on the top menu.</p>
+<p>Below are the icons representing the menu items (Editor Ribbon) and their functions. Users can change the size of these icons by right-clicking on any of them, selecting Customize, and selecting the appropriate setting in Options.</p>
+<table>
+<caption><span id="tab:table33">Table 3.3: </span> A bird’s-eye view of the menu items in the Editor Ribbon</caption>
+<colgroup>
+<col width="29%" />
+<col width="70%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Menu item</th>
+<th>Names and functions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="images/image017.png" /></td>
+<td>Load from Registry. Select from a dropdown list to load.</td>
+</tr>
+<tr class="even">
+<td><img src="images/image019.png" /></td>
+<td>Refresh the registry.</td>
+</tr>
+<tr class="odd">
+<td><img src="images/image020.png" /></td>
+<td>Import. Allows to import an SDMX XML file locally.</td>
+</tr>
+<tr class="even">
+<td><img src="images/image021.png" /></td>
+<td>Reset the current Editor inputs.</td>
+</tr>
+<tr class="odd">
+<td><img src="images/image022.png" /></td>
+<td>Translation Service. Provide inline translations for names and descriptions via translation API or manually if needed.</td>
+</tr>
+<tr class="even">
+<td><img src="images/image023.png" /></td>
+<td>Collapse DSDs.</td>
+</tr>
+<tr class="odd">
+<td><img src="images/image024.png" /></td>
+<td>Bulk load. Allows to upload multiple items (if available) by copying and pasting.</td>
+</tr>
+<tr class="even">
+<td><img src="images/image026.png" /></td>
+<td>Add New Concept (e.g., Agency or Category). Depending on which Editor is active, e.g., it can help add a new agency if it is for AgencyScheme.</td>
+</tr>
+<tr class="odd">
+<td><img src="images/image027.png" /></td>
+<td>Load Concept.</td>
+</tr>
+<tr class="even">
+<td><img src="images/image028.png" /></td>
+<td>Delete Selected Concepts.</td>
+</tr>
+<tr class="odd">
+<td><img src="images/image030.png" /></td>
+<td>Move Up.</td>
+</tr>
+<tr class="even">
+<td><img src="images/image031.png" /></td>
+<td>Move Down.</td>
+</tr>
+</tbody>
+</table>
+<p>If a user chooses “Codelist” from the top menu, the corresponding menu items in the third group will appear as “Load from registry” (from the dropdown menu), “Refresh the registry”, “Import”, “Reset the current Editor inputs”, “Translation Service”, and “Bulk load”.</p>
+<p>However, suppose a user selects “ConceptScheme” from the top menu instead. In that case, the user will see three additional options: “Add New Concept”, “Load Concept”, and “Delete Selected Concepts” relevant to the chosen menu item at the top, i.e., “ConceptScheme”.</p>
+<p>All options available within this menu group per the item selected on the top menu are listed below.</p>
+<p><img src="images/image032.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image032.png">Click here to enlarge the image</a></p>
 </div>
-<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="installation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="user-interface.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="editors-menu.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="preview-and-export-menu.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -175,7 +245,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rajivranj/placeholder/edit/main/02-getting-started.Rmd",
+"link": "https://github.com/rajivranj/placeholder/edit/main/03-user-interface.Rmd",
 "text": "Edit"
 },
 "history": {
