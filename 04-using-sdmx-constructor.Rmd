@@ -699,9 +699,9 @@ knitr::include_graphics("./images/image206.png")
 ## Connecting to an SDMX registry {#connecting-to}
 
 SDMX Constructor can also connect to a new SDMX registry (such as .Stat DLM) directly, and users can directly pull or push (perhaps after editing) artefacts from the SDMX Constructor. 
+
 -	After launching the SDMX Constructor, click on the Registry, as shown below.
  
-Figure 85-208
 ```{r 208, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image208.png")
 ```
@@ -709,7 +709,6 @@ knitr::include_graphics("./images/image208.png")
 
 -	The default value you can see is as follows.
  
-Figure 86-210
 ```{r 210, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image210.png")
 ```
@@ -717,7 +716,6 @@ knitr::include_graphics("./images/image210.png")
 
 -	Change the default values for Registry Name and Base URL. For Registry Name, you can choose a name of your choice. For example, Registry Name is DLM, and for the Base URL, the localhost configuration is already specified (by default, it will be http://127.0.0.1/rest/). 
  
-Figure 87-212
 ```{r 212, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image212.png")
 ```
@@ -725,7 +723,6 @@ knitr::include_graphics("./images/image212.png")
 
 -	Clicking on Save will show the message shown below. Click on OK.
  
-Figure 88-214
 ```{r 214, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image214.png")
 ```
@@ -733,7 +730,6 @@ knitr::include_graphics("./images/image214.png")
 
 -	Once the Registry is set, select it from the ‘Load from registry’ option, as shown below. 
  
-Figure 89-216
 ```{r 216, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image216.png")
 ```
@@ -743,7 +739,6 @@ Doing this syncs the artefacts. For instance, you can see the dataflows in SDMX 
 
 -	From the concepts obtained from the DLM, as shown below, let’s create a new data flow. 
  
-Figure 90-218
 ```{r 218, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image218.png")
 ```
@@ -751,7 +746,6 @@ knitr::include_graphics("./images/image218.png")
 
 -	Move the concepts around and enter table details as shown below.
  
-Figure 91-220
 ```{r 220, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image220.png")
 ```
@@ -759,7 +753,6 @@ knitr::include_graphics("./images/image220.png")
 
 -	Apply the content constraints as shown below.
  
-Figure 92-222
 ```{r 222, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image222.png")
 ```
@@ -767,7 +760,6 @@ knitr::include_graphics("./images/image222.png")
 
 -	Then click on the Push to DLM button, as shown below.
  
-Figure 93-224
 ```{r 224, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image224.png")
 ```
@@ -775,7 +767,6 @@ knitr::include_graphics("./images/image224.png")
 
 -	Select ‘Push without descendants’.
  
-Figure 94-226
 ```{r 226, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image226.png")
 ```
@@ -783,7 +774,6 @@ knitr::include_graphics("./images/image226.png")
 
 -	After entering the credentials for the DLM, push, and you will see a message like the one below.
  
-Figure 95-228
 ```{r 228, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image228.png")
 ```
@@ -791,7 +781,6 @@ knitr::include_graphics("./images/image228.png")
 
 -	After you have pressed the Continue button, you will see the following. The message mentions what has changed and what has not. In this case, it notes no DSD change, but one data flow and a content constraint have been created. 
  
-Figure 96-230
 ```{r 230, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image230.png")
 ```
@@ -799,10 +788,7 @@ knitr::include_graphics("./images/image230.png")
 
 -	Click on OK and go to the DLM. In the DLM, clicking on the dataflow would show the additional dataflow added directly through the SDMX Constructor to the DLM, as shown below.  
  
-Figure 97-232
 ```{r 232, echo=FALSE, fig.align="center", out.width="100%"}
 knitr::include_graphics("./images/image232.png")
 ```
 [Click here to enlarge the image](images/image232.png)
-
-
