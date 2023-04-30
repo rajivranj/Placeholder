@@ -63,11 +63,10 @@ This comprehensive manual provides a step-by-step guide on getting started with 
 The chapters in this manual build up toward providing comprehensive guidance that covers topics users need to know to get started with the application, understand its navigation, and use its features and functionalities to model data effectively. The manual includes the following chapters.
 
 -   Chapter 1: [Benefits of SDMX Constructor](#benefits-of)
--   Chapter 2: [Getting started](#getting-started)
--   Chapter 3: [User interface](#user-interface)
+-   Chapter 2: [Getting Started](#getting-started)
+-   Chapter 3: [User Interface](#user-interface)
 -   Chapter 4: [Using SDMX Constructor](#using-sdmx)
 -   Chapter 5: [Special Topics](#special-topics)
--   Chapter 6: [Glossary](#glossary)
 
 ## Contact information {.unnumbered}
 
