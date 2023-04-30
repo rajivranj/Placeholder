@@ -23,13 +23,13 @@ SDMX Constructor[^index-1] is a powerful desktop software tool that helps users 
 
 [^index-1]: It was previously called DSD Constructor, it supported creating and editing Data Structure Definitions (DSDs) and their related artefacts (i.e., concept schemes and code lists). The significant improvements and additions to the software justify the name change of the tool from DSD Constructor to SDMX Constructor. With the latest update, the tool can now translate SDMX artefacts in multiple languages, integrate with the .Stat Suite, and manage reference metadata. Additionally, the tool now includes Table Modeller functionalities that make it easier for users who are new to SDMX to understand and use the software. The updated software is no longer just a DSD Constructor but a complete SDMX Constructor capable of handling various aspects of SDMX data and metadata. The new name better reflects the software's expanded capabilities, making it more relevant and recognizable to the target audience (<https://ilostat.github.io/dsdc/>).
 
-[^index-2]: An ISO standard (since 2005, version 2.1 since 2013): <https://www.iso.org/obp/ui/fr/#iso:std:iso:17369:ed-1:v1:en> and <https://sdmx.org/?page_id=5008>
+[^index-2]: SDMX has also been published as an ISO International Standard. <https://www.iso.org/obp/ui/fr/#iso:std:iso:17369:ed-1:v1:en> and <https://sdmx.org/?page_id=5008>
 
 [^index-3]: To learn more about the .Stat Suite platform please refer to the documentation here: <https://siscc.org/stat-suite/>. The SDMX Constructor has been optimised to seamlessly integrate with the .Stat Suite platform, as its back-end client.
 
 SDMX Constructor is one of the tools that comprise the ILO SDMX toolkit [^index-4], alongside SMART (Statistical Metadata-driven Analysis and Reporting Tool) and the SDMX Excel Add-in.
 
-[^index-4]: <https://ilostat.ilo.org/resources/sdmx-tools/>
+[^index-4]: The ILO offers several tools for Statistical Data and Metadata eXchange (SDMX). <https://ilostat.ilo.org/resources/sdmx-tools/>
 
 This user manual for the SDMX Constructor provides step-by-step instructions on using the tool in a user-friendly and accessible manner. It provides an in-depth understanding of SDMX Constructor's features and functionalities. It is an essential resource for anyone using the tool to manage and share data following the SDMX standards.
 
