@@ -160,6 +160,14 @@ We will use these dummy datasets in this user manual to illustrate some critical
 
 ## Creating AgencyScheme {#creating-agencyscheme}
 
+In the context of SDMX, an AgencyScheme is a type of structural metadata that provides information about the organisations or agencies responsible for producing or disseminating data. It defines the different roles these organisations play and assigns unique identifiers to them, allowing them to be easily referenced and identified within the SDMX framework.
+
+The AgencyScheme is an important component of the SDMX infrastructure, as it enables data users to understand better the context of the data they are working with. It allows them to identify who produced the data, what their role was in the data production process, and where to go for more information.
+
+For example, an AgencyScheme may include information on national statistical organisations, international organisations, or other data-producing entities. Each organisation or agency would be assigned a unique identifier and given a defined role within the AgencyScheme. Using the AgencyScheme allows data users to easily navigate the complex world of data production and dissemination, ensuring that they are working with accurate and reliable information.
+
+To create an AgencyScheme, you can use the SDMX Constructor by following these steps:
+
 -	Start the SDMX Constructor, click the AgencyScheme button on top, and select the folder we created before, LOCAL_REGISTRY, from the AgencyScheme Editor’s ‘Load from registry’ dropdown option, as shown below.
 
 ```{r 060, echo=FALSE, fig.align="center", out.width="100%"}
@@ -246,7 +254,11 @@ knitr::include_graphics("./images/image080.png")
 
 ## Creating ConceptScheme & Codelist {#creating-conceptscheme}
 
-We do this in one go. But first, we will upload the Codelist and then the ConceptScheme. 
+In the context of SDMX, a Concept Scheme is a structured list of concepts used to define the dimensions and attributes of a dataset. When creating a data model, it's important to identify and define the key concepts that are relevant to the data being collected.
+
+One way to define these concepts is through the use of code lists, which are standardised lists of codes that classify objects based on a specific concept. For example, in a dataset on population demographics, the code list for the concept of sex might include codes such as Men, Women, and Both Sexes (Total). 
+
+To create Code Lists and Concept Schemes, you can use the SDMX Constructor by following these steps. First, upload the Code List and then the Concept Scheme. By completing these steps in sequence, you can create both artefacts in one go.
 
 **Create Codelist:**
 
@@ -417,9 +429,11 @@ knitr::include_graphics("./images/image129.png")
 
 ## Creating DSD, Dataflow, ContentConstraint and CategoryScheme {#creating-dsd}
 
-Recalling our two initial tables (Table: \@ref(tab:table41) and Table: \@ref(tab:table42)), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the [Table Modeller](#table-modeller) option in the SDMX Constructor.
+In SDMX, a Data Structure Definition (DSD) is used to organise data in a specific format. Represented as a cube, a DSD is made up of dimensions and attributes. A Dataflow, on the other hand, represents a specific portion or filtered view of the cube that the DSD represents. A Content Constraint specifies the permitted code list and codes for a particular Dataflow. Finally, a Category Scheme groups similar objects based on shared characteristics, providing a hierarchical structure that helps to classify and organise data and metadata in a meaningful way.
 
-The Table Modeller offers the functionality to design statistical tables with an intuitive user interface to generate the SDMX artefacts that model it.
+In SDMX Constructor, the Table Modeller feature provides an intuitive user interface for designing statistical tables and generating the corresponding SDMX artefacts.
+
+Recalling our two initial tables (Table: \@ref(tab:table41) and Table: \@ref(tab:table42)), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the [Table Modeller](#table-modeller) option in the SDMX Constructor.
 
 -	Click on the Table Modeller button on top and ensure that the folder we created before, LOCAL_REGISTRY, is selected from the Table Modeller Editor’s ‘Load from registry’ dropdown option, as shown below.
  
