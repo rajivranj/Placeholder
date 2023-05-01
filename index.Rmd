@@ -46,7 +46,7 @@ The SDMX Constructor is designed to meet the needs of a wide range of users, fro
 
 **SDMX beginners**: These users are new to SDMX and want to use the SDMX Constructor to view, edit, and create new SDMX structural artefacts. They may need assistance understanding the SDMX concepts, terminology, and the software's user interface.
 
-For SDMX beginners, this manual explains using the SDMX Constructor to access, view, edit, and create SDMX structural artefacts from SDMX registries. While one can find information on SDMX concepts and terminology from other sources, this manual focuses explicitly on the user interfaces of the SDMX Constructor. The SDMX beginners may be keen to know how to [view and access SDMX artefacts from SDMX registries](#accessing-sdmx), as well as how to [connect to an SDMX registry](#connecting-to) through the SDMX Constructor.
+For SDMX beginners, this manual explains using the SDMX Constructor to access, view, edit, and create SDMX structural artefacts from SDMX registries. While one can find information on SDMX concepts and terminology from other sources, this manual focuses explicitly on the SDMX Constructor. The SDMX beginners may be keen to know how to [view and access SDMX artefacts from SDMX registries](#accessing-sdmx), as well as how to [connect to an SDMX registry](#connecting-to) through the SDMX Constructor.
 
 **Data managers**: These users are likely familiar with the SDMX concepts and terminology and may require information about advanced functionalities offered by the SDMX Constructor. For example, they may want to use the SDMX Constructor as a backend client to manage SDMX artefacts for the .Stat Data Lifecycle Manager (DLM). For such cases, they may also use the SDMX Constructor to build the initial structural metadata when creating a new .Stat Suite instance.
 
@@ -70,4 +70,4 @@ The chapters in this manual build up toward providing comprehensive guidance tha
 
 ## Contact information {.unnumbered}
 
-For more information and to seek basic technical assistance or support on the tool, please reach out International Labour Organization - Department of Statistics at [sdmx.support\@ilo.org](mailto:sdmx.support@ilo.org){.email}.
+For more information and to seek basic technical assistance or support on the tool, please contact the International Labour Organization - Department of Statistics at [sdmx.support\@ilo.org](mailto:sdmx.support@ilo.org){.email}.
