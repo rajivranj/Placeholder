@@ -2,6 +2,8 @@
 
 ## Annotations
 
+We're working hard on finishing this chapter. Stay tuned for updates.
+
 ## Table Modeller {#table-modeller}
 
 The Table Modeller functionality supports designing statistical tables using an intuitive user interface that generates the SDMX artefacts that model it. The interface is designed to use statistical terms to name objects, hiding the SDMX artefact names wherever possible, making it user-friendly and accessible.
@@ -41,4 +43,6 @@ A table in SDMX parlance represents a Dataflow, has a title, and comprises conce
 
 
 ## Translations using Google API/DeepL
+
+We're working hard on finishing this chapter. Stay tuned for updates.
 
