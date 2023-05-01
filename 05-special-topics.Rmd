@@ -2,7 +2,7 @@
 
 ## Annotations
 
-We're working hard on finishing this chapter. Stay tuned for updates.
+We're working hard on finishing this section. Stay tuned for updates.
 
 ## Table Modeller {#table-modeller}
 
@@ -44,5 +44,5 @@ A table in SDMX parlance represents a Dataflow, has a title, and comprises conce
 
 ## Translations using Google API/DeepL
 
-We're working hard on finishing this chapter. Stay tuned for updates.
+We're working hard on finishing this section. Stay tuned for updates.
 
