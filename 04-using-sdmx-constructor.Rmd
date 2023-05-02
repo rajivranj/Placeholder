@@ -4,7 +4,7 @@ Welcome to the chapter on using SDMX Constructor! This chapter will cover three 
 
 The first topic we will cover is how to use SDMX Constructor to access SDMX artefacts from SDMX registries. This will include step-by-step instructions on how to use the tool to connect to a registry, browse its contents, and download the artefacts you need.
 
-Next, we will dive into how to use SDMX Constructor to create new SDMX artefacts from scratch. Whether you need to create a new concept scheme, code list or DSD, SDMX Constructor provides a simple and intuitive interface to help you get the job done.
+Next, we will dive into how to use SDMX Constructor to create new SDMX artefacts from scratch. Whether you need to create a new ConceptScheme, code list or DSD, SDMX Constructor provides a simple and intuitive interface to help you get the job done.
 
 Finally, we will explore how to use SDMX Constructor to work with .Stat Suite. This powerful platform is designed to help you analyse, visualise, and disseminate statistical data, and SDMX Constructor is the perfect complement to help you access and work with the SDMX artefacts you need.
 
@@ -254,11 +254,11 @@ knitr::include_graphics("./images/image080.png")
 
 ## Creating ConceptScheme & Codelist {#creating-conceptscheme}
 
-In the context of SDMX, a Concept Scheme is a structured list of concepts used to define the dimensions and attributes of a dataset. When creating a data model, it's important to identify and define the key concepts that are relevant to the data being collected.
+In the context of SDMX, a ConceptScheme is a structured list of concepts used to define the dimensions and attributes of a dataset. When creating a data model, it's important to identify and define the key concepts that are relevant to the data being collected.
 
 One way to define these concepts is through the use of code lists, which are standardised lists of codes that classify objects based on a specific concept. For example, in a dataset on population demographics, the code list for the concept of sex might include codes such as Men, Women, and Both Sexes (Total). 
 
-To create Code Lists and Concept Schemes, you can use the SDMX Constructor by following these steps. First, upload the Code List and then the Concept Scheme. By completing these steps in sequence, you can create both artefacts in one go.
+To create Codelists and ConceptSchemes, you can use the SDMX Constructor by following these steps. First, upload the Code List and then the ConceptScheme. By completing these steps in sequence, you can create both artefacts in one go.
 
 **Create Codelist:**
 
@@ -534,9 +534,9 @@ knitr::include_graphics("./images/image158.png")
 
 -	We should see two DSDs, two content constraints and two data flows. `Remember, dataflows are the filtered view of the DSDs.` 
 
-## Creating Category Scheme {#creating-category}
+## Creating CategoryScheme {#creating-category}
 
-A Category Scheme groups similar objects based on shared characteristics, providing a hierarchical structure that helps classify and organise data and metadata meaningfully.
+A CategoryScheme groups similar objects based on shared characteristics, providing a hierarchical structure that helps classify and organise data and metadata meaningfully.
 
 Referencing our two initial tables (Table: \@ref(tab:table41) and Table: \@ref(tab:table42)), we will create a CategoryScheme using the Table Modeller option in the SDMX Constructor. The categorisation could be by topics such as ‘Unemployment Rate’ and ‘Population outside the labour force’. 
 
