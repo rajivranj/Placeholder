@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.1 System requirements | SDMX Constructor: User Manual</title>
+  <title>4.7 Creating Category Scheme | SDMX Constructor: User Manual</title>
   <meta name="description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.1 System requirements | SDMX Constructor: User Manual" />
+  <meta property="og:title" content="4.7 Creating Category Scheme | SDMX Constructor: User Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/Main.png" />
   <meta property="og:description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.1 System requirements | SDMX Constructor: User Manual" />
+  <meta name="twitter:title" content="4.7 Creating Category Scheme | SDMX Constructor: User Manual" />
   
   <meta name="twitter:description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="twitter:image" content="/Main.png" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="prev" href="getting-started.html"/>
-<link rel="next" href="installation.html"/>
+<link rel="prev" href="creating-dsd.html"/>
+<link rel="next" href="uploading-xml.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -133,22 +133,89 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="system-requirements" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> System requirements<a href="system-requirements.html#system-requirements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Before installing any desktop software, ensuring the computer meets the necessary system requirements is essential. These requirements can include hardware specifications like processor speed, memory, and storage capacity, as well as software prerequisites like operating system version and other dependencies. Find below the minimum system requirements for installing and running SDMX Constructor.</p>
+<div id="creating-category" class="section level2 hasAnchor" number="4.7">
+<h2><span class="header-section-number">4.7</span> Creating Category Scheme<a href="creating-category.html#creating-category" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A Category Scheme groups similar objects based on shared characteristics, providing a hierarchical structure that helps classify and organise data and metadata meaningfully.</p>
+<p>Referencing our two initial tables (Table: <a href="preparing-inputs.html#tab:table41">4.1</a> and Table: <a href="preparing-inputs.html#tab:table42">4.2</a>), we will create a CategoryScheme using the Table Modeller option in the SDMX Constructor. The categorisation could be by topics such as ‘Unemployment Rate’ and ‘Population outside the labour force’.</p>
 <ul>
-<li>Windows 7 or later in both 32- and 64-bit environments</li>
-<li>.NET 4.5.2 or later with all updates and patches</li>
-<li>200MB disk space for the software</li>
+<li>First, we will click the CategoryScheme button and enter the properties (ID: CAS_BY_TOPIC, AgencyID: DEMOLAND_NSO, Version: 1.0 and Name: Categorisation Scheme By Topic) as shown below.</li>
 </ul>
+<p><img src="images/image160.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image160.png">Click here to enlarge the image</a></p>
+<ul>
+<li>Click on “Add New Category”, as shown below.</li>
+</ul>
+<p><img src="images/image162.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image162.png">Click here to enlarge the image</a></p>
+<ul>
+<li>It will open a pop-up window, as shown below. Enter the details: ID: UNER (shorthand for Unemployment Rate) and Name: Unemployment Rate.</li>
+</ul>
+<p><img src="images/image164.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image164.png">Click here to enlarge the image</a></p>
+<ul>
+<li>Click on the Load “Dataflows” button, as shown below.</li>
+</ul>
+<p><img src="images/image166.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image166.png">Click here to enlarge the image</a></p>
+<ul>
+<li>It will open another pop-up window to select the dataflow through the Registry.</li>
+</ul>
+<p><img src="images/image168.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image168.png">Click here to enlarge the image</a></p>
+<ul>
+<li>Select the Registry (LOCAL_REGISTRY), then the dataflow, and press Apply as shown below.</li>
+</ul>
+<p><img src="images/image170.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image170.png">Click here to enlarge the image</a></p>
+<ul>
+<li>A message will appear as shown below.</li>
+</ul>
+<p><img src="images/image172.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image172.png">Click here to enlarge the image</a></p>
+<ul>
+<li>Clicking the OK button will lead you to the following window.</li>
+</ul>
+<p><img src="images/image174.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image174.png">Click here to enlarge the image</a></p>
+<ul>
+<li>As shown below, move (dragging and dropping) the dataflow to the ‘attached dataflows’ space.</li>
+</ul>
+<p><img src="images/image176.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image176.png">Click here to enlarge the image</a></p>
+<ul>
+<li>Clicking “Apply” in that pop-up will take you to the following window, showing the entry into the CATEGORY POOL.</li>
+</ul>
+<p><img src="images/image178.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image178.png">Click here to enlarge the image</a></p>
+<ul>
+<li>Move it to the right pane, as shown below.</li>
+</ul>
+<p><img src="images/image180.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image180.png">Click here to enlarge the image</a></p>
+<ul>
+<li>Then hit Save (Save without descendants), and it will show the pop-up windows to ensure the location where it saves the file, as shown below.</li>
+</ul>
+<p><img src="images/image182.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image182.png">Click here to enlarge the image</a></p>
+<ul>
+<li>Clicking on Save will ask the confirmation to merge the file. Select Yes.</li>
+<li>Repeat the process for the other category, ‘Population outside the labour force’. The final view would be as follows:</li>
+</ul>
+<p><img src="images/image184.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image184.png">Click here to enlarge the image</a></p>
+<ul>
+<li>The XML file (by going to the location of the folder we created before and opening the XML file) would be like the one below.</li>
+</ul>
+<p><img src="images/image186.png" width="100%" style="display: block; margin: auto;" />
+<a href="images/image186.png">Click here to enlarge the image</a></p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="getting-started.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="installation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="creating-dsd.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="uploading-xml.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -179,7 +246,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rajivranj/placeholder/edit/main/02-getting-started.Rmd",
+"link": "https://github.com/rajivranj/placeholder/edit/main/04-using-sdmx-constructor.Rmd",
 "text": "Edit"
 },
 "history": {

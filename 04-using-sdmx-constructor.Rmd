@@ -534,7 +534,7 @@ knitr::include_graphics("./images/image158.png")
 
 -	We should see two DSDs, two content constraints and two data flows. `Remember, dataflows are the filtered view of the DSDs.` 
 
-## Category scheme 
+## Creating Category Scheme {#creating-category}
 
 A Category Scheme groups similar objects based on shared characteristics, providing a hierarchical structure that helps classify and organise data and metadata meaningfully.
 
