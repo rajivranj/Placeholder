@@ -1128,13 +1128,13 @@ To create Code Lists and Concept Schemes, you can use the SDMX Constructor by fo
 \end{itemize}
 
 \hypertarget{creating-dsd}{%
-\section{Creating DSD, Dataflow, ContentConstraint and CategoryScheme}\label{creating-dsd}}
+\section{Creating DSD, ContentConstraint and Dataflow}\label{creating-dsd}}
 
-In SDMX, a Data Structure Definition (DSD) is used to organise data in a specific format. Represented as a cube, a DSD is made up of dimensions and attributes. A Dataflow, on the other hand, represents a specific portion or filtered view of the cube that the DSD represents. A Content Constraint specifies the permitted code list and codes for a particular Dataflow. Finally, a Category Scheme groups similar objects based on shared characteristics, providing a hierarchical structure that helps to classify and organise data and metadata in a meaningful way.
+In SDMX, a Data Structure Definition (DSD) is used to organise data in a specific format. Represented as a cube, a DSD is made up of dimensions and attributes. A Dataflow, on the other hand, represents a specific portion or filtered view of the cube that the DSD represents. A Content Constraint specifies the permitted code list and codes for a particular Dataflow.
 
 In SDMX Constructor, the Table Modeller feature provides an intuitive user interface for designing statistical tables and generating the corresponding SDMX artefacts.
 
-Recalling our two initial tables (Table: \ref{tab:table41} and Table: \ref{tab:table42}), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the \protect\hyperlink{table-modeller}{Table Modeller} option in the SDMX Constructor.
+Recalling our two initial tables (Table: \ref{tab:table41} and Table: \ref{tab:table42}), we will now generate DSDs, ContentConstraints and Dataflows. We can create all these artefacts through the \protect\hyperlink{table-modeller}{Table Modeller} option in the SDMX Constructor.
 
 \begin{itemize}
 \tightlist
@@ -1276,9 +1276,12 @@ Recalling our two initial tables (Table: \ref{tab:table41} and Table: \ref{tab:t
   We should see two DSDs, two content constraints and two data flows. \texttt{Remember,\ dataflows\ are\ the\ filtered\ view\ of\ the\ DSDs.}
 \end{itemize}
 
-\textbf{Category scheme}
+\hypertarget{category-scheme}{%
+\section{Category scheme}\label{category-scheme}}
 
-Now, we can create a categorisation scheme. The categorisation could be by topics such as `Unemployment Rate' and `Population outside the labour force'.
+A Category Scheme groups similar objects based on shared characteristics, providing a hierarchical structure that helps classify and organise data and metadata meaningfully.
+
+Referencing our two initial tables (Table: \ref{tab:table41} and Table: \ref{tab:table42}), we will create a CategoryScheme using the Table Modeller option in the SDMX Constructor. The categorisation could be by topics such as `Unemployment Rate' and `Population outside the labour force'.
 
 \begin{itemize}
 \tightlist

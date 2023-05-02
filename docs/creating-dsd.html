@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.6 Creating DSD, Dataflow, ContentConstraint and CategoryScheme | SDMX Constructor: User Manual</title>
+  <title>4.6 Creating DSD, ContentConstraint and Dataflow | SDMX Constructor: User Manual</title>
   <meta name="description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.6 Creating DSD, Dataflow, ContentConstraint and CategoryScheme | SDMX Constructor: User Manual" />
+  <meta property="og:title" content="4.6 Creating DSD, ContentConstraint and Dataflow | SDMX Constructor: User Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/Main.png" />
   <meta property="og:description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.6 Creating DSD, Dataflow, ContentConstraint and CategoryScheme | SDMX Constructor: User Manual" />
+  <meta name="twitter:title" content="4.6 Creating DSD, ContentConstraint and Dataflow | SDMX Constructor: User Manual" />
   
   <meta name="twitter:description" content="Instructions and information on how to use the SDMX Constructor tool" />
   <meta name="twitter:image" content="/Main.png" />
@@ -31,7 +31,7 @@
   
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="prev" href="creating-conceptscheme.html"/>
-<link rel="next" href="uploading-xml.html"/>
+<link rel="next" href="category-scheme.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -104,9 +104,10 @@
 <li class="chapter" data-level="4.3" data-path="preparing-inputs.html"><a href="preparing-inputs.html"><i class="fa fa-check"></i><b>4.3</b> Preparing inputs</a></li>
 <li class="chapter" data-level="4.4" data-path="creating-agencyscheme.html"><a href="creating-agencyscheme.html"><i class="fa fa-check"></i><b>4.4</b> Creating AgencyScheme</a></li>
 <li class="chapter" data-level="4.5" data-path="creating-conceptscheme.html"><a href="creating-conceptscheme.html"><i class="fa fa-check"></i><b>4.5</b> Creating ConceptScheme &amp; Codelist</a></li>
-<li class="chapter" data-level="4.6" data-path="creating-dsd.html"><a href="creating-dsd.html"><i class="fa fa-check"></i><b>4.6</b> Creating DSD, Dataflow, ContentConstraint and CategoryScheme</a></li>
-<li class="chapter" data-level="4.7" data-path="uploading-xml.html"><a href="uploading-xml.html"><i class="fa fa-check"></i><b>4.7</b> Uploading XML file to the DLM</a></li>
-<li class="chapter" data-level="4.8" data-path="connecting-to.html"><a href="connecting-to.html"><i class="fa fa-check"></i><b>4.8</b> Connecting to an SDMX registry</a></li>
+<li class="chapter" data-level="4.6" data-path="creating-dsd.html"><a href="creating-dsd.html"><i class="fa fa-check"></i><b>4.6</b> Creating DSD, ContentConstraint and Dataflow</a></li>
+<li class="chapter" data-level="4.7" data-path="category-scheme.html"><a href="category-scheme.html"><i class="fa fa-check"></i><b>4.7</b> Category scheme</a></li>
+<li class="chapter" data-level="4.8" data-path="uploading-xml.html"><a href="uploading-xml.html"><i class="fa fa-check"></i><b>4.8</b> Uploading XML file to the DLM</a></li>
+<li class="chapter" data-level="4.9" data-path="connecting-to.html"><a href="connecting-to.html"><i class="fa fa-check"></i><b>4.9</b> Connecting to an SDMX registry</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="special-topics.html"><a href="special-topics.html"><i class="fa fa-check"></i><b>5</b> Special Topics</a>
 <ul>
@@ -133,10 +134,10 @@
 
             <section class="normal" id="section-">
 <div id="creating-dsd" class="section level2 hasAnchor" number="4.6">
-<h2><span class="header-section-number">4.6</span> Creating DSD, Dataflow, ContentConstraint and CategoryScheme<a href="creating-dsd.html#creating-dsd" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>In SDMX, a Data Structure Definition (DSD) is used to organise data in a specific format. Represented as a cube, a DSD is made up of dimensions and attributes. A Dataflow, on the other hand, represents a specific portion or filtered view of the cube that the DSD represents. A Content Constraint specifies the permitted code list and codes for a particular Dataflow. Finally, a Category Scheme groups similar objects based on shared characteristics, providing a hierarchical structure that helps to classify and organise data and metadata in a meaningful way.</p>
+<h2><span class="header-section-number">4.6</span> Creating DSD, ContentConstraint and Dataflow<a href="creating-dsd.html#creating-dsd" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In SDMX, a Data Structure Definition (DSD) is used to organise data in a specific format. Represented as a cube, a DSD is made up of dimensions and attributes. A Dataflow, on the other hand, represents a specific portion or filtered view of the cube that the DSD represents. A Content Constraint specifies the permitted code list and codes for a particular Dataflow.</p>
 <p>In SDMX Constructor, the Table Modeller feature provides an intuitive user interface for designing statistical tables and generating the corresponding SDMX artefacts.</p>
-<p>Recalling our two initial tables (Table: <a href="preparing-inputs.html#tab:table41">4.1</a> and Table: <a href="preparing-inputs.html#tab:table42">4.2</a>), we will now generate DSDs, ContentConstraints and Dataflows. We will also create a CategoryScheme. We can create all these artefacts through the <a href="table-modeller.html#table-modeller">Table Modeller</a> option in the SDMX Constructor.</p>
+<p>Recalling our two initial tables (Table: <a href="preparing-inputs.html#tab:table41">4.1</a> and Table: <a href="preparing-inputs.html#tab:table42">4.2</a>), we will now generate DSDs, ContentConstraints and Dataflows. We can create all these artefacts through the <a href="table-modeller.html#table-modeller">Table Modeller</a> option in the SDMX Constructor.</p>
 <ul>
 <li>Click on the Table Modeller button on top and ensure that the folder we created before, LOCAL_REGISTRY, is selected from the Table Modeller Editor’s ‘Load from registry’ dropdown option, as shown below.</li>
 </ul>
@@ -208,79 +209,6 @@
 <li><p>Proceed with ‘Continue’, ‘Save’, and ‘Yes’ for merge.</p></li>
 <li><p>We should see two DSDs, two content constraints and two data flows. <code>Remember, dataflows are the filtered view of the DSDs.</code></p></li>
 </ul>
-<p><strong>Category scheme</strong></p>
-<p>Now, we can create a categorisation scheme. The categorisation could be by topics such as ‘Unemployment Rate’ and ‘Population outside the labour force’.</p>
-<ul>
-<li>First, we will click the CategoryScheme button and enter the properties (ID: CAS_BY_TOPIC, AgencyID: DEMOLAND_NSO, Version: 1.0 and Name: Categorisation Scheme By Topic) as shown below.</li>
-</ul>
-<p><img src="images/image160.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image160.png">Click here to enlarge the image</a></p>
-<ul>
-<li>Click on “Add New Category”, as shown below.</li>
-</ul>
-<p><img src="images/image162.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image162.png">Click here to enlarge the image</a></p>
-<ul>
-<li>It will open a pop-up window, as shown below. Enter the details: ID: UNER (shorthand for Unemployment Rate) and Name: Unemployment Rate.</li>
-</ul>
-<p><img src="images/image164.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image164.png">Click here to enlarge the image</a></p>
-<ul>
-<li>Click on the Load “Dataflows” button, as shown below.</li>
-</ul>
-<p><img src="images/image166.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image166.png">Click here to enlarge the image</a></p>
-<ul>
-<li>It will open another pop-up window to select the dataflow through the Registry.</li>
-</ul>
-<p><img src="images/image168.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image168.png">Click here to enlarge the image</a></p>
-<ul>
-<li>Select the Registry (LOCAL_REGISTRY), then the dataflow, and press Apply as shown below.</li>
-</ul>
-<p><img src="images/image170.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image170.png">Click here to enlarge the image</a></p>
-<ul>
-<li>A message will appear as shown below.</li>
-</ul>
-<p><img src="images/image172.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image172.png">Click here to enlarge the image</a></p>
-<ul>
-<li>Clicking the OK button will lead you to the following window.</li>
-</ul>
-<p><img src="images/image174.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image174.png">Click here to enlarge the image</a></p>
-<ul>
-<li>As shown below, move (dragging and dropping) the dataflow to the ‘attached dataflows’ space.</li>
-</ul>
-<p><img src="images/image176.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image176.png">Click here to enlarge the image</a></p>
-<ul>
-<li>Clicking “Apply” in that pop-up will take you to the following window, showing the entry into the CATEGORY POOL.</li>
-</ul>
-<p><img src="images/image178.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image178.png">Click here to enlarge the image</a></p>
-<ul>
-<li>Move it to the right pane, as shown below.</li>
-</ul>
-<p><img src="images/image180.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image180.png">Click here to enlarge the image</a></p>
-<ul>
-<li>Then hit Save (Save without descendants), and it will show the pop-up windows to ensure the location where it saves the file, as shown below.</li>
-</ul>
-<p><img src="images/image182.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image182.png">Click here to enlarge the image</a></p>
-<ul>
-<li>Clicking on Save will ask the confirmation to merge the file. Select Yes.</li>
-<li>Repeat the process for the other category, ‘Population outside the labour force’. The final view would be as follows:</li>
-</ul>
-<p><img src="images/image184.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image184.png">Click here to enlarge the image</a></p>
-<ul>
-<li>The XML file (by going to the location of the folder we created before and opening the XML file) would be like the one below.</li>
-</ul>
-<p><img src="images/image186.png" width="100%" style="display: block; margin: auto;" />
-<a href="images/image186.png">Click here to enlarge the image</a></p>
 </div>
             </section>
 
@@ -288,7 +216,7 @@
         </div>
       </div>
 <a href="creating-conceptscheme.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="uploading-xml.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="category-scheme.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
