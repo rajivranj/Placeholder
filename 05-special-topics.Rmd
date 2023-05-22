@@ -1,5 +1,13 @@
 # Special Topics {#special-topics}
 
+This chapter delves into special topics to help you fully utilise this tool. We will cover three key areas.
+
+Firstly, we will explain Annotations in the SDMX Constructor, including how to access the feature and provide an example of it in action.
+
+Next, we will explore Table Modeller, which allows you to easily design statistical tables using an intuitive user interface that generates the appropriate SDMX artefacts.
+
+Lastly, we will discuss performing translations using Google/DeepL API in the SDMX Constructor.
+
 ## Annotations
 
 We're working hard on finishing this section. Stay tuned for updates.
